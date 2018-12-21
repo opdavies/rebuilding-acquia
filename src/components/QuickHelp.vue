@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white border-t-10 border-purple mb-6" :class="[hidden ? 'hidden' : 'flex']">
-    <div class="flex-none py-3 pl-3 pr-8 border-r border-grey-lighter">
+  <div class="bg-white border-t-10 border-purple mb-6" :class="[hidden ? 'hidden' : 'block lg:flex']">
+    <div class="flex-none py-3 pl-3 pr-8 border-b lg:border-r border-grey-lighter">
       <div class="flex items-center">
         <svg class="h-6 w-6 mr-1 text-purple fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__info"></use></svg>
         Quick help
@@ -8,20 +8,30 @@
     </div>
 
     <div class="p-4">
-      <div class="flex mb-6">
-        <button
-          v-for="(item, i) in items"
-          type="button"
-          class="hover:underline focus:underline mr-6 focus:outline-none"
-          :class="[ i === selected ? 'text-grey-darkest' : 'text-blue-dark' ]"
-          @click="selected = i"
-        >{{ item.subject }}</button>
+      <div class="block lg:hidden leading-normal -mb-5">
+        <div v-for="item in items">
+          <p class="text-sm mb-3 font-bold">{{ item.subject }}</p>
+          <p class="text-sm mb-5">{{ item.text }}</p>
+        </div>
       </div>
-      <div class="leading-normal">
-        <p class="text-sm text-grey-darker">
-          {{ items[selected].text }}
-          <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">Learn more</a>
-        </p>
+
+      <div class="hidden lg:block">
+        <div class="w-full lg:w-auto lg:flex mb-6">
+          <button
+            v-for="(item, i) in items"
+            type="button"
+            class="hover:underline focus:underline mr-6 focus:outline-none"
+            :class="[ i === selected ? 'text-grey-darkest' : 'text-blue-dark' ]"
+            @click="selected = i"
+          >{{ item.subject }}</button>
+        </div>
+
+        <div class="leading-normal">
+          <p class="text-sm text-grey-darker">
+            {{ items[selected].text }}
+            <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">Learn more</a>
+          </p>
+        </div>
       </div>
     </div>
   </div>

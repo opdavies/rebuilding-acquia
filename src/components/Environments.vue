@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="bg-white">
-      <div class="mx-1 px-4 flex items-center leading-none">
-        <div class="mr-24">
+      <div class="mx-1 px-4 flex items-center leading-none justify-between">
+        <div class="flex-none md:mr-24">
           <a href="#0"><img src="img/logo.png" alt="" class="h-10"></a>
         </div>
 
         <div class="flex flex-col flex-1">
-          <nav class="border-t-2 border-transparent">
-            <a href="#0" class="inline-block text-sm border-b-4 border-blue-dark mx-2 px-4 py-5 text-blue-dark uppercase no-underline hover:underline focus:underline">Develop</a>
-            <a href="#0" class="inline-block text-sm border-b-4 border-transparent mx-2 px-4 py-5 text-blue-dark uppercase no-underline hover:underline focus:underline">Manage</a>
+          <nav class="border-t-2 border-transparent flex justify-end md:justify-start">
+            <a href="#0" class="inline-block text-xs sm:text-sm border-b-4 border-blue-dark mx-2 px-4 py-4 md:py-5 text-blue-dark uppercase no-underline hover:underline focus:underline">Develop</a>
+            <a href="#0" class="inline-block text-xs sm:text-sm border-b-4 border-transparent mx-2 px-4 py-4 md:py-5 text-blue-dark uppercase no-underline hover:underline focus:underline">Manage</a>
           </nav>
         </div>
 
-        <div class="flex items-center">
+        <div class="hidden md:flex md:items-center">
           <div><a class="text-sm text-blue-dark no-underline hover:underline uppercase" href="#0">Help</a></div>
           <div class="ml-6"><button type="button">
             <span class="hidden">Menu</span>
@@ -30,8 +30,8 @@
       </div>
     </div>
 
-    <div class="px-4 py-5 border-b-2 border-grey flex justify-between">
-      <div>
+    <div class="px-4 py-5 border-b-2 border-grey flex justify-between items-center">
+      <div class="w-full md:w-auto flex flex-col">
         <div class="text-xs mb-3">
           <ol class="list-reset flex">
             <li class="mr-6"><a href="#0" class="text-blue-dark no-underline hover:underline">Applications</a></li>
@@ -39,13 +39,13 @@
           </ol>
         </div>
 
-        <div class="flex items-center">
+        <div class="flex flex-1 items-center justify-between md:justify-start">
           <div class="text-2xl font-hairline mr-2">{{ name }}</div>
           <svg class="h-6 w-6 text-blue-dark fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__down-arrow"></use></svg>
         </div>
       </div>
 
-      <div>
+      <div class="hidden md:block">
         <ul class="list-reset flex">
           <li>
             <button type="button" class="text-xs text-blue-dark no-underline hover:underline flex flex-col items-center justify-center">
@@ -72,7 +72,7 @@
     </div>
 
     <div class="flex flex-row-reverse h-full">
-      <div class="flex-1 p-12">
+      <div class="flex-1 p-4 lg:p-12">
         <div class="mb-6">
           <div class="flex items-start justify-between">
             <div class="flex items-baseline">
@@ -85,7 +85,7 @@
               </div>
             </div>
 
-            <div class="w-1/5">
+            <div class="w-full lg:w-1/5">
               <form action="#">
                 <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-darker rounded">
               </form>
@@ -105,30 +105,30 @@
         <task-log></task-log>
       </div>
 
-      <div class="w-64 bg-grey-darkest text-white antialiased">
+      <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased">
         <div>
           <ul class="list-reset">
-            <li>
-              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-blue px-4 py-5 hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-white fill-current mr-4" role="presentation"><use xlink:href="icons.symbol.svg#alpha__grid"></use></svg>
-                Environments
+            <li class="border-r-6 border-grey-darker">
+              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-blue px-4 py-5 bg-grey-darker">
+                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="icons.symbol.svg#alpha__grid"></use></svg>
+                <span class="hidden lg:block lg:ml-4">Environments</span>
               </a>
             </li>
-            <li>
+            <li class="border-r-6 border-grey-darkest hover:border-grey-darker">
               <div class="flex items-center text-grey no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 cursor-not-allowed hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-grey fill-current mr-4" role="presentation"><use xlink:href="icons.symbol.svg#locations__keys"></use></svg>
-                Product Keys
+                <svg class="h-6 w-6 text-grey fill-current" role="presentation"><use xlink:href="icons.symbol.svg#locations__keys"></use></svg>
+                <span class="hidden lg:block lg:ml-4">Product Keys</span>
+              </div>
+            </li class="border-r-6 border-grey-darkest hover:border-grey-darker">
+              <div class="flex items-center text-grey no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 cursor-not-allowed hover:bg-grey-darker">
+                <svg class="h-6 w-6 text-grey fill-current" role="presentation"><use xlink:href="icons.symbol.svg#alpha__security"></use></svg>
+                <span class="hidden lg:block lg:ml-4">Security</span>
               </div>
             </li>
-              <div class="flex items-center text-grey no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 cursor-not-allowed hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-grey fill-current mr-4" role="presentation"><use xlink:href="icons.symbol.svg#alpha__security"></use></svg>
-                Security
-              </div>
-            </li>
-            <li>
+            <li class="border-r-6 border-grey-darkest hover:border-grey-darker">
               <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-white fill-current mr-4" role="presentation"><use xlink:href="icons.symbol.svg#actions__search"></use></svg>
-                Acquia Search
+                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__search"></use></svg>
+                <span class="hidden lg:block lg:ml-4">Acquia Search</span>
               </a>
             </li>
           </ul>
