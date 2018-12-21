@@ -81,10 +81,7 @@
               </div>
 
               <div class="flex-1">
-                <button type="button" class="text-blue text-sm font-hairline flex items-center hover:underline focus:underline">
-                  <svg class="h-5 w-5 mr-1 text-blue-dark fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__info"></use></svg>
-                  Hide quick help
-                </button>
+                <toggle-help @toggle="help.hidden = !help.hidden" :hidden="help.hidden"></toggle-help>
               </div>
             </div>
 
@@ -103,7 +100,7 @@
           </div>
         </div>
 
-        <quick-help></quick-help>
+        <quick-help :hidden="help.hidden"></quick-help>
         <environment-cards></environment-cards>
         <task-log></task-log>
       </div>
@@ -142,20 +139,25 @@
 </template>
 
 <script>
-import QuickHelp from './QuickHelp'
 import EnvironmentCards from './EnvironmentCards'
+import QuickHelp from './QuickHelp'
 import TaskLog from './TaskLog'
+import ToggleHelp from './ToggleHelp'
 
 export default {
   components: {
     EnvironmentCards,
     QuickHelp,
     TaskLog,
+    ToggleHelp,
   },
 
   data() {
     return {
       name: 'Rebuilding Acquia',
+      help: {
+        hidden: false,
+      }
     }
   }
 }

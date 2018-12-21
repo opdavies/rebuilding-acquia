@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white border-t-10 border-purple flex mb-6">
+  <div class="bg-white border-t-10 border-purple mb-6" :class="[hidden ? 'hidden' : 'flex']">
     <div class="flex-none py-3 pl-3 pr-8 border-r border-grey-lighter">
       <div class="flex items-center">
         <svg class="h-6 w-6 mr-1 text-purple fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__info"></use></svg>
@@ -29,6 +29,10 @@
 
 <script>
 export default {
+  props: {
+    hidden: Boolean,
+  },
+
   data() {
     return {
       selected: 0,
