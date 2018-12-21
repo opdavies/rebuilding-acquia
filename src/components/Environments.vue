@@ -35,12 +35,12 @@
         <div class="text-xs mb-3">
           <ol class="list-reset flex">
             <li class="mr-6"><a href="#0" class="text-blue-dark no-underline hover:underline">Applications</a></li>
-            <li>{{ name }}</li>
+            <li>{{ project.name }}</li>
           </ol>
         </div>
 
         <div class="flex flex-1 items-center justify-between md:justify-start">
-          <div class="text-2xl font-hairline mr-2">{{ name }}</div>
+          <div class="text-2xl font-hairline mr-2">{{ project.name }}</div>
           <svg class="h-6 w-6 text-blue-dark fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__down-arrow"></use></svg>
         </div>
       </div>
@@ -94,14 +94,14 @@
 
           <div>
             <ul class="list-reset flex -mr-2">
-              <li class="text-2xs uppercase py-1 px-2 rounded border border-transparent bg-blue-light text-white mr-2">Drupal</li>
-              <li class="text-2xs uppercase py-1 px-2 rounded border border-grey bg-white mr-2">Enterprise</li>
+              <li class="text-2xs uppercase py-1 px-2 rounded border border-transparent bg-blue-light text-white mr-2">{{ project.type }}</li>
+              <li class="text-2xs uppercase py-1 px-2 rounded border border-grey bg-white mr-2">{{ project.level }}</li>
             </ul>
           </div>
         </div>
 
         <quick-help :hidden="help.hidden"></quick-help>
-        <environment-cards></environment-cards>
+        <environment-cards :environments="project.environments"></environment-cards>
         <task-log></task-log>
       </div>
 
@@ -152,9 +152,12 @@ export default {
     ToggleHelp,
   },
 
+  props: {
+    project: Object,
+  },
+
   data() {
     return {
-      name: 'Rebuilding Acquia',
       help: {
         hidden: false,
       }

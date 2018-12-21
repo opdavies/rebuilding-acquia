@@ -40,26 +40,8 @@
 
 <script>
 export default {
-  data() {
-    return {
-      environments: [
-        {
-          name: 'Dev',
-          url: 'dev.rebuilding-acquia.com',
-          label: 'develop'
-        },
-        {
-          name: 'Stage',
-          url: 'stg.rebuilding-acquia.com',
-          label: 'master'
-        },
-        {
-          name: 'Prod',
-          url: 'rebuilding-acquia.com',
-          label: 'tags/2018-12-21'
-        },
-      ],
-    }
-  }
+  props: {
+    environments: Array,
+  },
 }
 </script>
