@@ -9,18 +9,48 @@
 
     <div class="p-4">
       <div class="flex mb-6">
-        <button type="button" class="text-grey-darkest hover:underline mr-6">Deploying code</button>
-        <button type="button" class="text-blue-dark hover:underline mr-6">Copying files</button>
-        <button type="button" class="text-blue-dark hover:underline mr-6">Copying database</button>
-        <button type="button" class="text-blue-dark hover:underline ">Task Log</button>
+        <button
+          v-for="(item, i) in items"
+          type="button"
+          class="hover:underline focus:underline mr-6 focus:outline-none"
+          :class="[ i === selected ? 'text-grey-darkest' : 'text-blue-dark' ]"
+          @click="selected = i"
+        >{{ item.subject }}</button>
       </div>
       <div class="leading-normal">
-        <p>Drag a code element from one environment to another environment, which creates a new tag for the HEAD of that branch and then deploys the tag. Learn more</p>
+        <p class="text-sm text-grey-darker">
+          {{ items[selected].text }}
+          <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">Learn more</a>
+        </p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      selected: 0,
+      items: [
+        {
+          subject: 'Deploying code',
+          text: 'Drag a code element from one environment to another environment, which creates a new tag for the HEAD of that branch and then deploys the tag.',
+        },
+        {
+          subject: 'Copying files',
+          text: 'Drag a file element from one environment to another environment, which writes new files, overwrites existing files, and ignores files already in place.',
+        },
+        {
+          subject: 'Copying database',
+          text: 'Drag a database element from one environment to another environment, which overwrites the target database(s). Dragging database elements with more than one database displays a dialog box that allows you to select the databases to deploy',
+        },
+        {
+          subject: 'Task Log',
+          text: 'The Task Log is displayed below your Acquia Cloud environments and contains information on all of the actions taken against your application, including code deployments, configuration updates and environment specific changes.',
+        },
+      ]
+    }
+  }
+}
 </script>
