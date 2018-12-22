@@ -62,8 +62,8 @@
           </li>
 
           <li class="ml-6">
-            <button type="button" class="text-xs text-grey no-underline flex flex-col items-center justify-center cursor-not-allowed" disabled>
-              <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="icons.symbol.svg#actions__edit"></use></svg>
+            <button type="button" class="text-xs text-grey-dark no-underline flex flex-col items-center justify-center cursor-not-allowed" disabled>
+              <svg class="h-6 w-6 fill-current text-grey-dark mb-2" role="presentation"><use xlink:href="icons.symbol.svg#actions__edit"></use></svg>
               Rename
             </button>
           </li>
@@ -108,7 +108,7 @@
       <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased">
         <div>
           <ul class="list-reset">
-            <li class="border-r-6 border-grey-darker">
+            <li class="border-r-6 border-b border-grey-darker">
               <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-blue px-4 py-5 bg-grey-darker">
                 <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="icons.symbol.svg#alpha__grid"></use></svg>
                 <span class="hidden lg:block lg:ml-4">Environments</span>
