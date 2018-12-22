@@ -74,29 +74,29 @@
     <div class="flex flex-row-reverse h-full">
       <div class="flex-1 p-4 lg:p-12">
         <div class="mb-6">
-          <div class="flex items-start justify-between">
-            <div class="flex items-baseline">
-              <div class="mr-6">
-                <h1 class="text-4xl font-thin mb-2">Environments</h1>
+          <div class="lg:flex lg:items-baseline mb-2">
+            <div class="mr-16 mb-4 lg:mb-0">
+              <h1 class="text-4xl font-hairline mb-2">Environments</h1>
+
+              <div>
+                <ul class="list-reset flex -mr-2">
+                  <li class="text-2xs uppercase py-1 px-2 rounded border border-transparent bg-blue-light text-white mr-2">{{ project.type }}</li>
+                  <li class="text-2xs uppercase py-1 px-2 rounded border border-grey bg-white mr-2">{{ project.level }}</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
+              <div class="w-full lg:w-1/2 xl:w-1/3">
+                <form action="#">
+                  <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-darker rounded">
+                </form>
               </div>
 
               <div class="flex-1">
-                <toggle-help @toggle="help.hidden = !help.hidden" :hidden="help.hidden"></toggle-help>
+                <toggle-help @toggle="help.hidden = !help.hidden"></toggle-help>
               </div>
             </div>
-
-            <div class="w-full lg:w-1/5">
-              <form action="#">
-                <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-darker rounded">
-              </form>
-            </div>
-          </div>
-
-          <div>
-            <ul class="list-reset flex -mr-2">
-              <li class="text-2xs uppercase py-1 px-2 rounded border border-transparent bg-blue-light text-white mr-2">{{ project.type }}</li>
-              <li class="text-2xs uppercase py-1 px-2 rounded border border-grey bg-white mr-2">{{ project.level }}</li>
-            </ul>
           </div>
         </div>
 
