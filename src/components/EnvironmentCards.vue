@@ -5,8 +5,14 @@
         <div class="border border-grey rounded overflow-hidden">
            <div class="bg-white">
             <div class="border-t-4 border-teal p-4">
-              <h2 class="text-grey-darkest mb-1">{{ environment.name }}</h2>
-              <div class="text-grey-darker mb-2">{{ environment.url }}</div>
+              <a href="#0" class="no-underline hover:underline focus:underline text-grey-darkest hover:text-blue-dark focus:text-blue-dark focus:outline-none">
+                <h2 class="mb-1">{{ environment.name }}</h2>
+              </a>
+
+              <div class="text-grey-darker mb-2">
+                <a href="#0" class="no-underline hover:underline focus:underline text-grey-darkest hover:text-blue-dark focus:text-blue-dark focus:outline-none">{{ environment.url }}</a>
+              </div>
+
               <div class="text-grey-darker">{{ environment.label }}</div>
             </div>
           </div>

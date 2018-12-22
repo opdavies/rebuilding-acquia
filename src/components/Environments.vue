@@ -39,10 +39,10 @@
           </ol>
         </div>
 
-        <div class="flex flex-1 items-center justify-between md:justify-start">
+        <button class="flex flex-1 items-center justify-between md:justify-start">
           <div class="text-2xl font-hairline mr-2">{{ project.name }}</div>
           <svg class="h-6 w-6 text-blue-dark fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__down-arrow"></use></svg>
-        </div>
+        </button>
       </div>
 
       <div class="hidden md:block">
