@@ -4,7 +4,7 @@
       <div v-for="(environment, key) in environments" class="w-full md:w-1/2 xl:w-1/3 px-4 mb-6" :key="key">
         <div class="border border-grey rounded overflow-hidden">
            <div class="bg-white">
-            <div class="border-t-4 border-teal p-4">
+            <div class="border-t-4 border-teal p-3">
               <a href="#0" class="no-underline hover:underline focus:underline text-grey-darkest hover:text-blue-dark focus:text-blue-dark focus:outline-none">
                 <h2 class="mb-1">{{ environment.name }}</h2>
               </a>
