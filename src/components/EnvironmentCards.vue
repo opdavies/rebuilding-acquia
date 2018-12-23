@@ -19,23 +19,23 @@
 
           <div>
             <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue-light hover:bg-blue-dark focus:bg-blue-dark focus:outline-none focus:underline text-sm w-full text-left">
-              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="icons.symbol.svg#objects__grip-handle"></use></svg>
+              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               <span class="flex-1">Code</span>
               <span class="border-l border-grey p-2">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__switch"></use></svg>
+                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
               </span>
             </button>
 
             <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue-light hover:bg-blue-dark focus:bg-blue-dark focus:outline-none focus:underline text-sm w-full text-left border-t border-grey">
-              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="icons.symbol.svg#objects__grip-handle"></use></svg>
+              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               <span class="flex-1">Databases</span>
               <span class="border-l border-grey p-2">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="icons.symbol.svg#actions__backup"></use></svg>
+                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
               </span>
             </button>
 
             <button type="button" class="flex items-center text-white bg-blue-light hover:bg-blue-dark focus:bg-blue-dark focus:outline-none focus:underline px-1 py-3 text-sm w-full text-left border-t border-grey">
-              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="icons.symbol.svg#objects__grip-handle"></use></svg>
+              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               Files
             </button>
           </div>
@@ -48,7 +48,7 @@
 <script>
 export default {
   props: {
-    environments: Array,
+    environments: Object,
   },
 }
 </script>

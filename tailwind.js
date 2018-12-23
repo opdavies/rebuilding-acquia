@@ -60,12 +60,15 @@ let colors = {
   'blue-light': '#008DC7',
   'blue': '#1E70AB',
 
-'green': '#398002',
+  'green': '#398002',
 
   'purple': '#991FAF',
+
   'red-dark': '#cc1f1a',
 
   'teal': '#3F7B8F',
+
+  'orange': '#FA9903',
 
 /*
   'red-darkest': '#3b0d0c',

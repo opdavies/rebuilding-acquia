@@ -1,0 +1,27 @@
+{
+  "applications": {
+    "1": {
+      "id": 1,
+      "name": "Rebuilding Acquia",
+      "type": "Drupal",
+      "level": "Enterprise",
+      "environments": {
+        "dev": {
+          "name": "Dev",
+          "url": "dev.rebuilding-acquia.com",
+          "label": "develop"
+        },
+        "stage": {
+          "name": "Stage",
+          "url": "stg.rebuilding-acquia.com",
+          "label": "master"
+        },
+        "prod": {
+          "name": "Prod",
+          "url": "rebuilding-acquia.com",
+          "label": "tags/2018-12-21"
+        }
+      }
+    }
+  }
+}

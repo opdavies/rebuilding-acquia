@@ -5,11 +5,11 @@
     </div>
     <div>
       <ul class="list-reset bg-white">
-        <li v-for="item in items" class="px-3 py-4 border-b border-grey-light flex">
+        <li v-for="item in items" :key="item.text" class="px-3 py-4 border-b border-grey-light flex">
           <div class="flex-none mr-3">
-            <svg v-if="item.loading" class="h-5 w-5 text-grey fill-current" role="presentation"><use xlink:href="icons.symbol.svg#feedback__loading"></use></svg>
-            <svg v-if="!item.loading && item.success" class="h-5 w-5 text-green fill-current" role="presentation"><use xlink:href="icons.symbol.svg#feedback__success-circle"></use></svg>
-            <svg v-if="!item.loading && !item.success" class="h-5 w-5 text-red-dark fill-current" role="presentation"><use xlink:href="icons.symbol.svg#feedback__warning"></use></svg>
+            <svg v-if="item.loading" class="h-5 w-5 text-grey fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__loading"></use></svg>
+            <svg v-if="!item.loading && item.success" class="h-5 w-5 text-green fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__success-circle"></use></svg>
+            <svg v-if="!item.loading && !item.success" class="h-5 w-5 text-red-dark fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__warning"></use></svg>
           </div>
 
           <div class="flex-1">
@@ -19,7 +19,7 @@
 
           <div>
             <button type="button">
-              <svg class="h-5 w-5 text-grey-darker fill-current" role="presentation"><use xlink:href="icons.symbol.svg#alpha__chevron"></use></svg>
+              <svg class="h-5 w-5 text-grey-darker fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
             </button>
           </div>
         </li>
