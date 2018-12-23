@@ -37,8 +37,14 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap -mx-6">
-          <application-card v-for="application in applications" :id="application.id" :application="application" :key="application.id"></application-card>
+        <div class="flex flex-wrap -mx-3 w-full">
+          <application-card
+            v-for="application in applications"
+            :id="application.id"
+            :application="application"
+            :key="application.id"
+            class="px-3 w-full lg:w-1/3"
+          ></application-card>
         </div>
       </div>
 
