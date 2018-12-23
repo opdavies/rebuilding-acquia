@@ -6,7 +6,7 @@
       <div class="w-full md:w-auto flex flex-col">
         <div class="text-xs mb-3">
           <ol class="list-reset flex">
-            <li class="mr-6"><a href="#0" class="text-blue-dark no-underline hover:underline">Applications</a></li>
+            <li class="mr-6"><router-link to="/" class="text-blue-dark no-underline hover:underline">Applications</router-link></li>
             <li>{{ application.name }}</li>
           </ol>
         </div>
