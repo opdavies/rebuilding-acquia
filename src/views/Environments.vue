@@ -50,7 +50,7 @@
             <div class="mr-16 mb-4 lg:mb-0">
               <h1 class="text-4xl font-hairline mb-2">Environments</h1>
 
-              <!-- <application-tags></application-tags> -->
+              <application-tags :type="application.type" :level="application.level"></application-tags>
             </div>
 
             <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
@@ -107,6 +107,7 @@
 </template>
 
 <script>
+import ApplicationTags from '@/components/ApplicationTags'
 import EnvironmentCards from '@/components/EnvironmentCards'
 import QuickHelp from '@/components/QuickHelp'
 import TaskLog from '@/components/TaskLog'
@@ -115,6 +116,7 @@ import data from '@/data.json'
 
 export default {
   components: {
+    ApplicationTags,
     EnvironmentCards,
     QuickHelp,
     TaskLog,
