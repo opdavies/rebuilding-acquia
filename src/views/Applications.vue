@@ -47,7 +47,7 @@
             :key="application.id"
             :display="display"
             class="px-3 w-full"
-            :class="[display == 'grid' ? 'lg:w-1/3 mb-6 rounded' : '']"
+            :class="[display == 'grid' ? 'lg:w-1/3 mb-6 flex flex-col' : '']"
           ></application-card>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="display == 'grid'" class="bg-white p-4 border-grey rounded border">
+    <div v-if="display == 'grid'" class="bg-white p-4 border-grey rounded border flex-1">
       <div class="flex flex-col h-full justify-between">
         <div class="flex mb-12" :class="[display == 'grid' ? 'justify-between' : '']">
           <div>
