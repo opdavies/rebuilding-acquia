@@ -27,8 +27,10 @@
               <h1 class="text-4xl font-hairline mb-2">Applications</h1>
             </div>
 
-            <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
-              <div class="w-full lg:w-1/2 xl:w-1/4">
+            <application-switcher class="flex-1 flex justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-switcher>
+
+            <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
+              <div class="w-full">
                 <form action="#">
                   <input type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-darker rounded">
                 </form>
@@ -43,7 +45,9 @@
             :id="application.id"
             :application="application"
             :key="application.id"
-            class="px-3 w-full lg:w-1/3"
+            :display="display"
+            class="px-3 w-full"
+            :class="[display == 'grid' ? 'lg:w-1/3 mb-6 rounded' : '']"
           ></application-card>
         </div>
       </div>
@@ -78,17 +82,26 @@
 
 <script>
 import ApplicationCard from '@/components/ApplicationCard'
+import ApplicationSwitcher from '@/components/ApplicationSwitcher'
 import data from '@/data.json'
 
 export default {
   components: {
     ApplicationCard,
+    ApplicationSwitcher,
   },
 
   data() {
     return {
       applications: data.applications,
+      display: 'grid',
     }
   },
+
+  methods: {
+    handleDisplay(mode) {
+      this.display = mode
+    }
+  }
 }
 </script>
