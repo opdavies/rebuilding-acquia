@@ -27,7 +27,7 @@
               <h1 class="text-4xl font-hairline mb-2">Applications</h1>
             </div>
 
-            <application-switcher class="flex-1 flex justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-switcher>
+            <application-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-switcher>
 
             <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
               <div class="w-full">
