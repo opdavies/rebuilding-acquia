@@ -55,19 +55,19 @@
       <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased">
         <div>
           <ul class="list-reset">
-            <li class="border-r-6 border-b border-grey-darker">
+            <li>
               <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-blue px-4 py-5 bg-grey-darker">
                 <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__grid"></use></svg>
                 <span class="hidden lg:block lg:ml-4">All</span>
               </a>
             </li>
-            <li class="border-r-6 border-b border-grey-darker">
+            <li>
               <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5">
                 <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#state__starred"></use></svg>
                 <span class="hidden lg:block lg:ml-4">Starred</span>
               </a>
             </li>
-            <li class="border-r-6 border-b border-grey-darker">
+            <li>
               <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5">
                 <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__recent"></use></svg>
                 <span class="hidden lg:block lg:ml-4">Recents</span>
