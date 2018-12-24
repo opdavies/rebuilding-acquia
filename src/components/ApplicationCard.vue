@@ -13,8 +13,8 @@
           </div>
 
           <div>
-            <button type="button" @click="starred = !starred" class="focus:outline-none">
-              <svg class="h-6 w-6 text-orange fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
+            <button type="button" @click="starred = !starred" class="text-orange focus:text-blue-dark focus:outline-none">
+              <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
             </button>
           </div>
         </div>
@@ -38,8 +38,8 @@
         </div>
 
         <div class="mr-3">
-          <button type="button" @click="starred = !starred" class="focus:outline-none">
-            <svg class="h-6 w-6 text-orange fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
+          <button type="button" @click="starred = !starred" class="text-orange focus:text-blue-dark focus:outline-none">
+            <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
           </button>
         </div>
       </div>
