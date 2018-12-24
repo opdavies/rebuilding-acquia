@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row-reverse h-full">
+    <div class="flex flex-row-reverse flex-1 h-full">
       <div class="flex-1 p-4 lg:p-12">
         <div class="mb-6">
           <div class="lg:flex lg:items-baseline mb-12">
