@@ -31,17 +31,17 @@
       "environments": {
         "dev": {
           "name": "Dev",
-          "url": "dev.oliverdavies.uk",
+          "url": "foo.oliverdavies.uk",
           "label": "develop"
         },
         "stage": {
           "name": "Stage",
-          "url": "stg.oliverdavies.uk",
+          "url": "bar.oliverdavies.uk",
           "label": "master"
         },
         "prod": {
           "name": "Prod",
-          "url": "oliverdavies.uk",
+          "url": "www.oliverdavies.uk",
           "label": "tags/2018-12-23"
         }
       }
