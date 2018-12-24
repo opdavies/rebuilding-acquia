@@ -12,7 +12,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="ml-2">
             <button type="button" @click="starred = !starred" class="text-orange focus:text-blue-dark focus:outline-none">
               <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
             </button>
