@@ -23,7 +23,7 @@
             <svg class="h-6 w-6 text-blue-dark fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__notification"></use></svg>
           </button></div>
           <div class="ml-6">
-            <img class="w-5 h-5 rounded-full" src="https://accounts.acquia.com/images/users/04950d70-7265-4ca7-9a52-2108961edb65/style/avatar" alt="">
+            <img class="w-5 h-5 rounded-full" src="https://avatars1.githubusercontent.com/u/339813?s=460&v=4" alt="">
           </div>
         </div>
       </div>
