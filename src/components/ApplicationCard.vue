@@ -2,7 +2,7 @@
   <div>
     <div v-if="display == 'grid'" class="bg-white p-4 border-grey rounded border flex-1">
       <div class="flex flex-col h-full justify-between">
-        <div class="flex mb-12" :class="[display == 'grid' ? 'justify-between' : '']">
+        <div class="flex mb-12 justify-between">
           <div>
             <div>
               <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline"><h2 class="mb-1">{{ application.name }}</h2></router-link>
