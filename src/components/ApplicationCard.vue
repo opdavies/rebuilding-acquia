@@ -24,23 +24,25 @@
     </div>
 
     <div v-if="display == 'list'" class="bg-white p-3 border-grey border-b">
-      <div class="flex flex-row-reverse items-center justify-between">
-        <div class="flex flex-1 justify-between">
-          <div class="flex-1">
-            <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline"><h2 class="text-base font-normal mb-1">{{ application.name }}</h2></router-link>
+      <div class="-mx-2">
+        <div class="flex flex-row-reverse items-center justify-between">
+          <div class="flex flex-1 justify-between items-center -mx-2">
+            <div class="flex-1 px-2">
+              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline"><h2 class="text-base font-normal mb-1">{{ application.name }}</h2></router-link>
+            </div>
+
+            <application-tags :type="application.type" :level="application.level" class="w-1/4 px-2"></application-tags>
+
+            <div class="w-2/5 px-2">
+              <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
+            </div>
           </div>
 
-          <application-tags :type="application.type" :level="application.level" class="w-1/5"></application-tags>
-
-          <div class="w-2/5">
-            <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
+          <div class="px-2">
+            <button type="button" @click="starred = !starred" class="focus:outline-none">
+              <svg class="h-6 w-6 text-orange fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
+            </button>
           </div>
-        </div>
-
-        <div class="mr-3">
-          <button type="button" @click="starred = !starred" class="focus:outline-none">
-            <svg class="h-6 w-6 text-orange fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
-          </button>
         </div>
       </div>
     </div>
