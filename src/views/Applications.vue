@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="flex flex-wrap -mx-3 w-full">
+        <div class="flex flex-wrap -mx-3 -mb-6">
           <application-card
             v-for="application in applications"
             :id="application.id"
