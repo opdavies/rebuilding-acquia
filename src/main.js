@@ -4,9 +4,11 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import HeaderButtons from '@/components/HeaderButtons'
 import Sidebar from '@/components/Sidebar'
 import Navbar from '@/components/Navbar'
 
+Vue.component('header-buttons', HeaderButtons);
 Vue.component('navbar', Navbar);
 Vue.component('sidebar', Sidebar);
 

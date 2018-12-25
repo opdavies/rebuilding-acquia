@@ -20,30 +20,11 @@
         </button>
       </div>
 
-      <div class="hidden md:block">
-        <ul class="list-reset flex">
-          <li>
-            <button type="button" class="text-xs text-blue-dark no-underline hover:underline flex flex-col items-center justify-center">
-              <svg class="h-6 w-6 text-blue-dark fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__new-database"></use></svg>
-              Add database
-            </button>
-          </li>
-
-          <li class="ml-6">
-            <button type="button" class="text-xs text-blue-dark no-underline hover:underline flex flex-col items-center justify-center">
-              <svg class="h-6 w-6 text-blue-dark fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__info"></use></svg>
-              Git Info
-            </button>
-          </li>
-
-          <li class="ml-6">
-            <button type="button" class="text-xs text-grey-dark no-underline flex flex-col items-center justify-center cursor-not-allowed" disabled>
-              <svg class="h-6 w-6 fill-current text-grey-dark mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__edit"></use></svg>
-              Rename
-            </button>
-          </li>
-        </ul>
-      </div>
+      <header-buttons :links="[
+        { title: 'Add database', icon: 'actions__new-database', disabled: false },
+        { title: 'Git Info', icon: 'actions__info', disabled: false },
+        { title: 'Rename', icon: 'actions__edit', disabled: true },
+      ]"></header-buttons>
     </div>
 
     <div class="flex flex-row-reverse h-full">

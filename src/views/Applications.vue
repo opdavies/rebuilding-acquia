@@ -7,16 +7,9 @@
         <div class="text-2xl font-hairline mr-2">Applications</div>
       </div>
 
-      <div class="hidden md:block">
-        <ul class="list-reset flex">
-          <li>
-            <button type="button" class="text-xs text-blue-dark no-underline hover:underline flex flex-col items-center justify-center">
-              <svg class="h-6 w-6 text-blue-dark fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__new-app"></use></svg>
-              Add Application
-            </button>
-          </li>
-        </ul>
-      </div>
+      <header-buttons :links="[
+        { title: 'Add Application', icon: 'alpha__new-app', disabled: false },
+      ]"></header-buttons>
     </div>
 
     <div class="flex flex-row-reverse flex-1 h-full">
