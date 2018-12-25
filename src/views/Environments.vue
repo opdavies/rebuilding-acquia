@@ -75,36 +75,12 @@
         <task-log></task-log>
       </div>
 
-      <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased">
-        <div>
-          <ul class="list-reset">
-            <li>
-              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-blue px-4 py-5 bg-grey-darker">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__grid"></use></svg>
-                <span class="hidden lg:block lg:ml-4">Environments</span>
-              </a>
-            </li>
-            <li>
-              <div class="flex items-center text-grey no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 cursor-not-allowed hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-grey fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#locations__keys"></use></svg>
-                <span class="hidden lg:block lg:ml-4">Product Keys</span>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center text-grey no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 cursor-not-allowed hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-grey fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__security"></use></svg>
-                <span class="hidden lg:block lg:ml-4">Security</span>
-              </div>
-            </li>
-            <li>
-              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5 hover:bg-grey-darker">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__search"></use></svg>
-                <span class="hidden lg:block lg:ml-4">Acquia Search</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <sidebar :links="[
+        { title: 'Environments', icon: 'alpha__grid', active: true, disabled: false },
+        { title: 'Product Keys', icon: 'locations__keys', active: false, disabled: true },
+        { title: 'Security', icon: 'alpha__security', active: false, disabled: true },
+        { title: 'Acquia Search', icon: 'actions__search', active: false, disabled: false },
+      ]"></sidebar>
     </div>
   </div>
 </template>

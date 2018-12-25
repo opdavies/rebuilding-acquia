@@ -52,30 +52,11 @@
         </div>
       </div>
 
-      <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased">
-        <div>
-          <ul class="list-reset">
-            <li>
-              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-blue px-4 py-5 bg-grey-darker">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__grid"></use></svg>
-                <span class="hidden lg:block lg:ml-4">All</span>
-              </a>
-            </li>
-            <li>
-              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#state__starred"></use></svg>
-                <span class="hidden lg:block lg:ml-4">Starred</span>
-              </a>
-            </li>
-            <li>
-              <a href="#0" class="flex items-center text-white no-underline hover:underline focus:underline border-l-6 border-transparent px-4 py-5">
-                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__recent"></use></svg>
-                <span class="hidden lg:block lg:ml-4">Recents</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <sidebar :links="[
+        { title: 'All', icon: 'alpha__grid', active: true, disabled: false },
+        { title: 'Starred', icon: 'state__starred', active: false, disabled: false },
+        { title: 'Recents', icon: 'objects__recent', active: false, disabled: false },
+      ]"></sidebar>
     </div>
   </div>
 </template>
