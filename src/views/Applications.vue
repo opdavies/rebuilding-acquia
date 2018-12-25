@@ -1,55 +1,61 @@
 <template>
   <div>
-    <navbar></navbar>
+    <div class="fixed pin-t w-full z-30">
+      <navbar></navbar>
 
-    <div class="px-4 py-5 border-b-2 border-grey flex justify-between items-center">
-      <div class="w-full md:w-auto flex flex-col">
-        <div class="text-2xl font-hairline mr-2">Applications</div>
-      </div>
+      <title-block>
+        <template slot="left">
+          <div class="text-2xl font-hairline mr-2">Applications</div>
+        </template>
 
-      <header-buttons :links="[
-        { title: 'Add Application', icon: 'alpha__new-app', disabled: false },
-      ]"></header-buttons>
+        <template slot="right">
+          <header-buttons :links="[
+            { title: 'Add Application', icon: 'alpha__new-app', disabled: false },
+          ]"></header-buttons>
+        </template>
+      </title-block>
     </div>
 
-    <div class="flex flex-row-reverse flex-1 h-full">
-      <div class="flex-1 p-4 lg:p-12">
-        <div class="mb-6">
-          <div class="lg:flex lg:items-baseline mb-12">
-            <div class="mr-16 mb-4 lg:mb-0">
-              <h1 class="text-4xl font-hairline mb-2">Applications</h1>
-            </div>
+    <div class="mt-48">
+      <div class="-mt-10 md:-mt-4 flex flex-row-reverse h-full">
+        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64">
+          <div class="mb-6">
+            <div class="lg:flex lg:items-baseline mb-12">
+              <div class="mr-16 mb-4 lg:mb-0">
+                <h1 class="text-4xl font-hairline mb-2">Applications</h1>
+              </div>
 
-            <application-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-switcher>
+              <application-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-switcher>
 
-            <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
-              <div class="w-full">
-                <form action="#">
-                  <input type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-darker rounded">
-                </form>
+              <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
+                <div class="w-full">
+                  <form action="#">
+                    <input type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-darker rounded">
+                  </form>
+                </div>
               </div>
             </div>
           </div>
+
+          <div class="flex flex-wrap -mx-3 -mb-6">
+            <application-card
+              v-for="application in applications"
+              :id="application.id"
+              :application="application"
+              :key="application.id"
+              :display="display"
+              class="px-3 w-full"
+              :class="[display == 'grid' ? 'lg:w-1/3 xl:w-1/4 mb-6 flex flex-col' : '']"
+            ></application-card>
+          </div>
         </div>
 
-        <div class="flex flex-wrap -mx-3 -mb-6">
-          <application-card
-            v-for="application in applications"
-            :id="application.id"
-            :application="application"
-            :key="application.id"
-            :display="display"
-            class="px-3 w-full"
-            :class="[display == 'grid' ? 'lg:w-1/3 xl:w-1/4 mb-6 flex flex-col' : '']"
-          ></application-card>
-        </div>
+        <sidebar :links="[
+          { title: 'All', icon: 'alpha__grid', active: true, disabled: false },
+          { title: 'Starred', icon: 'state__starred', active: false, disabled: false },
+          { title: 'Recents', icon: 'objects__recent', active: false, disabled: false },
+        ]"></sidebar>
       </div>
-
-      <sidebar :links="[
-        { title: 'All', icon: 'alpha__grid', active: true, disabled: false },
-        { title: 'Starred', icon: 'state__starred', active: false, disabled: false },
-        { title: 'Recents', icon: 'objects__recent', active: false, disabled: false },
-      ]"></sidebar>
     </div>
   </div>
 </template>
