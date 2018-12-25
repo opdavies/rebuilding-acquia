@@ -25,7 +25,7 @@
                 <h1 class="text-4xl font-hairline mb-2">Applications</h1>
               </div>
 
-              <application-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-switcher>
+              <application-display-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-display-switcher>
 
               <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
                 <div class="w-full">
@@ -62,13 +62,13 @@
 
 <script>
 import ApplicationCard from '@/components/ApplicationCard'
-import ApplicationSwitcher from '@/components/ApplicationSwitcher'
+import ApplicationDisplaySwitcher from '@/components/ApplicationDisplaySwitcher'
 import data from '@/data.json'
 
 export default {
   components: {
     ApplicationCard,
-    ApplicationSwitcher,
+    ApplicationDisplaySwitcher,
   },
 
   data() {
