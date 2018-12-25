@@ -26,6 +26,7 @@
             { title: 'Add database', icon: 'actions__new-database', disabled: false },
             { title: 'Git Info', icon: 'actions__info', disabled: false },
             { title: 'Rename', icon: 'actions__edit', disabled: true },
+            { title: 'Cancel', icon: 'actions__remove--circle', disabled: false },
           ]"></header-buttons>
         </template>
       </title-block>
