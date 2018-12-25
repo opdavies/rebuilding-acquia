@@ -6,7 +6,10 @@
       <div class="w-full md:w-auto flex flex-col">
         <div class="text-xs mb-3">
           <ol class="list-reset flex">
-            <li class="mr-6"><router-link to="/" class="text-blue-dark no-underline hover:underline">Applications</router-link></li>
+            <li class="flex items-center pr-1">
+              <router-link to="/" class="text-blue-dark no-underline hover:underline mr-1">Applications</router-link>
+              <svg class="w-3 h-3 fill-current text-grey" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" fill-rule="evenodd"/></svg>
+            </li>
             <li>{{ application.name }}</li>
           </ol>
         </div>
