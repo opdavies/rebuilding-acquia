@@ -68,6 +68,7 @@ let colors = {
 
   'teal': '#3F7B8F',
 
+  'orange-light': '#FFB401',
   'orange': '#FA9903',
 
 /*
