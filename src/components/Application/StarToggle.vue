@@ -10,5 +10,11 @@ export default {
   props: {
     application: Object,
   },
+
+  data() {
+    return {
+      starred: false
+    }
+  },
 }
 </script>
