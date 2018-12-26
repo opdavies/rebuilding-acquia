@@ -18,7 +18,7 @@
 
     <div class="mt-48">
       <div class="-mt-10 md:-mt-4 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64">
+        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64 overflow-x-hidden">
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-12">
               <div class="mr-16 mb-4 lg:mb-0">
