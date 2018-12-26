@@ -39,7 +39,7 @@
 
           <div class="flex flex-wrap -mx-3 -mb-6">
             <application-card
-              v-for="application in applications"
+              v-for="application in sortedApplications"
               :id="application.id"
               :application="application"
               :key="application.id"
@@ -63,6 +63,7 @@
 <script>
 import ApplicationCard from '@/components/Application/ApplicationCard'
 import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisplaySwitcher'
+import _ from 'lodash'
 import data from '@/data.json'
 
 export default {
@@ -75,6 +76,12 @@ export default {
     return {
       applications: data.applications,
       display: 'grid',
+    }
+  },
+
+  computed: {
+    sortedApplications: function () {
+      return _.sortBy(this.applications, [function (a) { return a.name }])
     }
   },
 
