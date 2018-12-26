@@ -59,7 +59,7 @@
 
           <quick-help :hidden="help.hidden"></quick-help>
           <environment-cards :environments="application.environments"></environment-cards>
-          <task-log></task-log>
+          <task-log :tasks="application.tasks"></task-log>
         </div>
 
         <sidebar :links="[

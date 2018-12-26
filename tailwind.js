@@ -71,6 +71,8 @@ let colors = {
   'orange-light': '#FFB401',
   'orange': '#FA9903',
 
+  'yellow-lightest': '#FAF8DF'
+
 /*
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',

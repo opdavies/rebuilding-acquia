@@ -1,0 +1,76 @@
+<template>
+  <div>
+    <div class="px-3 py-4 border-b border-grey-light flex" :class="{'bg-yellow-lightest': open}">
+      <div class="flex-none mr-3">
+        <svg v-if="task.loading" class="h-5 w-5 text-grey fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__loading"></use></svg>
+        <svg v-if="!task.loading && task.success" class="h-5 w-5 text-green fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__success-circle"></use></svg>
+        <svg v-if="!task.loading && !task.success" class="h-5 w-5 text-red-dark fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__warning"></use></svg>
+      </div>
+
+      <div class="flex-1">
+        <div class="text-sm font-bold mb-2">{{ task.text }}</div>
+        <div class="text-grey-darker text-2xs">{{ task.times.display }}</div>
+      </div>
+
+      <div>
+        <button type="button" @click="open = !open">
+          <svg v-if="!open" class="h-5 w-5 text-grey-darker fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
+          <svg v-else class="h-5 w-5 text-grey-darker fill-current" style="transform: rotate(180deg)" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="p-4 bg-grey-darker text-white antialiased" v-show="open">
+      <div class="flex flex-wrap -mx-4">
+        <div class="px-4">
+          <div class="text-xs uppercase mb-1">Task ID</div>
+          <div class="text-sm font-bold">12345678</div>
+        </div>
+
+        <div class="px-4 w-1/6 flex-none">
+          <div class="text-xs uppercase mb-1">User</div>
+          <div class="text-sm font-bold truncate">{{ task.user }}</div>
+        </div>
+
+        <div class="px-4 w-1/4 flex-none">
+          <div class="text-xs uppercase mb-1">Started</div>
+          <div class="text-sm font-bold truncate">{{ task.times.started }}</div>
+        </div>
+
+        <div class="px-4 w-1/4 flex-none">
+          <div class="text-xs uppercase mb-1">Completed</div>
+          <div class="text-sm font-bold truncate">{{ task.times.completed }}</div>
+        </div>
+
+        <div class="px-4">
+          <div class="text-xs uppercase mb-1">Status</div>
+          <div class="text-sm font-bold">{{ status }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props: {
+    task: Object,
+  },
+
+  data() {
+    return {
+      open: false,
+    }
+  },
+
+  computed: {
+    status: function () {
+      if (this.task.loading) {
+        return 'In progress'
+      }
+
+      return this.task.success ? 'Completed' : 'Failed'
+    }
+  }
+}
+</script>
