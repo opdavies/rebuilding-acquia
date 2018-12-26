@@ -30,7 +30,8 @@
               <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
                 <div class="w-full">
                   <form action="#">
-                    <input type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-darker rounded">
+                    <label for="applications" class="visuallyhidden">Filter applications</label>
+                    <input id="applications" type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-darker rounded">
                   </form>
                 </div>
               </div>
