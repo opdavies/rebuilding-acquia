@@ -74,11 +74,11 @@
 </template>
 
 <script>
-import ApplicationTags from '@/components/ApplicationTags'
-import EnvironmentCards from '@/components/EnvironmentCards'
-import QuickHelp from '@/components/QuickHelp'
-import TaskLog from '@/components/TaskLog'
-import ToggleHelp from '@/components/ToggleHelp'
+import ApplicationTags from '@/components/Application/ApplicationTags'
+import EnvironmentCards from '@/components/Environment/EnvironmentCards'
+import QuickHelp from '@/components/Environment/QuickHelp'
+import TaskLog from '@/components/Environment/TaskLog/TaskLog'
+import ToggleHelp from '@/components/Environment/ToggleHelp'
 import data from '@/data.json'
 
 export default {

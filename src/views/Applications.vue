@@ -61,8 +61,8 @@
 </template>
 
 <script>
-import ApplicationCard from '@/components/ApplicationCard'
-import ApplicationDisplaySwitcher from '@/components/ApplicationDisplaySwitcher'
+import ApplicationCard from '@/components/Application/ApplicationCard'
+import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisplaySwitcher'
 import data from '@/data.json'
 
 export default {

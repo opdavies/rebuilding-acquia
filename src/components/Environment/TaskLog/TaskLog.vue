@@ -15,7 +15,7 @@
 
 <script>
 import _ from 'lodash'
-import TaskLogItem from '@/components/TaskLogItem'
+import TaskLogItem from '@/components/Environment/TaskLog/TaskLogItem'
 
 export default {
   components: {

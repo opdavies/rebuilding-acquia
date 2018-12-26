@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import ApplicationTags from '@/components/ApplicationTags'
+import ApplicationTags from '@/components/Application/ApplicationTags'
 
 export default {
   components: {
