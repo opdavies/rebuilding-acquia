@@ -1,25 +1,26 @@
 <template>
   <div>
     <div v-if="display == 'grid'" class="bg-white p-4 border-grey rounded border flex-1">
-      <div class="flex flex-col h-full justify-between">
-        <div class="flex mb-12 justify-between">
+      <div class="flex h-full">
+        <div class="flex-1 flex flex-col justify-between">
           <div>
             <div>
               <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline"><h2 class="mb-1">{{ application.name }}</h2></router-link>
             </div>
-            <div>
+
+            <div class="overflow-hidden whitespace-no-wrap truncate">
               <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
             </div>
           </div>
 
-          <div class="ml-2">
-            <button type="button" @click="starred = !starred" class="focus:outline-none" :class="[starred ? 'text-orange hover:text-orange-light focus:text-orange-light' : 'text-grey focus:text-orange hover:text-orange']">
-              <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
-            </button>
-          </div>
+          <application-tags :type="application.type" :level="application.level" class="mt-6"></application-tags>
         </div>
 
-        <application-tags :type="application.type" :level="application.level"></application-tags>
+        <div class="flex-none ml-2">
+          <button type="button" @click="starred = !starred" class="focus:outline-none" :class="[starred ? 'text-orange hover:text-orange-light focus:text-orange-light' : 'text-grey focus:text-orange hover:text-orange']">
+            <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
+          </button>
+        </div>
       </div>
     </div>
 
