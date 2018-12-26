@@ -21,28 +21,28 @@
     </div>
 
     <div class="p-4 bg-grey-darker text-white antialiased" v-show="open">
-      <div class="flex flex-wrap -mx-4">
-        <div class="px-4">
+      <div class="lg:flex lg:flex-wrap -mx-4 -mb-4">
+        <div class="px-4 mb-4">
           <div class="text-xs uppercase mb-1">Task ID</div>
           <div class="text-sm font-bold">12345678</div>
         </div>
 
-        <div class="px-4 w-1/6 flex-none">
+        <div class="px-4 mb-4 lg:w-1/6 lg:flex-none">
           <div class="text-xs uppercase mb-1">User</div>
           <div class="text-sm font-bold truncate">{{ task.user }}</div>
         </div>
 
-        <div class="px-4 w-1/4 flex-none">
+        <div class="px-4 mb-4 lg:w-1/4 lg:flex-none">
           <div class="text-xs uppercase mb-1">Started</div>
           <div class="text-sm font-bold truncate">{{ task.times.started }}</div>
         </div>
 
-        <div class="px-4 w-1/4 flex-none">
+        <div class="px-4 mb-4 lg:w-1/4 lg:flex-none">
           <div class="text-xs uppercase mb-1">Completed</div>
           <div class="text-sm font-bold truncate">{{ task.times.completed }}</div>
         </div>
 
-        <div class="px-4">
+        <div class="px-4 mb-4">
           <div class="text-xs uppercase mb-1">Status</div>
           <div class="text-sm font-bold">{{ status }}</div>
         </div>
