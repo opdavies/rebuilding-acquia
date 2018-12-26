@@ -69,7 +69,11 @@ export default {
         return 'In progress'
       }
 
-      return this.task.success ? 'Completed' : 'Failed'
+      if (!this.task.success) {
+        return 'Failed'
+      }
+
+      return 'Completed'
     }
   }
 }
