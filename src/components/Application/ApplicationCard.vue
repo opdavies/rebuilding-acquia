@@ -2,21 +2,21 @@
   <div>
     <div v-if="display == 'grid'" class="bg-white p-4 border-grey rounded border flex-1">
       <div class="flex h-full">
-        <div class="flex-1 flex flex-col justify-between">
+        <div class="flex-1 w-5/6 flex flex-col justify-between">
           <div>
             <div>
-              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline"><h2 class="mb-1">{{ application.name }}</h2></router-link>
+              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline focus:outline-none"><h2 class="mb-1">{{ application.name }}</h2></router-link>
             </div>
 
-            <div class="overflow-hidden whitespace-no-wrap truncate">
-              <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
+            <div class="truncate text-blue-dark">
+              <a href="#0" class="text-inherit no-underline hover:underline focus:underline focus:outline-none">{{ application.environments['prod'].url }}</a>
             </div>
           </div>
 
           <application-tags :type="application.type" :level="application.level" class="mt-6"></application-tags>
         </div>
 
-        <div class="flex-none ml-2">
+        <div class="flex-none w-1/6 text-right">
           <button type="button" @click="starred = !starred" class="focus:outline-none" :class="[starred ? 'text-orange hover:text-orange-light focus:text-orange-light' : 'text-grey focus:text-orange hover:text-orange']">
             <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
           </button>

@@ -44,6 +44,7 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
+  'inherit': 'inherit',
   'transparent': 'transparent',
 
   'black': '#22292f',
