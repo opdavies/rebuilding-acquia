@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-      <div class="mx-1 px-4 flex items-center leading-none justify-between">
+      <div class="mx-1 px-4 lg:px-6 flex items-center leading-none justify-between">
         <div class="flex-none md:mr-24">
           <router-link to="/"><img src="/img/logo.png" alt="" class="h-10"></router-link>
         </div>
