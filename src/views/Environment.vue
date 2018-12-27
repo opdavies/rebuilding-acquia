@@ -40,7 +40,7 @@
     <div class="mt-48">
       <div class="-mt-4 md:-mt-2 flex flex-row-reverse h-full">
         <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64 overflow-x-hidden">
-          <div class="mb-6">
+          <div>
             <div>
               <h1 class="font-hairline mb-2">Overview</h1>
 
@@ -196,7 +196,7 @@
               </div>
             </div>
 
-            <div class="mb-6 rounded border border-grey shadow overflow-hidden">
+            <div class="rounded border border-grey shadow overflow-hidden">
               <div class="bg-grey-light p-4"><h2 class="text-lg">Information</h2></div>
               <div class="bg-white px-4 py-6">
                 <div class="mb-6 relative">
