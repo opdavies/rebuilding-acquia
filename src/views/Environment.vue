@@ -27,10 +27,11 @@
 
         <template slot="right">
           <header-buttons :links="[
-            { title: 'Add database', icon: 'actions__new-database', disabled: false },
-            { title: 'Git Info', icon: 'actions__info', disabled: false },
+            { title: 'Install Drupal', icon: 'actions__upload', disabled: false },
+            { title: 'Clear Varnish', icon: 'alpha__clear-cache', disabled: false },
+            { title: 'Live development', icon: 'actions__publish-settings', disabled: false },
             { title: 'Rename', icon: 'actions__edit', disabled: false },
-            { title: 'Cancel', icon: 'actions__remove--circle', disabled: false },
+            { title: 'Configure', icon: 'actions__setting', disabled: false },
           ]"></header-buttons>
         </template>
       </title-block>
