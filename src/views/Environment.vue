@@ -174,28 +174,27 @@
               </div>
             </div>
 
-            <!-- <div class="lg:flex lg:items-baseline mb-2">
-              <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-hairline mb-2">Environments</h1>
-
-                <application-tags :type="application.type" :level="application.level"></application-tags>
-              </div>
-
-              <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
-                <div class="w-full lg:w-1/2 xl:w-1/3">
-                  <form action="#">
-                    <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-darker rounded">
-                  </form>
+            <div class="mb-6 rounded border border-grey shadow overflow-hidden">
+              <div class="bg-grey-light p-4"><h2 class="text-lg">Site Health</h2></div>
+              <div class="bg-white p-4">
+                <div class="mb-6">
+                  <p class="text-lg font-hairline text-grey-darkest">Uptime monitoring</p>
                 </div>
 
-                <div class="flex-1">
-                  <toggle-help @toggle="help.hidden = !help.hidden"></toggle-help>
+                <div class="text-center leading-normal mb-5">
+                  <p class="text-grey-darker">
+                    Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
+                    of whether your Drupal site is really up and running.
+                  </p>
+                </div>
+
+                <div class="flex justify-center">
+                  <button type="button" class="text-sm font-thin bg-blue-dark hover:bg-blue-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Enable Uptime</button>
+                  <button type="button" class="text-sm font-thin bg-grey-dark hover:bg-grey-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Learn more</button>
                 </div>
               </div>
             </div>
-          </div> -->
-
-        </div>
+          </div>
         </div>
 
         <sidebar :links="[
