@@ -107,7 +107,7 @@
                 <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
                   <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
                     <div class="mb-1 text-xs text-grey-darker">IP Address</div>
-                    <div>111.222.333.444</div>
+                    <div>1.2.3.4</div>
                   </div>
 
                   <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
