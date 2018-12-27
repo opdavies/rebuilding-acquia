@@ -77,17 +77,17 @@
                       <div>
                         <ul class="list-reset flex -ml-px">
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <a href="#0" class="py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
                               <span class="block">Deploy</span>
-                            </a>
+                            </button>
                           </li>
 
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <a href="#0" class="py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
                               <span class="block">Switch</span>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -116,24 +116,24 @@
                       <div>
                         <ul class="list-reset flex -ml-px">
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <a href="#0" class="py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                               <span class="block">Copy</span>
-                            </a>
+                            </button>
                           </li>
 
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <a href="#0" class="py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
                               <span class="block">Back up</span>
-                            </a>
+                            </button>
                           </li>
 
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <a href="#0" class="py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
                               <span class="block">Restore</span>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
@@ -162,10 +162,10 @@
                       <div>
                         <ul class="list-reset flex -ml-px">
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <a href="#0" class="py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                               <span class="block">Copy</span>
-                            </a>
+                            </button>
                           </li>
                         </ul>
                       </div>
