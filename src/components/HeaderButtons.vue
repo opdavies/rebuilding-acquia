@@ -20,9 +20,19 @@
 </template>
 
 <script>
+import _ from 'lodash'
+
 export default {
   props: {
     links: Array,
   },
+
+  computed: {
+    filteredLinks: function () {
+      let links = this.links
+
+      return _.omitBy(links, _.isEmpty)
+    }
+  }
 }
 </script>

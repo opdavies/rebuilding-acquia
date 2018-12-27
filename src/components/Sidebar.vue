@@ -1,5 +1,5 @@
 <template>
-  <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased fixed pin-l h-full">
+  <div class="w-auto lg:w-64 bg-grey-darkest text-white antialiased fixed pin-l h-full overflow-y-scroll">
     <div>
       <ul class="list-reset">
         <li v-for="link in links" :key="link.title">
@@ -8,7 +8,7 @@
             class="flex items-center no-underline hover:underline focus:underline border-l-6 px-4 py-5"
             :class="{
               'border-blue bg-grey-darker': link.active,
-              'border-transparent': !link.active,
+              'border-transparent hover:bg-grey-darker': !link.active,
               'text-grey cursor-not-allowed': link.disabled,
               'text-white': !link.disabled,
             }"

@@ -50,16 +50,17 @@ let colors = {
   'black': '#22292f',
   'grey-darkest': '#333333',
   'grey-darker': '#444444',
-  'grey-dark': '#8795a1',
+  'grey-dark': '#888888',
   'grey': '#B7B7B7',
   'grey-light': '#DDDDDD',
   'grey-lighter': '#eeeeee',
   'grey-lightest': '#f8fafc',
   'white': '#ffffff',
 
-  'blue-dark': '#0B5386',
-  'blue-light': '#008DC7',
-  'blue': '#1E70AB',
+  'blue-darker': '#002d64',
+  'blue-dark': '#0e68a7',
+  'blue-light': '#29aae1',
+  'blue': '#018dc7',
 
   'green': '#398002',
 
