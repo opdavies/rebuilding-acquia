@@ -130,7 +130,15 @@
                           </li>
 
                           <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
-                            <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
+                            <button
+                              type="button"
+                              class="w-full py-3 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block"
+                              :class="{
+                                'text-blue-dark': !isProduction,
+                                'text-grey cursor-not-allowed': isProduction
+                              }"
+                              :disabled="isProduction"
+                            >
                               <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
                               <span class="block">Restore</span>
                             </button>
@@ -290,12 +298,19 @@ export default {
     application: function () {
       return this.applications[this.id]
     },
+
     environment: function () {
       return this.application['environments'][this.environmentName]
     },
+
     gitUrl: function () {
       return this.application.machineName  + '@svn-1234.prod.hosting.acquia.com:' + this.application.machineName + '.git'
     },
+
+    isProduction: function () {
+      return this.environmentName == 'prod'
+    },
+
     sshUrl: function () {
       return this.application.machineName + '.' + this.environmentName + '@staging-1234.prod.hosting.acquia.com'
     }
