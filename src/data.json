@@ -3,6 +3,7 @@
     "1": {
       "id": 1,
       "name": "Rebuilding Acquia",
+      "machineName": "rebuildingacquia",
       "type": "Drupal",
       "level": "Enterprise",
       "environments": {
@@ -129,6 +130,7 @@
     "2": {
       "id": 2,
       "name": "Oliver Davies",
+      "machineName": "opdaviestest",
       "type": "Drupal",
       "level": "Professional",
       "environments": {

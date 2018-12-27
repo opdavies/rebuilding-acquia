@@ -194,6 +194,55 @@
                 </div>
               </div>
             </div>
+
+            <div class="mb-6 rounded border border-grey shadow overflow-hidden">
+              <div class="bg-grey-light p-4"><h2 class="text-lg">Information</h2></div>
+              <div class="bg-white px-4 py-6">
+                <div class="mb-6 relative">
+                  <div class="text-xs mb-1">Git URL</div>
+                  <div class="border border-grey-dark rounded p-3">{{ gitUrl }}</div>
+                  <div class="absolute pin-t pin-r">
+                    <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
+                      <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                      Copy <span class="visuallyhidden">Git URL to your clipboard</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="mb-6 relative">
+                  <div class="text-xs mb-1">SSH URL</div>
+                  <div class="border border-grey-dark rounded p-3">{{ sshUrl }}</div>
+                  <div class="absolute pin-t pin-r">
+                    <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
+                      <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                      Copy <span class="visuallyhidden">SSH URL to your clipboard</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
+                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-1 text-xs text-grey-darker">IP Address</div>
+                    <div>111.222.333.444</div>
+                  </div>
+
+                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-1 text-xs text-grey-darker">Region</div>
+                    <div>eu-west-1</div>
+                  </div>
+
+                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-1 text-xs text-grey-darker">PHP version</div>
+                    <div>7.1</div>
+                  </div>
+
+                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-1 text-xs text-grey-darker">Live development mode</div>
+                    <div>Off</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -234,6 +283,12 @@ export default {
     },
     environment: function () {
       return this.application['environments'][this.environmentName]
+    },
+    gitUrl: function () {
+      return this.application.machineName  + '@svn-1234.prod.hosting.acquia.com:' + this.application.machineName + '.git'
+    },
+    sshUrl: function () {
+      return this.application.machineName + '.' + this.environmentName + '@staging-1234.prod.hosting.acquia.com'
     }
   },
 }
