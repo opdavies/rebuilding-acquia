@@ -79,7 +79,7 @@
                   class="w-full py-3 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block"
                   :class="{
                     'text-blue-dark': !isProduction,
-                    'text-grey cursor-not-allowed': isProduction
+                    'text-grey-dark cursor-not-allowed': isProduction
                   }"
                   :disabled="isProduction"
                 >
