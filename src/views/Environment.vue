@@ -20,8 +20,8 @@
           </div>
 
           <button class="flex flex-1 items-center justify-between md:justify-start">
-            <div class="text-2xl font-hairline mr-2">{{ application.name }} : {{ environment.name }}</div>
-            <svg class="h-6 w-6 text-blue-dark fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__down-arrow"></use></svg>
+            <div class="text-2xl font-hairline">{{ application.name }} : {{ environment.name }}</div>
+            <svg class="h-6 w-6 text-blue-dark fill-current ml-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__down-arrow"></use></svg>
           </button>
         </template>
 
@@ -41,7 +41,7 @@
         <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64 overflow-x-hidden">
           <div class="mb-6">
             <div>
-              <h1 class="text-hairline mb-2">Overview</h1>
+              <h1 class="font-hairline mb-2">Overview</h1>
 
               <application-tags :type="application.type" :level="application.level"></application-tags>
             </div>
