@@ -27,9 +27,9 @@
 
         <template slot="right">
           <header-buttons :links="[
-            { title: 'Install Drupal', icon: 'actions__upload', disabled: false },
+            !isProduction ? { title: 'Install Drupal', icon: 'actions__upload', disabled: false } : {},
             { title: 'Clear Varnish', icon: 'alpha__clear-cache', disabled: false },
-            { title: 'Live development', icon: 'actions__publish-settings', disabled: false },
+            !isProduction ? { title: 'Live development', icon: 'actions__publish-settings', disabled: false } : { title: 'Production mode', icon: 'state__locked', disabled: false },
             { title: 'Rename', icon: 'actions__edit', disabled: false },
             { title: 'Configure', icon: 'actions__setting', disabled: false },
           ]"></header-buttons>
