@@ -58,7 +58,7 @@
           </div>
 
           <quick-help :hidden="help.hidden"></quick-help>
-          <environment-cards :environments="application.environments"></environment-cards>
+          <environment-card :environments="application.environments"></environment-card>
           <task-log :tasks="application.tasks"></task-log>
         </div>
 
