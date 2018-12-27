@@ -248,10 +248,18 @@
         </div>
 
         <sidebar :links="[
-          { title: 'Environments', icon: 'alpha__grid', active: true, disabled: false },
-          { title: 'Product Keys', icon: 'locations__keys', active: false, disabled: true },
-          { title: 'Security', icon: 'alpha__security', active: false, disabled: true },
-          { title: 'Acquia Search', icon: 'actions__search', active: false, disabled: false },
+          { title: 'Overview', icon: 'sections__applications', active: true, disabled: false },
+          { title: 'Stack Metrics', icon: 'sections__activity', active: false, disabled: false },
+          { title: 'Servers', icon: 'alpha__server', active: false, disabled: false },
+          { title: 'Databases', icon: 'alpha__database-38', active: false, disabled: false },
+          { title: 'Domains', icon: 'alpha__globe', active: false, disabled: false },
+          { title: 'Users & Keys', icon: 'locations__keys', active: false, disabled: false },
+          { title: 'SSL', icon: 'alpha__ssl', active: false, disabled: false },
+          { title: 'Logs', icon: 'alpha__page', active: false, disabled: false },
+          { title: 'Insight', icon: 'alpha__insight', active: false, disabled: false },
+          { title: 'Scheduled jobs', icon: 'alpha__recent', active: false, disabled: false },
+          { title: 'Uptime', icon: 'alpha__grid', active: false, disabled: false },
+          { title: 'Variables', icon: 'objects__variable', active: false, disabled: false },
         ]"></sidebar>
       </div>
     </div>
