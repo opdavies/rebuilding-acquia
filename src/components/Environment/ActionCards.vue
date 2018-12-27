@@ -1,9 +1,9 @@
 <template>
   <div>
     <ul class="list-reset flex flex-wrap md:hidden -mx-1 mb-5">
-      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3" :class="[active == 'code' ? 'bg-blue-darker' : 'bg-blue-dark']" @click="active = 'code'">Code</button></li>
-      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3" :class="[active == 'databases' ? 'bg-blue-darker' : 'bg-blue-dark']" @click="active = 'databases'">Databases</button></li>
-      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3" :class="[active == 'files' ? 'bg-blue-darker' : 'bg-blue-dark']" @click="active = 'files'">Files</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[active == 'code' ? 'bg-blue-darker' : 'bg-blue-dark']" @click="active = 'code'">Code</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[active == 'databases' ? 'bg-blue-darker' : 'bg-blue-dark']" @click="active = 'databases'">Databases</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[active == 'files' ? 'bg-blue-darker' : 'bg-blue-dark']" @click="active = 'files'">Files</button></li>
     </ul>
 
     <div class="flex flex-wrap -mx-4 -mb-4">
