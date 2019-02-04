@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "tailwindcss": "^0.7.3",
+    "tailwindcss-skip-link": "^1.0.1",
+    "tailwindcss-spaced-items": "^0.1.0",
+    "tailwindcss-visuallyhidden": "^1.0.1",
+    "tailwindcss-vuejs": "^1.1.2",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2"
   },
@@ -19,10 +23,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
-    "tailwindcss-skip-link": "^1.0.1",
-    "tailwindcss-spaced-items": "^0.1.0",
-    "tailwindcss-visuallyhidden": "^1.0.1",
-    "tailwindcss-vuejs": "^1.1.2",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
