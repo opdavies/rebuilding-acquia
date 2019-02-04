@@ -7243,25 +7243,10 @@ table@^5.0.2:
     slice-ansi "2.0.0"
     string-width "^2.1.1"
 
-tailwindcss-skip-link@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/tailwindcss-skip-link/-/tailwindcss-skip-link-1.0.1.tgz#b965624ed0b007ddd33f0326f2719d9a88b857c7"
-  integrity sha512-Hxivkqu7UEluZY+ZPv+aQv4dreqTfYRgniEtux4qb9yJPjyR4dXiHMIWk7LgNqsyCPKpoRL8FJq55uIQN4ms+w==
-
-tailwindcss-spaced-items@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/tailwindcss-spaced-items/-/tailwindcss-spaced-items-0.1.0.tgz#e7f381e5c780a034bcdbc38a6a2cfb31f828a020"
-  integrity sha512-YiT1h89fp13r6I+EBM8wS1RWfsTwzHSi4BAnHoTXXQK1GQ53DUCPeFNmiksYSdx2aQLMdp/DTPvErqBVfTALiQ==
-
 tailwindcss-visuallyhidden@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tailwindcss-visuallyhidden/-/tailwindcss-visuallyhidden-1.0.1.tgz#ed67ecf6ee48ea0313b5c3c27498467f350be206"
   integrity sha512-RJNJ2BqUBPw8OgPR/UnoLFNuKuFWEM5gk6tcg63atG5rUS5tTtxHjsay0b8JnIx+0xfFF72dRuoDmVvxn4HDrg==
-
-tailwindcss-vuejs@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/tailwindcss-vuejs/-/tailwindcss-vuejs-1.1.2.tgz#1c7b6de4ad8b8c841e9e3fc3d7565e6a09819f7b"
-  integrity sha512-6P5EXM9XW6qprbEuh26pNLM2lj1nbgHT9oeSqsAcrrVx5u0uxywch86x5Bq/VRNqieNbdCZht5zC/3QNW4nE+w==
 
 tailwindcss@^0.7.3:
   version "0.7.3"
