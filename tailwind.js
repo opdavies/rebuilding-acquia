@@ -11,7 +11,7 @@ var colors = {
   'green': '#398002',
   'grey': '#B7B7B7',
   'grey-dark': '#888888',
-  'grey-darker': '#444444',
+  'grey-darker': '#555555',
   'grey-darkest': '#333333',
   'grey-light': '#DDDDDD',
   'grey-lighter': '#eeeeee',
@@ -56,16 +56,27 @@ module.exports = {
   },
   borderWidths: {
     ...defaultConfig.borderWidths,
+    '3': '3px',
     '6': '6px',
     '10': '10px',
   },
   margin: {
     ...defaultConfig.margin,
     '48': '10rem',
+    '56': '14rem',
     '64': '16rem',
+  },
+  width: {
+    ...defaultConfig.width,
+    '56': '14rem',
+  },
+  shadows: {
+    ...defaultConfig.shadows,
+    'md': '0 0 10px 0 rgba(0,0,0,0.1)'
   },
   plugins: [
     require('tailwindcss/plugins/container')(),
+    require('tailwindcss-spaced-items')(),
     require('tailwindcss-visuallyhidden')(),
   ],
 }

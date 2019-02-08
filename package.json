@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "tailwindcss": "^0.7.3",
+    "tailwindcss-spaced-items": "^0.1.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2"
   },

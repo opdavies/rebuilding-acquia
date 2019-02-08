@@ -10,7 +10,7 @@
       <div class="w-full md:w-1/3 md:block px-4 mb-4" :class="[ active == 'code' ? 'block' : 'hidden' ]">
         <div class="border border-grey rounded shadow bg-white overflow-hidden">
           <div class="border-t-4 border-teal">
-            <div class="border-b border-grey-dark">
+            <div class="border-b border-grey">
               <div class="px-3 py-4">
                 <div class="flex flex-row-reverse">
                   <div class="flex-1">
@@ -27,14 +27,14 @@
 
             <div>
               <ul class="list-reset flex -ml-px">
-                <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
+                <li class="w-1/2 flex-1 text-center border-l border-grey">
                   <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
                     <span class="block">Deploy</span>
                   </button>
                 </li>
 
-                <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
+                <li class="w-1/2 flex-1 text-center border-l border-grey">
                   <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
                     <span class="block">Switch</span>
@@ -49,7 +49,7 @@
       <div class="w-full md:w-1/3 md:block px-4 mb-4" :class="[ active == 'databases' ? 'block' : 'hidden' ]">
         <div class="border border-grey rounded shadow bg-white overflow-hidden">
           <div class="border-t-4 border-teal">
-            <div class="border-b border-grey-dark">
+            <div class="border-b border-grey">
               <div class="px-3 py-4">
                 <div class="flex flex-row-reverse">
                   <div class="flex-1">
@@ -66,21 +66,21 @@
 
             <div>
               <ul class="list-reset flex -ml-px">
-                <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
+                <li class="w-1/2 flex-1 text-center border-l border-grey">
                   <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                     <span class="block">Copy</span>
                   </button>
                 </li>
 
-                <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
+                <li class="w-1/2 flex-1 text-center border-l border-grey">
                   <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
                     <span class="block">Back up</span>
                   </button>
                 </li>
 
-                <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
+                <li class="w-1/2 flex-1 text-center border-l border-grey">
                   <button
                     type="button"
                     class="w-full py-3 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block"
@@ -103,7 +103,7 @@
       <div class="w-full md:w-1/3 md:block px-4 mb-4" :class="[ active == 'files' ? 'block' : 'hidden' ]">
         <div class="border border-grey rounded shadow bg-white overflow-hidden">
           <div class="border-t-4 border-teal">
-            <div class="border-b border-grey-dark">
+            <div class="border-b border-grey">
               <div class="px-3 py-4">
                 <div class="flex flex-row-reverse">
                   <div class="flex-1">
@@ -120,7 +120,7 @@
 
             <div>
               <ul class="list-reset flex -ml-px">
-                <li class="w-1/2 flex-1 text-center border-l border-grey-dark">
+                <li class="w-1/2 flex-1 text-center border-l border-grey">
                   <button type="button" class="w-full py-3 text-blue-dark text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-lighter focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                     <span class="block">Copy</span>

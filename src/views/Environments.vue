@@ -33,12 +33,12 @@
     </div>
 
     <div class="mt-48">
-      <div class="-mt-4 md:-mt-2 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64 overflow-x-hidden">
+      <div class="-mt-3 md:-mt-1 flex flex-row-reverse h-full">
+        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-2">
               <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-hairline mb-2">Environments</h1>
+                <h1 class="text-4xl font-thin mb-2">Environments</h1>
 
                 <application-tags :type="application.type" :level="application.level"></application-tags>
               </div>

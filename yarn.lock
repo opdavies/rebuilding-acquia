@@ -7243,6 +7243,11 @@ table@^5.0.2:
     slice-ansi "2.0.0"
     string-width "^2.1.1"
 
+tailwindcss-spaced-items@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/tailwindcss-spaced-items/-/tailwindcss-spaced-items-0.1.0.tgz#e7f381e5c780a034bcdbc38a6a2cfb31f828a020"
+  integrity sha512-YiT1h89fp13r6I+EBM8wS1RWfsTwzHSi4BAnHoTXXQK1GQ53DUCPeFNmiksYSdx2aQLMdp/DTPvErqBVfTALiQ==
+
 tailwindcss-visuallyhidden@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tailwindcss-visuallyhidden/-/tailwindcss-visuallyhidden-1.0.1.tgz#ed67ecf6ee48ea0313b5c3c27498467f350be206"

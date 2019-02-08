@@ -17,12 +17,12 @@
     </div>
 
     <div class="mt-48">
-      <div class="-mt-10 md:-mt-4 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64 overflow-x-hidden">
+      <div class="-mt-10 md:-mt-3 flex flex-row-reverse h-full">
+        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-12">
               <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-hairline mb-2">Applications</h1>
+                <h1 class="text-4xl font-thin mb-2">Applications</h1>
               </div>
 
               <application-display-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-display-switcher>
