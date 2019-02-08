@@ -22,7 +22,7 @@
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-12">
               <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-hairline mb-2">Applications</h1>
+                <h1 class="text-4xl font-thin mb-2">Applications</h1>
               </div>
 
               <application-display-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-display-switcher>

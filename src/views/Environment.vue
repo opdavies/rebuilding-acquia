@@ -42,7 +42,7 @@
         <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
           <div>
             <div>
-              <h1 class="font-hairline mb-2">Overview</h1>
+              <h1 class="text-4xl font-thin mb-2">Overview</h1>
 
               <application-tags :type="application.type" :level="application.level"></application-tags>
             </div>

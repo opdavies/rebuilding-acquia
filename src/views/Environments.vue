@@ -38,7 +38,7 @@
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-2">
               <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-hairline mb-2">Environments</h1>
+                <h1 class="text-4xl font-thin mb-2">Environments</h1>
 
                 <application-tags :type="application.type" :level="application.level"></application-tags>
               </div>
