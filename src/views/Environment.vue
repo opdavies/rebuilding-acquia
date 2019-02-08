@@ -39,7 +39,7 @@
 
     <div class="mt-48">
       <div class="-mt-4 md:-mt-2 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-64 overflow-x-hidden">
+        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
           <div>
             <div>
               <h1 class="font-hairline mb-2">Overview</h1>

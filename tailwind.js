@@ -63,7 +63,12 @@ module.exports = {
   margin: {
     ...defaultConfig.margin,
     '48': '10rem',
+    '56': '14rem',
     '64': '16rem',
+  },
+  width: {
+    ...defaultConfig.width,
+    '56': '14rem',
   },
   plugins: [
     require('tailwindcss/plugins/container')(),
