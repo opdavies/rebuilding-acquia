@@ -9,7 +9,7 @@
             :class="{
               'bg-grey-darker text-white': link.active,
               'border-transparent hover:bg-grey hover:text-blue-dark': !link.active,
-              'text-grey cursor-not-allowed': link.disabled,
+              'text-grey-dark cursor-not-allowed': link.disabled,
               'text-grey-darker': !link.disabled,
             }"
           >
