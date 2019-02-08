@@ -1,11 +1,11 @@
 <template>
-  <div class="w-auto lg:w-56 text-sm bg-grey-light text-grey-darker antialiased fixed pin-l h-full overflow-y-scroll">
+  <div class="w-auto lg:w-56 bg-grey-light text-grey-darker antialiased fixed pin-l h-full overflow-y-scroll">
     <div>
       <ul class="list-reset">
         <li v-for="link in links" :key="link.title">
           <a
             href="#0"
-            class="flex items-center no-underline focus:underline px-4 py-3 text-sm"
+            class="flex items-center no-underline focus:underline px-4 py-2 text-sm"
             :class="{
               'bg-grey-darker text-white': link.active,
               'border-transparent hover:bg-grey hover:text-blue-dark': !link.active,
