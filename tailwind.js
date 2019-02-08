@@ -56,6 +56,7 @@ module.exports = {
   },
   borderWidths: {
     ...defaultConfig.borderWidths,
+    '3': '3px',
     '6': '6px',
     '10': '10px',
   },
