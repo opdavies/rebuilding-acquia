@@ -54,75 +54,77 @@
               </a>
             </div>
 
-            <div class="mb-6">
-              <action-cards :environment="environment" :is-production="isProduction"></action-cards>
-            </div>
+            <div class="spaced-y-10">
+              <div>
+                <action-cards :environment="environment" :is-production="isProduction"></action-cards>
+              </div>
 
-            <div class="mb-6 rounded border border-grey shadow overflow-hidden">
-              <div class="bg-grey-light p-4"><h2 class="text-lg">Site Health</h2></div>
-              <div class="bg-white p-4">
-                <div class="mb-6">
-                  <p class="text-lg font-hairline text-grey-darkest">Uptime monitoring</p>
-                </div>
+              <div class="shadow-md overflow-hidden">
+                <div class="bg-white border-b-2 border-grey-light p-3"><h2 class="text-lg">Site Health</h2></div>
+                <div class="bg-white p-4">
+                  <div class="mb-6">
+                    <p class="text-lg font-hairline text-grey-darkest">Uptime monitoring</p>
+                  </div>
 
-                <div class="text-center leading-normal mb-5">
-                  <p class="text-grey-darker">
-                    Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
-                    of whether your Drupal site is really up and running.
-                  </p>
-                </div>
+                  <div class="text-center leading-normal mb-5">
+                    <p class="text-grey-darker">
+                      Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
+                      of whether your Drupal site is really up and running.
+                    </p>
+                  </div>
 
-                <div class="flex justify-center">
-                  <button type="button" class="text-sm font-thin bg-blue-dark hover:bg-blue-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Enable Uptime</button>
-                  <button type="button" class="text-sm font-thin bg-grey-dark hover:bg-grey-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Learn more</button>
+                  <div class="flex justify-center">
+                    <button type="button" class="text-sm font-thin bg-blue-dark hover:bg-blue-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Enable Uptime</button>
+                    <button type="button" class="text-sm font-thin bg-grey-dark hover:bg-grey-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Learn more</button>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="rounded border border-grey shadow overflow-hidden">
-              <div class="bg-grey-light p-4"><h2 class="text-lg">Information</h2></div>
-              <div class="bg-white px-4 py-6">
-                <div class="mb-6 relative">
-                  <div class="text-xs mb-1">Git URL</div>
-                  <div class="border border-grey-dark rounded p-3">{{ gitUrl }}</div>
-                  <div class="absolute pin-t pin-r">
-                    <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
-                      <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
-                      Copy <span class="visuallyhidden">Git URL to your clipboard</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="mb-6 relative">
-                  <div class="text-xs mb-1">SSH URL</div>
-                  <div class="border border-grey-dark rounded p-3">{{ sshUrl }}</div>
-                  <div class="absolute pin-t pin-r">
-                    <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
-                      <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
-                      Copy <span class="visuallyhidden">SSH URL to your clipboard</span>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
-                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                    <div class="mb-1 text-xs text-grey-darker">IP Address</div>
-                    <div>1.2.3.4</div>
+              <div class="shadow-md overflow-hidden">
+                <div class="bg-white border-b-2 border-grey-light p-3"><h2 class="text-lg">Information</h2></div>
+                <div class="bg-white px-4 py-6">
+                  <div class="mb-6 relative">
+                    <div class="text-xs mb-1">Git URL</div>
+                    <div class="border border-grey-dark rounded p-3">{{ gitUrl }}</div>
+                    <div class="absolute pin-t pin-r">
+                      <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
+                        <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                        Copy <span class="visuallyhidden">Git URL to your clipboard</span>
+                      </button>
+                    </div>
                   </div>
 
-                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                    <div class="mb-1 text-xs text-grey-darker">Region</div>
-                    <div>eu-west-1</div>
+                  <div class="mb-6 relative">
+                    <div class="text-xs mb-1">SSH URL</div>
+                    <div class="border border-grey-dark rounded p-3">{{ sshUrl }}</div>
+                    <div class="absolute pin-t pin-r">
+                      <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
+                        <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                        Copy <span class="visuallyhidden">SSH URL to your clipboard</span>
+                      </button>
+                    </div>
                   </div>
 
-                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                    <div class="mb-1 text-xs text-grey-darker">PHP version</div>
-                    <div>7.1</div>
-                  </div>
+                  <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
+                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                      <div class="mb-1 text-xs text-grey-darker">IP Address</div>
+                      <div>1.2.3.4</div>
+                    </div>
 
-                  <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                    <div class="mb-1 text-xs text-grey-darker">Live development mode</div>
-                    <div>Off</div>
+                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                      <div class="mb-1 text-xs text-grey-darker">Region</div>
+                      <div>eu-west-1</div>
+                    </div>
+
+                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                      <div class="mb-1 text-xs text-grey-darker">PHP version</div>
+                      <div>7.1</div>
+                    </div>
+
+                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                      <div class="mb-1 text-xs text-grey-darker">Live development mode</div>
+                      <div>Off</div>
+                    </div>
                   </div>
                 </div>
               </div>

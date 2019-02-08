@@ -70,8 +70,13 @@ module.exports = {
     ...defaultConfig.width,
     '56': '14rem',
   },
+  shadows: {
+    ...defaultConfig.shadows,
+    'md': '0 0 10px 0 rgba(0,0,0,0.1)'
+  },
   plugins: [
     require('tailwindcss/plugins/container')(),
+    require('tailwindcss-spaced-items')(),
     require('tailwindcss-visuallyhidden')(),
   ],
 }
