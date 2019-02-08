@@ -11,7 +11,7 @@ var colors = {
   'green': '#398002',
   'grey': '#B7B7B7',
   'grey-dark': '#888888',
-  'grey-darker': '#444444',
+  'grey-darker': '#555555',
   'grey-darkest': '#333333',
   'grey-light': '#DDDDDD',
   'grey-lighter': '#eeeeee',
