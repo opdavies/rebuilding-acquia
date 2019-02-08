@@ -136,12 +136,12 @@
       "environments": {
         "dev": {
           "name": "Dev",
-          "url": "foo.oliverdavies.uk",
+          "url": "dev.oliverdavies.uk",
           "label": "develop"
         },
         "stage": {
           "name": "Stage",
-          "url": "bar.oliverdavies.uk",
+          "url": "test.oliverdavies.uk",
           "label": "master"
         },
         "prod": {
