@@ -50,6 +50,10 @@ module.exports = {
       'sans-serif',
     ],
   },
+  textSizes: {
+    ...defaultConfig.textSizes,
+    '2xs': '.625rem', // 10px
+  },
   borderWidths: {
     ...defaultConfig.borderWidths,
     '6': '6px',
