@@ -22,4 +22,10 @@
   &:hover,
   &:focus
     @apply bg-grey-darker
+
+.tag
+  @apply text-2xs uppercase py-1 px-2 rounded border border-grey bg-white mr-2 mb-2
+
+.tag.is-type
+  @apply bg-blue-light border-blue-light text-white
 </style>
