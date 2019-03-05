@@ -74,8 +74,8 @@
                   </div>
 
                   <div class="flex justify-center">
-                    <button type="button" class="text-sm font-thin bg-blue-dark hover:bg-blue-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Enable Uptime</button>
-                    <button type="button" class="text-sm font-thin bg-grey-dark hover:bg-grey-darker antialiased text-white px-4 py-3 no-underline rounded mx-1">Learn more</button>
+                    <button type="button" class="btn">Enable Uptime</button>
+                    <button type="button" class="btn is-secondary">Learn more</button>
                   </div>
                 </div>
               </div>
