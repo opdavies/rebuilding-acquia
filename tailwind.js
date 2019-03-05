@@ -6,7 +6,7 @@ var colors = {
   'black': '#22292f',
   'blue': '#018dc7',
   'blue-dark': '#0e68a7',
-  'blue-darker': '#002d64',
+  'blue-darker': '#004f86',
   'blue-light': '#29aae1',
   'green': '#398002',
   'grey': '#B7B7B7',

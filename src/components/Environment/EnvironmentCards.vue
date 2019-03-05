@@ -21,7 +21,7 @@
           </div>
 
           <div>
-            <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue-light hover:bg-blue-dark focus:bg-blue-dark focus:outline-none focus:underline text-sm w-full text-left">
+            <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue hover:bg-blue-darker focus:bg-blue-darker focus:outline-none focus:underline text-sm w-full text-left">
               <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               <span class="flex-1">Code</span>
               <span class="border-l border-grey p-2">
@@ -29,7 +29,7 @@
               </span>
             </button>
 
-            <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue-light hover:bg-blue-dark focus:bg-blue-dark focus:outline-none focus:underline text-sm w-full text-left border-t border-grey">
+            <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue hover:bg-blue-darker focus:bg-blue-darker focus:outline-none focus:underline text-sm w-full text-left border-t border-grey">
               <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               <span class="flex-1">Databases</span>
               <span class="border-l border-grey p-2">
@@ -37,7 +37,7 @@
               </span>
             </button>
 
-            <button type="button" class="flex items-center text-white bg-blue-light hover:bg-blue-dark focus:bg-blue-dark focus:outline-none focus:underline px-1 py-3 text-sm w-full text-left border-t border-grey">
+            <button type="button" class="flex items-center text-white bg-blue hover:bg-blue-darker focus:bg-blue-darker focus:outline-none focus:underline px-1 py-3 text-sm w-full text-left border-t border-grey">
               <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               Files
             </button>
