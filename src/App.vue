@@ -8,6 +8,15 @@
 @tailwind base;
 @tailwind components;
 
+h1,
+h2 {
+  @apply font-bold
+}
+
+h2 {
+  @apply text-2xl
+}
+
 .btn {
   @apply text-sm font-thin antialiased text-white px-4 py-3 no-underline rounded mx-1 bg-blue-dark;
 
