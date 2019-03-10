@@ -3,16 +3,16 @@ defaultTheme = require('tailwindcss/defaultTheme')()
 module.exports = {
   theme: {
     colors: {
-      'inherit': 'inherit',
-      'black': '#22292f',
-      'blue': {
+      inherit: 'inherit',
+      black: '#22292f',
+      blue: {
         '1': '#29aae1',
         '2': '#018dc7',
         '3': '#0e68a7',
         '4': '#004f86',
       },
-      'green': '#398002',
-      'grey': {
+      green: '#398002',
+      grey: {
         '1': '#f8fafc',
         '2': '#eee',
         '3': '#ddd',
@@ -21,16 +21,16 @@ module.exports = {
         '6': '#555',
         '7': '#333',
       },
-      'orange': {
+      orange: {
         '1': '#fa9903',
         '2': '#ffb401',
       },
-      'purple': '#991faf',
-      'red': '#cc1f1a',
-      'teal': '#3f7b8f',
-      'transparent': 'transparent',
-      'white': '#fff',
-      'yellow': '#faf8df'
+      purple: '#991faf',
+      red: '#cc1f1a',
+      teal: '#3f7b8f',
+      transparent: 'transparent',
+      white: '#fff',
+      yellow: '#faf8df'
     },
     extend: {
       borderWidth: {
@@ -42,7 +42,7 @@ module.exports = {
         md: '0 0 10px 0 rgba(0,0,0,0.1)',
       },
       fontFamily: {
-        'sans': ['Proxima Nova', ...defaultTheme.fontFamily.sans],
+        sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         '2xs': '.625rem', // 10px
