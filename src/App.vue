@@ -5,7 +5,7 @@
 </template>
 
 <style lang="postcss">
-@tailwind preflight;
+@tailwind base;
 @tailwind components;
 
 .btn {
