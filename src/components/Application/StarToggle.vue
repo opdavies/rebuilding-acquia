@@ -1,5 +1,5 @@
 <template>
-  <button type="button" @click="starred = !starred" class="focus:outline-none" :class="[starred ? 'text-orange hover:text-orange-light focus:text-orange-light' : 'text-grey focus:text-orange hover:text-orange']">
+  <button type="button" @click="starred = !starred" class="focus:outline-none" :class="[starred ? 'text-orange-1 hover:text-orange-2 focus:text-orange-2' : 'text-grey-4 focus:text-orange-2 hover:text-orange-1']">
     <span class="visuallyhidden">{{ !starred ? 'Star' : 'Unstar' }} {{ application.name }}</span>
     <svg class="h-6 w-6 fill-current -mr-1" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#state__${starred ? 'starred' : 'unstarred'}`"></use></svg>
   </button>

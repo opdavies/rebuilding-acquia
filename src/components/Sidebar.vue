@@ -1,5 +1,5 @@
 <template>
-  <div class="w-auto lg:w-56 bg-grey-light text-grey-darker antialiased fixed pin-l h-full overflow-y-scroll">
+  <div class="w-auto lg:w-56 bg-grey-3 text-grey-6 antialiased fixed pin-l h-full overflow-y-scroll">
     <div>
       <ul class="list-reset">
         <li v-for="link in links" :key="link.title">
@@ -7,10 +7,10 @@
             href="#0"
             class="flex items-center no-underline focus:underline px-4 py-2 text-sm"
             :class="{
-              'bg-grey-darker text-white': link.active,
-              'border-transparent hover:bg-grey hover:text-blue-dark': !link.active,
-              'text-grey-dark cursor-not-allowed': link.disabled,
-              'text-grey-darker': !link.disabled,
+              'bg-grey-6 text-white': link.active,
+              'border-transparent hover:bg-grey hover:text-blue-3': !link.active,
+              'text-grey-5 cursor-not-allowed': link.disabled,
+              'text-grey-6': !link.disabled,
             }"
           >
             <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>

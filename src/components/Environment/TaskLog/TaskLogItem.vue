@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-3 py-4 border-b border-grey-light flex" :class="{'bg-yellow-lightest': open}">
+    <div class="px-3 py-4 border-b border-grey-3 flex" :class="{'bg-yellow-lightest': open}">
       <div class="flex-none mr-3">
         <svg v-if="task.loading" class="h-5 w-5 text-grey fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__loading"></use></svg>
         <svg v-if="!task.loading && task.success" class="h-5 w-5 text-green fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__success-circle"></use></svg>
@@ -9,18 +9,18 @@
 
       <div class="flex-1">
         <div class="text-sm font-bold mb-2">{{ task.text }}</div>
-        <div class="text-grey-darker text-2xs">{{ task.times.display }}</div>
+        <div class="text-grey-6 text-2xs">{{ task.times.display }}</div>
       </div>
 
       <div>
         <button type="button" @click="open = !open">
-          <svg v-if="!open" class="h-5 w-5 text-grey-darker fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
-          <svg v-else class="h-5 w-5 text-grey-darker fill-current" style="transform: rotate(180deg)" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
+          <svg v-if="!open" class="h-5 w-5 text-grey-6 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
+          <svg v-else class="h-5 w-5 text-grey-6 fill-current" style="transform: rotate(180deg)" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__chevron"></use></svg>
         </button>
       </div>
     </div>
 
-    <div class="p-4 bg-grey-darker text-white antialiased" v-show="open">
+    <div class="p-4 bg-grey-6 text-white antialiased" v-show="open">
       <div class="lg:flex lg:flex-wrap -mx-4 -mb-4">
         <div class="px-4 mb-4">
           <div class="text-xs uppercase mb-1">Task ID</div>
