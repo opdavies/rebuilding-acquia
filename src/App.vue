@@ -4,28 +4,35 @@
   </div>
 </template>
 
-<style lang="sass">
-@tailwind preflight
-@tailwind components
-@tailwind utilities
+<style lang="postcss">
+@tailwind preflight;
+@tailwind components;
 
-.btn
-  @apply text-sm font-thin antialiased text-white px-4 py-3 no-underline rounded mx-1 bg-blue-dark
+.btn {
+  @apply text-sm font-thin antialiased text-white px-4 py-3 no-underline rounded mx-1 bg-blue-dark;
 
   &:hover,
-  &:focus
+  &:focus {
     @apply bg-blue-darker
+  }
+}
 
-.btn.is-secondary
-  @apply bg-grey-dark
+.btn.is-secondary {
+  @apply bg-grey-dark;
 
   &:hover,
-  &:focus
+  &:focus {
     @apply bg-grey-darker
+  }
+}
 
-.tag
+.tag {
   @apply text-2xs uppercase py-1 px-2 rounded border border-grey bg-white mr-2 mb-2
+}
 
-.tag.is-type
+.tag.is-type {
   @apply bg-blue-light border-blue-light text-white
+}
+
+@tailwind utilities;
 </style>
