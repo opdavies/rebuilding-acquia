@@ -3,28 +3,34 @@ defaultTheme = require('tailwindcss/defaultTheme')()
 module.exports = {
   theme: {
     colors: {
-     'inherit': 'inherit',
+      'inherit': 'inherit',
       'black': '#22292f',
-      'blue': '#018dc7',
-      'blue-dark': '#0e68a7',
-      'blue-darker': '#004f86',
-      'blue-light': '#29aae1',
+      'blue': {
+        '1': '#29aae1',
+        '2': '#018dc7',
+        '3': '#0e68a7',
+        '4': '#004f86',
+      },
       'green': '#398002',
-      'grey': '#B7B7B7',
-      'grey-dark': '#888888',
-      'grey-darker': '#555555',
-      'grey-darkest': '#333333',
-      'grey-light': '#DDDDDD',
-      'grey-lighter': '#eeeeee',
-      'grey-lightest': '#f8fafc',
-      'orange': '#FA9903',
-      'orange-light': '#FFB401',
-      'purple': '#991FAF',
-      'red-dark': '#cc1f1a',
-      'teal': '#3F7B8F',
+      'grey': {
+        '1': '#f8fafc',
+        '2': '#eee',
+        '3': '#ddd',
+        '4': '#b7b7b7',
+        '5': '#888',
+        '6': '#555',
+        '7': '#333',
+      },
+      'orange': {
+        '1': '#fa9903',
+        '2': '#ffb401',
+      },
+      'purple': '#991faf',
+      'red': '#cc1f1a',
+      'teal': '#3f7b8f',
       'transparent': 'transparent',
-      'white': '#ffffff',
-      'yellow-lightest': '#FAF8DF'
+      'white': '#fff',
+      'yellow': '#faf8df'
     },
     extend: {
       borderWidth: {
