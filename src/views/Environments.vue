@@ -59,7 +59,7 @@
 
           <quick-help :hidden="help.hidden"></quick-help>
           <environment-cards :environments="application.environments" :id="id"></environment-cards>
-          <task-log :tasks="application.tasks"></task-log>
+          <task-log :tasks="application.tasks" v-if="application.tasks[0]"></task-log>
         </div>
 
         <sidebar :links="[
