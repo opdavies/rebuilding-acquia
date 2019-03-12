@@ -154,7 +154,7 @@
 <script>
 import ActionCards from '@/components/Environment/ActionCards'
 import ApplicationTags from '@/components/Application/ApplicationTags'
-import data from '@/data.json'
+import data from '@/data'
 
 export default {
   components: {

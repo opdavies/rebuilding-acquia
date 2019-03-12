@@ -65,7 +65,7 @@
 import ApplicationCard from '@/components/Application/ApplicationCard'
 import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisplaySwitcher'
 import _ from 'lodash'
-import data from '@/data.json'
+import data from '@/data'
 
 export default {
   components: {
