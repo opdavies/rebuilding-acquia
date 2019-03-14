@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div v-if="display == 'grid'" class="bg-white p-4 border-grey rounded border flex-1">
+    <div v-if="display == 'grid'" class="bg-white p-4 border-grey-4 rounded border flex-1">
       <div class="flex h-full">
         <div class="flex-1 w-5/6 flex flex-col justify-between">
           <div>
             <div>
-              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline focus:outline-none"><h2 class="mb-1">{{ application.name }}</h2></router-link>
+              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-3 no-underline hover:underline focus:underline focus:outline-none"><h2 class="mb-1">{{ application.name }}</h2></router-link>
             </div>
 
-            <div class="truncate text-blue-dark">
+            <div class="truncate text-blue-3">
               <a href="#0" class="text-inherit no-underline hover:underline focus:underline focus:outline-none">{{ application.environments['prod'].url }}</a>
             </div>
           </div>
@@ -22,18 +22,18 @@
       </div>
     </div>
 
-    <div v-if="display == 'list'" class="bg-white p-3 border-grey border-b">
+    <div v-if="display == 'list'" class="bg-white p-3 border-grey-4 border-b">
       <div class="-mx-2">
         <div class="flex flex-row-reverse items-center justify-between">
           <div class="flex flex-1 justify-between items-center -mx-2">
             <div class="flex-1 px-2">
-              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-dark no-underline hover:underline focus:underline"><h2 class="text-base font-normal mb-1">{{ application.name }}</h2></router-link>
+              <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-3 no-underline hover:underline focus:underline"><h2 class="text-base font-normal mb-1">{{ application.name }}</h2></router-link>
             </div>
 
             <application-tags :type="application.type" :level="application.level" class="w-1/4 px-2"></application-tags>
 
             <div class="w-2/5 px-2">
-              <a href="#0" class="text-blue-dark no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
+              <a href="#0" class="text-blue-3 no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
             </div>
           </div>
 

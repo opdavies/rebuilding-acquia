@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="bg-grey-lightest rounded overflow-hidden">
-      <button type="button" class="p-2 focus:outline-none focus:bg-blue-dark focus:text-white" :class="[mode == 'grid' ? 'bg-blue-light text-white' : 'text-grey-darkest']" @click="$emit('display-changed', 'grid')">
+    <div class="bg-grey-1 rounded overflow-hidden">
+      <button type="button" class="p-2 focus:outline-none focus:bg-blue-3 focus:text-white" :class="[mode == 'grid' ? 'bg-blue-1 text-white' : 'text-grey-darkest']" @click="$emit('display-changed', 'grid')">
         <svg class="h-5 w-5 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__grid"></use></svg>
         <span class="visuallyhidden">Grid</span>
       </button>
 
-      <button type="button" class="p-2 focus:outline-none focus:bg-blue-dark focus:text-white" :class="[mode == 'list' ? 'bg-blue-light text-white' : 'text-grey-darkest']" @click="$emit('display-changed', 'list')">
+      <button type="button" class="p-2 focus:outline-none focus:bg-blue-3 focus:text-white" :class="[mode == 'list' ? 'bg-blue-1 text-white' : 'text-grey-darkest']" @click="$emit('display-changed', 'list')">
         <svg class="h-5 w-5 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__list"></use></svg>
         <span class="visuallyhidden">List</span>
       </button>
