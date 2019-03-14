@@ -62,7 +62,7 @@
           <task-log :tasks="application.tasks" v-if="application.tasks[0]"></task-log>
         </div>
 
-        <sidebar :links="[
+        <sidebar class="-mt-2px" :links="[
           { title: 'Environments', icon: 'alpha__grid', active: true, disabled: false },
           { title: 'Product Keys', icon: 'locations__keys', active: false, disabled: true },
           { title: 'Security', icon: 'alpha__security', active: false, disabled: true },

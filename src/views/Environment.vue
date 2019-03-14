@@ -132,7 +132,7 @@
           </div>
         </div>
 
-        <sidebar :links="[
+        <sidebar class="-mt-2px" :links="[
           { title: 'Overview', icon: 'sections__applications', active: true, disabled: false },
           { title: 'Stack Metrics', icon: 'sections__activity', active: false, disabled: false },
           { title: 'Servers', icon: 'alpha__server', active: false, disabled: false },
