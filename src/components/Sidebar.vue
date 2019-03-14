@@ -7,10 +7,10 @@
             href="#0"
             class="flex items-center no-underline focus:underline px-4 py-2 text-sm"
             :class="{
-              'bg-grey-darker text-white': link.active,
-              'border-transparent hover:bg-grey hover:text-blue-dark': !link.active,
-              'text-grey-dark cursor-not-allowed': link.disabled,
-              'text-grey-darker': !link.disabled,
+              'bg-grey-darker text-white hover:text-white': link.active,
+              'border-transparent hover:bg-grey': !link.active,
+              'text-grey-dark cursor-not-allowed hover:text-grey-dark_': link.disabled,
+              'text-grey-darker hover:text-blue-dark': !link.disabled && !link.active,
             }"
           >
             <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>
