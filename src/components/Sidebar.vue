@@ -8,7 +8,7 @@
             class="flex items-center no-underline focus:underline px-4 py-2 text-sm"
             :class="{
               'bg-grey-6 text-white hover:text-white': link.active,
-              'border-transparent hover:bg-grey': !link.active,
+              'border-transparent hover:bg-grey-4': !link.active,
               'text-grey-5 cursor-not-allowed': link.disabled,
               'text-grey-6 hover:text-blue-3': !link.disabled && !link.active,
             }"
