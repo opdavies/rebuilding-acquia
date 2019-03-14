@@ -1,6 +1,7 @@
-import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import routes from './routes'
+import Vue from 'vue'
+import VueRouter from 'vue-router'
 
 Vue.config.productionTip = false
 
@@ -14,7 +15,10 @@ Vue.component('navbar', Navbar);
 Vue.component('sidebar', Sidebar);
 Vue.component('title-block', TitleBlock);
 
+Vue.use(VueRouter);
+
 new Vue({
   render: h => h(App),
-  router
+
+  router: new VueRouter(routes)
 }).$mount('#app')
