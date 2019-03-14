@@ -75,11 +75,11 @@
 
 <script>
 import ApplicationTags from '@/components/Application/ApplicationTags'
+import data from '@/data'
 import EnvironmentCards from '@/components/Environment/EnvironmentCards'
 import QuickHelp from '@/components/Environment/QuickHelp'
 import TaskLog from '@/components/Environment/TaskLog/TaskLog'
 import ToggleHelp from '@/components/Environment/ToggleHelp'
-import data from '@/data'
 
 export default {
   components: {
