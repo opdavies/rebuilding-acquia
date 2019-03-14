@@ -48,6 +48,7 @@ module.exports = {
         '2xs': '.625rem', // 10px
       },
       spacing: {
+        '2px': '2px',
         '48': '10rem',
         '56': '14rem',
         '64': '16rem',
