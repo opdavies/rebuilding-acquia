@@ -1,12 +1,8 @@
 import Applications from '@/views/Applications'
 import Environment from '@/views/Environment'
 import Environments from '@/views/Environments'
-import Router from 'vue-router'
-import Vue from 'vue'
 
-Vue.use(Router)
-
-export default new Router({
+export default {
   routes: [
     {
       path: '/',
@@ -26,4 +22,4 @@ export default new Router({
       props: true,
     }
   ]
-})
+}
