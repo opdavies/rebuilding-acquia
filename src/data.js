@@ -13,12 +13,12 @@ export default {
           label: 'develop',
         },
         stage: {
-          name: 'stage',
+          name: 'Stage',
           url: 'stg.rebuilding-acquia.com',
           label: 'master',
         },
         prod: {
-          name: 'prod',
+          name: 'Prod',
           url: 'rebuilding-acquia.com',
           label: 'tags/2018-12-21',
         },
@@ -92,9 +92,9 @@ export default {
             started: 'Dec 21, 2018 12:55:49 PM UTC +0000',
             completed: 'Dec 21, 2018 12:55:49 PM UTC +0000',
           },
-          "status": "Failed",
+          status: 'Failed',
           loading: false,
-          "success": false
+          success: false,
         },
         {
           text: 'Commit: 398945c Ensure stage_file_proxy is enabled refs/heads/master',
@@ -126,8 +126,8 @@ export default {
             started: 'Dec 21, 2018 1:34:13 PM UTC +0000',
             completed: 'Dec 21, 2018 1:34:13 PM UTC +0000',
           },
-          "status": "In progress",
-          "loading": true,
+          status: 'In progress',
+          loading: true,
           success: true,
         },
       ],
@@ -145,12 +145,12 @@ export default {
           label: 'develop',
         },
         stage: {
-          name: 'stage',
+          name: 'Stage',
           url: 'stg.oliverdavies.uk',
           label: 'master',
         },
         prod: {
-          name: 'prod',
+          name: 'Prod',
           url: 'oliverdavies.uk',
           label: 'tags/2018-12-21',
         },
