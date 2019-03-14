@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <div class="w-auto lg:w-56 bg-grey-3 text-grey-6 antialiased fixed pin-l h-full overflow-y-scroll z-30 -mt-2px">
     <div>
       <ul class="list-reset">
