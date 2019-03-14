@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import Router from 'vue-router'
 import Applications from '@/views/Applications'
 import Environment from '@/views/Environment'
 import Environments from '@/views/Environments'
+import Router from 'vue-router'
+import Vue from 'vue'
 
 Vue.use(Router)
 
