@@ -13,12 +13,12 @@ export default {
           label: 'develop',
         },
         stage: {
-          name: 'stage',
+          name: 'Stage',
           url: 'stg.rebuilding-acquia.com',
           label: 'master',
         },
         prod: {
-          name: 'prod',
+          name: 'Prod',
           url: 'rebuilding-acquia.com',
           label: 'tags/2018-12-21',
         },
@@ -145,12 +145,12 @@ export default {
           label: 'develop',
         },
         stage: {
-          name: 'stage',
+          name: 'Stage',
           url: 'stg.oliverdavies.uk',
           label: 'master',
         },
         prod: {
-          name: 'prod',
+          name: 'Prod',
           url: 'oliverdavies.uk',
           label: 'tags/2018-12-21',
         },
