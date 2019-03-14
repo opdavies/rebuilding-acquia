@@ -66,6 +66,10 @@ module.exports = {
     '56': '14rem',
     '64': '16rem',
   },
+  negativeMargin: {
+    ...defaultConfig.negativeMargin,
+    '2px': '2px',
+  },
   width: {
     ...defaultConfig.width,
     '56': '14rem',

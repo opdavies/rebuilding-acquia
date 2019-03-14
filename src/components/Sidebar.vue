@@ -1,5 +1,5 @@
 <template>
-  <div class="w-auto lg:w-56 bg-grey-light text-grey-darker antialiased fixed pin-l h-full overflow-y-scroll">
+  <div class="w-auto lg:w-56 bg-grey-light text-grey-darker antialiased fixed pin-l h-full overflow-y-scroll z-30 -mt-2px">
     <div>
       <ul class="list-reset">
         <li v-for="link in links" :key="link.title">
