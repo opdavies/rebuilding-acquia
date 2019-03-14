@@ -7,10 +7,10 @@
             href="#0"
             class="flex items-center no-underline focus:underline px-4 py-2 text-sm"
             :class="{
-              'bg-grey-6 text-white': link.active,
-              'border-transparent hover:bg-grey hover:text-blue-3': !link.active,
+              'bg-grey-6 text-white hover:text-white': link.active,
+              'border-transparent hover:bg-grey': !link.active,
               'text-grey-5 cursor-not-allowed': link.disabled,
-              'text-grey-6': !link.disabled,
+              'text-grey-6 hover:text-blue-3': !link.disabled && !link.active,
             }"
           >
             <svg class="h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>
