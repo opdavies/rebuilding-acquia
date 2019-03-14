@@ -85,7 +85,7 @@
                 <div class="bg-white px-4 py-6">
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">Git URL</div>
-                    <div class="border border-grey-dark rounded p-3">{{ gitUrl }}</div>
+                    <div class="border border-grey-dark rounded p-3 truncate">{{ gitUrl }}</div>
                     <div class="absolute pin-t pin-r">
                       <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
@@ -96,7 +96,7 @@
 
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">SSH URL</div>
-                    <div class="border border-grey-dark rounded p-3">{{ sshUrl }}</div>
+                    <div class="border border-grey-dark rounded p-3 truncate">{{ sshUrl }}</div>
                     <div class="absolute pin-t pin-r">
                       <button type="button" class="flex items-center text-xs text-blue-dark hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
