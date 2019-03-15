@@ -1,4 +1,4 @@
-# rebuilding-acquia
+# Rebuilding Acquia’s Dashboard with Vue.js and Tailwind CSS
 
 ## Project setup
 ```
