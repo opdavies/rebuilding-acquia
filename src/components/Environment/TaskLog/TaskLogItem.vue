@@ -4,7 +4,7 @@
       <div class="flex-none mr-3">
         <svg v-if="task.loading" class="h-5 w-5 text-grey fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__loading"></use></svg>
         <svg v-if="!task.loading && task.success" class="h-5 w-5 text-green fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__success-circle"></use></svg>
-        <svg v-if="!task.loading && !task.success" class="h-5 w-5 text-red-dark fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__warning"></use></svg>
+        <svg v-if="!task.loading && !task.success" class="h-5 w-5 text-red fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__warning"></use></svg>
       </div>
 
       <div class="flex-1">
