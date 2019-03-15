@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "postcss-nested": "^4.1.2",
-    "tailwindcss": "https://github.com/tailwindcss/tailwindcss.git#next",
+    "tailwindcss": "^1.0.0-beta.1",
     "tailwindcss-spaced-items": "^0.1.0",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2"
