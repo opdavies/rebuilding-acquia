@@ -11,6 +11,7 @@
     "postcss-nested": "^4.1.2",
     "tailwindcss": "https://github.com/tailwindcss/tailwindcss.git#next",
     "tailwindcss-spaced-items": "^0.1.0",
+    "tailwindcss-visuallyhidden": "^1.0.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.2"
   },
@@ -21,7 +22,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0-0",
-    "tailwindcss-visuallyhidden": "^1.0.1",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {
