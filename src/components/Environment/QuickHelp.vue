@@ -22,7 +22,7 @@
             :key="item.subject"
             type="button"
             class="hover:underline focus:underline mr-6 focus:outline-none"
-            :class="[ i === selected ? 'text-grey-darkest' : 'text-blue-3' ]"
+            :class="[ i === selected ? 'text-grey-7' : 'text-blue-3' ]"
             @click="selected = i"
           >{{ item.subject }}</button>
         </div>
