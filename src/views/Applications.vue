@@ -51,7 +51,7 @@
           </div>
         </div>
 
-        <sidebar class="sm:-mt-2px" :links="[
+        <sidebar class="md:-mt-2px" :links="[
           { title: 'All', icon: 'alpha__grid', active: true, disabled: false },
           { title: 'Starred', icon: 'state__starred', active: false, disabled: false },
           { title: 'Recents', icon: 'objects__recent', active: false, disabled: false },
