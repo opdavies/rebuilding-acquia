@@ -22,12 +22,20 @@
         </template>
 
         <template slot="right">
-          <header-buttons :links="[
-            { title: 'Add database', icon: 'actions__new-database', disabled: false },
-            { title: 'Git Info', icon: 'actions__info', disabled: false },
-            { title: 'Rename', icon: 'actions__edit', disabled: false },
-            { title: 'Cancel', icon: 'actions__remove--circle', disabled: false },
-          ]"></header-buttons>
+          <div class="flex items-center">
+            <div class="hidden md:block">
+              <button type="button" class="text-sm font-bold text-blue-3 uppercase py-2 px-6 border border-blue-3 hover:text-blue-4 hover:border-blue-4 focus:border-blue-4">
+                Steps to launch
+              </button>
+            </div>
+
+            <header-buttons class="ml-5" :links="[
+              { title: 'Add database', icon: 'actions__new-database', disabled: false },
+              { title: 'Git Info', icon: 'actions__info', disabled: false },
+              { title: 'Rename', icon: 'actions__edit', disabled: false },
+              { title: 'Cancel', icon: 'actions__remove--circle', disabled: false },
+            ]"></header-buttons>
+          </div>
         </template>
       </title-block>
     </div>
