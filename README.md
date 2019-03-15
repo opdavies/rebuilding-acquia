@@ -1,5 +1,7 @@
 # Rebuilding Acquia’s Dashboard with Vue.js and Tailwind CSS
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8cc12712-590a-47c7-bb78-d65e9249ac1d/deploy-status)](https://app.netlify.com/sites/rebuilding-acquia/deploys)
+
 ## Project setup
 ```
 yarn install
