@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed pin-t w-full z-30">
+    <div class="fixed top-0 w-full z-30">
       <navbar></navbar>
 
       <title-block>

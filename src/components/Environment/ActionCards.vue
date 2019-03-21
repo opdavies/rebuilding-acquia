@@ -28,14 +28,14 @@
             <div>
               <ul class="list-reset flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
+                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
                     <span class="block">Deploy</span>
                   </button>
                 </li>
 
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
+                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
                     <span class="block">Switch</span>
                   </button>
@@ -67,14 +67,14 @@
             <div>
               <ul class="list-reset flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
+                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                     <span class="block">Copy</span>
                   </button>
                 </li>
 
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
+                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
                     <span class="block">Back up</span>
                   </button>
@@ -83,7 +83,7 @@
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
                   <button
                     type="button"
-                    class="w-full py-3 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block"
+                    class="w-full flex flex-col items-center py-3 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block"
                     :class="{
                       'text-blue-300': !isProduction,
                       'text-grey-500 cursor-not-allowed': isProduction
@@ -121,7 +121,7 @@
             <div>
               <ul class="list-reset flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
+                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
                     <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                     <span class="block">Copy</span>
                   </button>

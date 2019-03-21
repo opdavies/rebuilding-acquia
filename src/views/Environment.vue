@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed pin-t w-full z-30">
+    <div class="fixed top-0 w-full z-30">
       <navbar></navbar>
 
       <title-block>
@@ -86,7 +86,7 @@
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">Git URL</div>
                     <div class="border border-grey-dark rounded p-3 truncate">{{ gitUrl }}</div>
-                    <div class="absolute pin-t pin-r">
+                    <div class="absolute top-0 right-0">
                       <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                         Copy <span class="visuallyhidden">Git URL to your clipboard</span>
@@ -97,7 +97,7 @@
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">SSH URL</div>
                     <div class="border border-grey-dark rounded p-3 truncate">{{ sshUrl }}</div>
-                    <div class="absolute pin-t pin-r">
+                    <div class="absolute top-0 right-0">
                       <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                         Copy <span class="visuallyhidden">SSH URL to your clipboard</span>
