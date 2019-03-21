@@ -28,17 +28,15 @@
             <div>
               <ul class="list-reset flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
-                    <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
-                    <span class="block">Deploy</span>
-                  </button>
+                  <action-card-button label="Deploy">
+                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
+                  </action-card-button>
                 </li>
 
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
-                    <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
-                    <span class="block">Switch</span>
-                  </button>
+                  <action-card-button label="Switch">
+                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
+                  </action-card-button>
                 </li>
               </ul>
             </div>
@@ -67,32 +65,24 @@
             <div>
               <ul class="list-reset flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
-                    <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
-                    <span class="block">Copy</span>
-                  </button>
+                  <action-card-button label="Copy">
+                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                  </action-card-button>
                 </li>
 
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
-                    <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
-                    <span class="block">Back up</span>
-                  </button>
+                  <action-card-button label="Back up">
+                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
+                  </action-card-button>
                 </li>
 
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button
-                    type="button"
-                    class="w-full flex flex-col items-center py-3 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block"
-                    :class="{
-                      'text-blue-300': !isProduction,
-                      'text-grey-500 cursor-not-allowed': isProduction
-                    }"
-                    :disabled="isProduction"
-                  >
-                    <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
-                    <span class="block">Restore</span>
-                  </button>
+                  <action-card-button label="Restore" :disabled="isProduction" :class="{
+                    'text-blue-300': !isProduction,
+                    'text-grey-500 cursor-not-allowed': isProduction
+                  }">
+                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
+                  </action-card-button>
                 </li>
               </ul>
             </div>
@@ -121,10 +111,9 @@
             <div>
               <ul class="list-reset flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <button type="button" class="w-full flex flex-col items-center py-3 text-blue-300 text-xs font-bold no-underline hover:underline focus:underline hover:bg-grey-200 focus:bg-grey-lighter focus:outline-none block">
-                    <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
-                    <span class="block">Copy</span>
-                  </button>
+                  <action-card-button label="Copy">
+                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                  </action-card-button>
                 </li>
               </ul>
             </div>
@@ -137,7 +126,11 @@
 
 
 <script>
+import ActionCardButton from '@/components/Environment/ActionCardButton'
+
 export default {
+  components: { ActionCardButton },
+
   props: {
     environment: Object,
     isProduction: Boolean
