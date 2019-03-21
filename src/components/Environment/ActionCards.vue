@@ -1,9 +1,9 @@
 <template>
   <div>
     <ul class="list-reset flex flex-wrap md:hidden -mx-1 mb-5">
-      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[active == 'code' ? 'bg-blue-400' : 'bg-blue-300']" @click="active = 'code'">Code</button></li>
-      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[active == 'databases' ? 'bg-blue-400' : 'bg-blue-300']" @click="active = 'databases'">Databases</button></li>
-      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[active == 'files' ? 'bg-blue-400' : 'bg-blue-300']" @click="active = 'files'">Files</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'code'}" @click="active = 'code'">Code</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'databases'}" @click="active = 'databases'">Databases</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'files'}" @click="active = 'files'">Files</button></li>
     </ul>
 
     <div class="flex flex-wrap -mx-4 -mb-4">
@@ -143,3 +143,12 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.mobile-button {
+  @apply text-sm text-white w-full py-3 rounded bg-blue-300
+}
+.mobile-button.is-active {
+  @apply bg-blue-400
+}
+</style>
