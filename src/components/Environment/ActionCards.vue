@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="list-reset flex flex-wrap md:hidden -mx-1 mb-5">
+    <ul class="flex flex-wrap md:hidden -mx-1 mb-5">
       <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'code'}" @click="active = 'code'">Code</button></li>
       <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'databases'}" @click="active = 'databases'">Databases</button></li>
       <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'files'}" @click="active = 'files'">Files</button></li>
@@ -26,7 +26,7 @@
             </div>
 
             <div>
-              <ul class="list-reset flex -ml-px">
+              <ul class="flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
                   <action-card-button label="Deploy">
                     <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
@@ -63,7 +63,7 @@
             </div>
 
             <div>
-              <ul class="list-reset flex -ml-px">
+              <ul class="flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
                   <action-card-button label="Copy">
                     <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
@@ -109,7 +109,7 @@
             </div>
 
             <div>
-              <ul class="list-reset flex -ml-px">
+              <ul class="flex -ml-px">
                 <li class="w-1/2 flex-1 text-center border-l border-grey-400">
                   <action-card-button label="Copy">
                     <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
