@@ -1,124 +1,73 @@
 <template>
   <div>
     <ul class="flex flex-wrap md:hidden -mx-1 mb-5">
-      <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'code'}" @click="active = 'code'">Code</button></li>
-      <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'databases'}" @click="active = 'databases'">Databases</button></li>
-      <li class="w-1/3 px-1"><button type="button" class="mobile-button" :class="{'is-active': active == 'files'}" @click="active = 'files'">Files</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[ active == 'code' ? 'bg-blue-400' : 'bg-blue-300' ]" @click="active = 'code'">Code</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[ active == 'databases' ? 'bg-blue-400' : 'bg-blue-300' ]" @click="active = 'databases'">Databases</button></li>
+      <li class="w-1/3 px-1"><button type="button" class="text-sm text-white w-full py-3 rounded" :class="[ active == 'files' ? 'bg-blue-400' : 'bg-blue-300' ]" @click="active = 'files'">Files</button></li>
     </ul>
 
     <div class="flex flex-wrap -mx-4 -mb-4">
-      <div class="w-full md:w-1/3 md:block px-4 mb-4" :class="[ active == 'code' ? 'block' : 'hidden' ]">
-        <div class="border border-grey-400 rounded shadow bg-white overflow-hidden">
-          <div class="border-t-4 border-teal">
-            <div class="border-b border-grey-400">
-              <div class="px-3 py-4">
-                <div class="flex flex-row-reverse">
-                  <div class="flex-1">
-                    <h2 class="text-grey-600 text-base mb-1">Code</h2>
-                    <div class="text-xs text-grey-600">{{ environment.name }}: {{ environment.label }}</div>
-                  </div>
+      <div class="wrapper" :class="[ active == 'code' ? 'block' : 'hidden' ]">
+        <action-card title="Code" description="Prod: tags/2018-12-21">
+          <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__code"></use></svg>
 
-                  <div class="mr-3">
-                    <svg class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__code"></use></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <ul slot="buttons" class="button-list">
+            <li class="button-list-item">
+              <action-card-button label="Deploy">
+                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
+              </action-card-button>
+            </li>
 
-            <div>
-              <ul class="flex -ml-px">
-                <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <action-card-button label="Deploy">
-                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
-                  </action-card-button>
-                </li>
-
-                <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <action-card-button label="Switch">
-                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
-                  </action-card-button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            <li class="button-list-item">
+              <action-card-button label="Switch">
+                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
+              </action-card-button>
+            </li>
+          </ul>
+        </action-card>
       </div>
 
-      <div class="w-full md:w-1/3 md:block px-4 mb-4" :class="[ active == 'databases' ? 'block' : 'hidden' ]">
-        <div class="border border-grey-400 rounded shadow bg-white overflow-hidden">
-          <div class="border-t-4 border-teal">
-            <div class="border-b border-grey-400">
-              <div class="px-3 py-4">
-                <div class="flex flex-row-reverse">
-                  <div class="flex-1">
-                    <h2 class="text-grey-600 text-base mb-1">Databases</h2>
-                    <div class="text-xs text-grey-600">{{ environment.name }}</div>
-                  </div>
+      <div class="wrapper" :class="[ active == 'databases' ? 'block' : 'hidden' ]">
+        <action-card title="Databases" description="Prod">
+          <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__database"></use></svg>
 
-                  <div class="mr-3">
-                    <svg class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__database"></use></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <ul slot="buttons" class="button-list">
+            <li class="button-list-item">
+              <action-card-button label="Copy">
+                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+              </action-card-button>
+            </li>
 
-            <div>
-              <ul class="flex -ml-px">
-                <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <action-card-button label="Copy">
-                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
-                  </action-card-button>
-                </li>
+            <li class="button-list-item">
+              <action-card-button label="Back up">
+                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
+              </action-card-button>
+            </li>
 
-                <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <action-card-button label="Back up">
-                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
-                  </action-card-button>
-                </li>
-
-                <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <action-card-button label="Restore" :disabled="isProduction" :class="{
-                    'text-blue-300': !isProduction,
-                    'text-grey-500 cursor-not-allowed': isProduction
-                  }">
-                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
-                  </action-card-button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+            <li class="button-list-item">
+              <action-card-button label="Restore" :disabled="isProduction" :class="{
+                'text-blue-300': !isProduction,
+                'text-grey-500 cursor-not-allowed': isProduction
+              }">
+                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
+              </action-card-button>
+            </li>
+          </ul>
+        </action-card>
       </div>
 
-      <div class="w-full md:w-1/3 md:block px-4 mb-4" :class="[ active == 'files' ? 'block' : 'hidden' ]">
-        <div class="border border-grey-400 rounded shadow bg-white overflow-hidden">
-          <div class="border-t-4 border-teal">
-            <div class="border-b border-grey-400">
-              <div class="px-3 py-4">
-                <div class="flex flex-row-reverse">
-                  <div class="flex-1">
-                    <h2 class="text-grey-600 text-base mb-1">Files</h2>
-                    <div class="text-xs text-grey-600">{{ environment.name }}</div>
-                  </div>
+      <div class="wrapper" :class="[ active == 'files' ? 'block' : 'hidden' ]">
+        <action-card title="Files" description="Prod">
+          <svg slot="icon" class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__environment"></use></svg>
 
-                  <div class="mr-3">
-                    <svg class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__environment"></use></svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <ul class="flex -ml-px">
-                <li class="w-1/2 flex-1 text-center border-l border-grey-400">
-                  <action-card-button label="Copy">
-                    <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
-                  </action-card-button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <ul slot="buttons" class="button-list">
+            <li class="button-list-item">
+              <action-card-button label="Copy">
+                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+              </action-card-button>
+            </li>
+          </ul>
+        </action-card>
       </div>
     </div>
   </div>
@@ -126,10 +75,14 @@
 
 
 <script>
+import ActionCard from '@/components/Environment/ActionCard'
 import ActionCardButton from '@/components/Environment/ActionCardButton'
 
 export default {
-  components: { ActionCardButton },
+  components: {
+    ActionCard,
+    ActionCardButton,
+  },
 
   props: {
     environment: Object,
@@ -145,12 +98,19 @@ export default {
 </script>
 
 <style scoped>
-.mobile-button {
-  @apply text-sm text-white w-full py-3 rounded bg-blue-300;
+.wrapper {
+  @apply w-full px-4 mb-4;
 
-  &.is-active {
-    @apply bg-blue-400
+  @screen md {
+    @apply w-1/3 block
   }
 }
+
+.button-list {
+  @apply flex -ml-px
+}
+
+.button-list-item {
+  @apply w-1/2 flex-1 text-center border-l border-grey-400
 }
 </style>
