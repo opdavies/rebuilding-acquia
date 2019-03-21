@@ -6,6 +6,11 @@
 
 <style lang="postcss">
 @tailwind base;
+
+html {
+  line-height: 1.15;
+}
+
 @tailwind components;
 
 h1,
