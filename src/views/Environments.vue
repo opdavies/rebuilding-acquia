@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed pin-t w-full z-30">
+    <div class="fixed top-0 w-full z-30">
       <navbar></navbar>
 
       <title-block>
@@ -8,7 +8,7 @@
           <div class="text-xs mb-3">
             <ol class="list-reset flex">
               <li class="flex items-center pr-1">
-                <router-link to="/" class="text-blue-3 no-underline hover:underline mr-1">Applications</router-link>
+                <router-link to="/" class="text-blue-300 no-underline hover:underline mr-1">Applications</router-link>
                 <svg class="w-3 h-3 fill-current text-grey" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" fill-rule="evenodd"/></svg>
               </li>
               <li>{{ application.name }}</li>
@@ -17,14 +17,14 @@
 
           <button class="flex flex-1 items-center justify-between md:justify-start">
             <div class="text-2xl font-hairline mr-2">{{ application.name }}</div>
-            <svg class="h-6 w-6 text-blue-3 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__down-arrow"></use></svg>
+            <svg class="h-6 w-6 text-blue-300 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__down-arrow"></use></svg>
           </button>
         </template>
 
         <template slot="right">
           <div class="flex items-center">
             <div class="hidden md:block">
-              <button type="button" class="text-sm font-bold text-blue-3 uppercase py-2 px-6 border border-blue-3 hover:text-blue-4 hover:border-blue-4 focus:border-blue-4">
+              <button type="button" class="text-sm font-bold text-blue-300 uppercase py-2 px-6 border border-blue-300 hover:text-blue-400 hover:border-blue-400 focus:border-blue-400">
                 Steps to launch
               </button>
             </div>
@@ -54,7 +54,7 @@
               <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
                 <div class="w-full lg:w-1/2 xl:w-1/3">
                   <form action="#">
-                    <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-4-6 rounded">
+                    <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-400-6 rounded">
                   </form>
                 </div>
 

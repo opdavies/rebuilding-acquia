@@ -7,7 +7,7 @@
           class="text-xs no-underline hover:underline flex flex-col items-center justify-center"
           :class="{
             'text-grey cursor-not-allowed': link.disabled,
-            'text-blue-3': !link.disabled,
+            'text-blue-300': !link.disabled,
           }"
           :disabled="link.disabled"
         >

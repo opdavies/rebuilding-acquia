@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed pin-t w-full z-30">
+    <div class="fixed top-0 w-full z-30">
       <navbar></navbar>
 
       <title-block>
@@ -8,11 +8,11 @@
           <div class="text-xs mb-3">
             <ol class="list-reset flex">
               <li class="flex items-center pr-1">
-                <router-link to="/" class="text-blue-3 no-underline hover:underline mr-1">Applications</router-link>
+                <router-link to="/" class="text-blue-300 no-underline hover:underline mr-1">Applications</router-link>
                 <svg class="w-3 h-3 fill-current text-grey" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" fill-rule="evenodd"/></svg>
               </li>
               <li class="flex items-center pr-1">
-                <router-link :to="{ name: 'environments' }" class="text-blue-3 no-underline hover:underline mr-1">{{ application.name }}</router-link>
+                <router-link :to="{ name: 'environments' }" class="text-blue-300 no-underline hover:underline mr-1">{{ application.name }}</router-link>
                 <svg class="w-3 h-3 fill-current text-grey" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z" fill-rule="evenodd"/></svg>
               </li>
               <li>{{ environment.name }}</li>
@@ -21,7 +21,7 @@
 
           <button class="flex flex-1 items-center justify-between md:justify-start">
             <div class="text-2xl font-hairline">{{ application.name }} : {{ environment.name }}</div>
-            <svg class="h-6 w-6 text-blue-3 fill-current ml-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__down-arrow"></use></svg>
+            <svg class="h-6 w-6 text-blue-300 fill-current ml-2" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__down-arrow"></use></svg>
           </button>
         </template>
 
@@ -48,7 +48,7 @@
             </div>
 
             <div class="my-10">
-              <a :href="environment.url" class="flex items-center text-sm text-blue-3 no-underline hover:underline focus:underline">
+              <a :href="environment.url" class="flex items-center text-sm text-blue-300 no-underline hover:underline focus:underline">
                 <svg class="h-6 w-6 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#alpha__globe"></use></svg>
                 {{ environment.url }}
               </a>
@@ -60,14 +60,14 @@
               </div>
 
               <div class="shadow-md overflow-hidden">
-                <div class="bg-white border-b-2 border-grey-3 p-3"><h2 class="text-lg">Site Health</h2></div>
+                <div class="bg-white border-b-2 border-grey-300 p-3"><h2 class="text-lg">Site Health</h2></div>
                 <div class="bg-white p-4">
                   <div class="mb-6">
                     <p class="text-lg font-hairline text-grey-darkest">Uptime monitoring</p>
                   </div>
 
                   <div class="text-center leading-normal mb-5">
-                    <p class="text-grey-6">
+                    <p class="text-grey-600">
                       Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
                       of whether your Drupal site is really up and running.
                     </p>
@@ -81,13 +81,13 @@
               </div>
 
               <div class="shadow-md overflow-hidden">
-                <div class="bg-white border-b-2 border-grey-3 p-3"><h2 class="text-lg">Information</h2></div>
+                <div class="bg-white border-b-2 border-grey-300 p-3"><h2 class="text-lg">Information</h2></div>
                 <div class="bg-white px-4 py-6">
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">Git URL</div>
                     <div class="border border-grey-dark rounded p-3 truncate">{{ gitUrl }}</div>
-                    <div class="absolute pin-t pin-r">
-                      <button type="button" class="flex items-center text-xs text-blue-3 hover:underline focus:underline">
+                    <div class="absolute top-0 right-0">
+                      <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                         Copy <span class="visuallyhidden">Git URL to your clipboard</span>
                       </button>
@@ -97,8 +97,8 @@
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">SSH URL</div>
                     <div class="border border-grey-dark rounded p-3 truncate">{{ sshUrl }}</div>
-                    <div class="absolute pin-t pin-r">
-                      <button type="button" class="flex items-center text-xs text-blue-3 hover:underline focus:underline">
+                    <div class="absolute top-0 right-0">
+                      <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                         Copy <span class="visuallyhidden">SSH URL to your clipboard</span>
                       </button>
@@ -107,22 +107,22 @@
 
                   <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-6">IP Address</div>
+                      <div class="mb-1 text-xs text-grey-600">IP Address</div>
                       <div>1.2.3.4</div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-6">Region</div>
+                      <div class="mb-1 text-xs text-grey-600">Region</div>
                       <div>eu-west-1</div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-6">PHP version</div>
+                      <div class="mb-1 text-xs text-grey-600">PHP version</div>
                       <div>7.1</div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-6">Live development mode</div>
+                      <div class="mb-1 text-xs text-grey-600">Live development mode</div>
                       <div>Off</div>
                     </div>
                   </div>
