@@ -146,9 +146,11 @@ export default {
 
 <style scoped>
 .mobile-button {
-  @apply text-sm text-white w-full py-3 rounded bg-blue-300
+  @apply text-sm text-white w-full py-3 rounded bg-blue-300;
+
+  &.is-active {
+    @apply bg-blue-400
+  }
 }
-.mobile-button.is-active {
-  @apply bg-blue-400
 }
 </style>
