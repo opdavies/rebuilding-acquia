@@ -31,7 +31,7 @@
                 <div class="w-full">
                   <form action="#">
                     <label for="applications" class="visuallyhidden">Filter applications</label>
-                    <input id="applications" type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-4-6 rounded">
+                    <input id="applications" type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-grey-400-6 rounded">
                   </form>
                 </div>
               </div>

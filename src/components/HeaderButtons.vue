@@ -7,11 +7,11 @@
           class="text-xs no-underline hover:underline flex flex-col items-center justify-center"
           :class="{
             'text-grey cursor-not-allowed': link.disabled,
-            'text-blue-3': !link.disabled,
+            'text-blue-300': !link.disabled,
           }"
           :disabled="link.disabled"
         >
-          <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>
+          <svg class="h-6 w-6 fill-current mb-1" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>
           {{ link.title }}
         </button>
       </li>
