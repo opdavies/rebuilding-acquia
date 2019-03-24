@@ -95,24 +95,24 @@ export default {
     EnvironmentCards,
     QuickHelp,
     TaskLog,
-    ToggleHelp,
+    ToggleHelp
   },
 
   props: {
-    id: String,
+    id: String
   },
 
-  data() {
+  data () {
     return {
       applications: data.applications,
       help: {
-        hidden: false,
+        hidden: false
       }
     }
   },
 
   computed: {
-    application: function() {
+    application: function () {
       return this.applications[this.id]
     }
   }
