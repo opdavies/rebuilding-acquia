@@ -1,5 +1,5 @@
 {
-  "name": "rebuilding-acquia",
+  "name": "rebuilding-acquia2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,43 +11,18 @@
     "postcss-nested": "^4.1.2",
     "tailwindcss": "^1.0.0-beta.3",
     "tailwindcss-spaced-items": "^0.1.0",
-    "tailwindcss-visuallyhidden": "^1.0.1",
-    "vue": "^2.5.17",
+    "tailwindcss-visuallyhidden": "^1.0.2",
+    "vue": "^2.6.6",
     "vue-router": "^3.0.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.1",
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-plugin-babel": "^3.5.1",
+    "@vue/cli-plugin-eslint": "^3.5.1",
+    "@vue/cli-service": "^3.5.1",
+    "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "rules": {},
-    "parserOptions": {
-      "parser": "babel-eslint"
-    }
-  },
-  "postcss": {
-    "plugins": {
-      "tailwindcss": "./tailwind.config.js",
-      "postcss-nested": {},
-      "autoprefixer": {}
-    }
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ]
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.5.21"
+  }
 }
