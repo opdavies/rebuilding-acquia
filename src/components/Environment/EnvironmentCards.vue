@@ -2,7 +2,7 @@
   <div class="mb-6">
     <div class="flex flex-wrap -mx-4 -mb-6">
       <div v-for="(environment, key) in environments" class="w-full md:w-1/2 xl:w-1/3 px-4 mb-6" :key="key">
-        <div class="border border-grey-400 rounded overflow-hidden">
+        <div class="border border-grey-400 rounded overflow-hidden shadow">
            <div class="bg-white">
             <div class="border-t-4 border-teal p-3">
               <router-link :to="{ name: 'environment', params: { environmentName: key, id: id }}" class="flex items-baseline no-underline hover:underline focus:underline text-grey-600 hover:text-blue-300 focus:text-blue-300 focus:outline-none mb-1">
