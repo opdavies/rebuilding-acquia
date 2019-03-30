@@ -21,25 +21,25 @@
           </div>
 
           <div>
-            <button type="button" class="card-button py-1">
-              <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
+            <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue-200 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:underline text-sm w-full text-left py-1">
+              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               <span class="flex-1">Code</span>
               <span class="border-l border-grey-400 p-2">
-                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
+                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
               </span>
             </button>
 
-            <button type="button" class="card-button py-1 border-t border-grey-400">
-              <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
+            <button type="button" class="flex items-center justify-between text-white pl-1 bg-blue-200 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:underline text-sm w-full text-left py-1 border-t border-grey-400">
+              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               <span class="flex-1">Databases</span>
               <span class="border-l border-grey-400 p-2">
-                <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
+                <svg class="h-6 w-6 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
               </span>
             </button>
 
-            <button type="button" class="card-button border-t border-grey-400 py-3 block">
-              <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
-              <span class="flex-1">Files</span>
+            <button type="button" class="flex items-center text-white bg-blue-200 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:underline px-1 py-3 text-sm w-full text-left py-1 border-t border-grey-400">
+              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
+              Files
             </button>
           </div>
         </div>
@@ -56,25 +56,3 @@ export default {
   }
 }
 </script>
-
-<style type="postcss" scoped>
-.card-button {
-  @apply flex items-center justify-between text-white pl-1 bg-blue-200 text-sm w-full text-left;
-
-  &:hover {
-    @apply bg-blue-400
-  }
-
-  &:focus {
-    @apply bg-blue-400 outline-none underline
-  }
-}
-
-.card-button > svg {
-  @apply h-6 w-5 text-white mr-2 fill-current
-}
-
-.card-button span svg {
-  @apply h-6 w-6 text-white fill-current
-}
-</style>

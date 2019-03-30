@@ -12,13 +12,13 @@
           <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__code"></use></svg>
 
           <ul slot="buttons" class="button-list">
-            <li>
+            <li class="button-list-item">
               <action-card-button label="Deploy">
                 <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__fork"></use></svg>
               </action-card-button>
             </li>
 
-            <li>
+            <li class="button-list-item">
               <action-card-button label="Switch">
                 <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__switch"></use></svg>
               </action-card-button>
@@ -32,19 +32,19 @@
           <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__database"></use></svg>
 
           <ul slot="buttons" class="button-list">
-            <li>
+            <li class="button-list-item">
               <action-card-button label="Copy">
                 <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
               </action-card-button>
             </li>
 
-            <li>
+            <li class="button-list-item">
               <action-card-button label="Back up">
                 <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__backup"></use></svg>
               </action-card-button>
             </li>
 
-            <li>
+            <li class="button-list-item">
               <action-card-button label="Restore" :disabled="isProduction" :class="{
                 'text-blue-300': !isProduction,
                 'text-grey-500 cursor-not-allowed': isProduction
@@ -61,7 +61,7 @@
           <svg slot="icon" class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__environment"></use></svg>
 
           <ul slot="buttons" class="button-list">
-            <li>
+            <li class="button-list-item">
               <action-card-button label="Copy">
                 <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
               </action-card-button>
@@ -109,7 +109,7 @@ export default {
   @apply flex -ml-px
 }
 
-.button-list > li {
+.button-list-item {
   @apply w-1/2 flex-1 text-center border-l border-grey-400
 }
 </style>
