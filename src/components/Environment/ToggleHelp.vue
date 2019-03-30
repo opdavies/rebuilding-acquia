@@ -10,7 +10,7 @@
 <script>
 export default {
   props: {
-    hidden: Boolean,
-  },
+    hidden: Boolean
+  }
 }
 </script>

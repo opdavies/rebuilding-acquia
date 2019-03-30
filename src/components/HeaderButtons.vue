@@ -24,7 +24,7 @@ import _ from 'lodash'
 
 export default {
   props: {
-    links: Array,
+    links: Array
   },
 
   computed: {

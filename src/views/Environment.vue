@@ -159,17 +159,17 @@ import data from '@/data'
 export default {
   components: {
     ActionCards,
-    ApplicationTags,
+    ApplicationTags
   },
 
   props: {
     id: String,
-    environmentName: String,
+    environmentName: String
   },
 
-  data() {
+  data () {
     return {
-      applications: data.applications,
+      applications: data.applications
     }
   },
 
@@ -183,16 +183,16 @@ export default {
     },
 
     gitUrl: function () {
-      return this.application.machineName  + '@svn-1234.prod.hosting.acquia.com:' + this.application.machineName + '.git'
+      return this.application.machineName + '@svn-1234.prod.hosting.acquia.com:' + this.application.machineName + '.git'
     },
 
     isProduction: function () {
-      return this.environmentName == 'prod'
+      return this.environmentName === 'prod'
     },
 
     sshUrl: function () {
       return this.application.machineName + '.' + this.environmentName + '@staging-1234.prod.hosting.acquia.com'
     }
-  },
+  }
 }
 </script>

@@ -19,11 +19,11 @@ import TaskLogItem from '@/components/Environment/TaskLog/TaskLogItem'
 
 export default {
   components: {
-    TaskLogItem,
+    TaskLogItem
   },
 
   props: {
-    tasks: Array,
+    tasks: Array
   },
 
   computed: {

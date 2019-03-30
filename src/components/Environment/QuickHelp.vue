@@ -41,29 +41,29 @@
 <script>
 export default {
   props: {
-    hidden: Boolean,
+    hidden: Boolean
   },
 
-  data() {
+  data () {
     return {
       selected: 0,
       items: [
         {
           subject: 'Deploying code',
-          text: 'Drag a code element from one environment to another environment, which creates a new tag for the HEAD of that branch and then deploys the tag.',
+          text: 'Drag a code element from one environment to another environment, which creates a new tag for the HEAD of that branch and then deploys the tag.'
         },
         {
           subject: 'Copying files',
-          text: 'Drag a file element from one environment to another environment, which writes new files, overwrites existing files, and ignores files already in place.',
+          text: 'Drag a file element from one environment to another environment, which writes new files, overwrites existing files, and ignores files already in place.'
         },
         {
           subject: 'Copying database',
-          text: 'Drag a database element from one environment to another environment, which overwrites the target database(s). Dragging database elements with more than one database displays a dialog box that allows you to select the databases to deploy',
+          text: 'Drag a database element from one environment to another environment, which overwrites the target database(s). Dragging database elements with more than one database displays a dialog box that allows you to select the databases to deploy'
         },
         {
           subject: 'Task Log',
-          text: 'The Task Log is displayed below your Acquia Cloud environments and contains information on all of the actions taken against your application, including code deployments, configuration updates and environment specific changes.',
-        },
+          text: 'The Task Log is displayed below your Acquia Cloud environments and contains information on all of the actions taken against your application, including code deployments, configuration updates and environment specific changes.'
+        }
       ]
     }
   }

@@ -7,19 +7,19 @@ export default {
     {
       path: '/',
       name: 'applications',
-      component: Applications,
+      component: Applications
     },
     {
       path: '/:id/environments',
       name: 'environments',
       component: Environments,
-      props: true,
+      props: true
     },
     {
       path: '/:id/environments/:environmentName',
       name: 'environment',
       component: Environment,
-      props: true,
+      props: true
     }
   ]
 }

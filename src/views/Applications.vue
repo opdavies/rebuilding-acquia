@@ -70,13 +70,13 @@ import data from '@/data'
 export default {
   components: {
     ApplicationCard,
-    ApplicationDisplaySwitcher,
+    ApplicationDisplaySwitcher
   },
 
-  data() {
+  data () {
     return {
       applications: data.applications,
-      display: 'grid',
+      display: 'grid'
     }
   },
 
@@ -87,7 +87,7 @@ export default {
   },
 
   methods: {
-    handleDisplay(mode) {
+    handleDisplay (mode) {
       this.display = mode
     }
   }

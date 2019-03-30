@@ -11,7 +11,7 @@
 export default {
   props: {
     level: String,
-    type: String,
-  },
+    type: String
+  }
 }
 </script>

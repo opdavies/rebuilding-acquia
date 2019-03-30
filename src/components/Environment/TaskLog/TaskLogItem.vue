@@ -54,12 +54,12 @@
 <script>
 export default {
   props: {
-    task: Object,
+    task: Object
   },
 
-  data() {
+  data () {
     return {
-      open: false,
+      open: false
     }
   },
 
