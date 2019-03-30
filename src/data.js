@@ -10,23 +10,23 @@ export default {
         dev: {
           name: 'Dev',
           url: 'dev.rebuilding-acquia.com',
-          label: 'develop',
+          label: 'develop'
         },
         stage: {
           name: 'Stage',
           url: 'stg.rebuilding-acquia.com',
-          label: 'master',
+          label: 'master'
         },
         prod: {
           name: 'Prod',
           url: 'rebuilding-acquia.com',
-          label: 'tags/2018-12-21',
+          label: 'tags/2018-12-21'
         },
         ra: {
           name: 'RA',
           url: 'ra.rebuilding-acquia.com',
-          label: 'tags/WELCOME',
-        },
+          label: 'tags/WELCOME'
+        }
       },
       tasks: [
         {
@@ -38,7 +38,7 @@ export default {
             completed: 'Dec 19, 2018 3:48:29 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Commit: 9688c41 Update IP address refs/heads/master',
@@ -46,10 +46,10 @@ export default {
           times: {
             display: 'Dec 19, 2018 3:50:31 PM UTC +0000',
             started: 'Dec 19, 2018 3:50:31 PM UTC +0000',
-            completed: 'Dec 19, 2018 3:50:31 PM UTC +0000',
+            completed: 'Dec 19, 2018 3:50:31 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Deploy code from test to prod',
@@ -57,10 +57,10 @@ export default {
           times: {
             display: 'Dec 19, 2018 3:55:29 PM UTC +0000',
             started: 'Dec 19, 2018 3:55:29 PM UTC +0000',
-            completed: 'Dec 19, 2018 3:55:29 PM UTC +0000',
+            completed: 'Dec 19, 2018 3:55:29 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Deploy the code reference master to dev',
@@ -68,10 +68,10 @@ export default {
           times: {
             display: 'Dec 20, 2018 10:13:48 PM UTC +0000',
             started: 'Dec 20, 2018 10:13:48 PM UTC +0000',
-            completed: 'Dec 20, 2018 10:13:48 PM UTC +0000',
+            completed: 'Dec 20, 2018 10:13:48 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Deploy the code reference tags/2018-12-19 to test',
@@ -79,10 +79,10 @@ export default {
           times: {
             display: 'Dec 20, 2018 10:25:07 PM UTC +0000',
             started: 'Dec 20, 2018 10:25:07 PM UTC +0000',
-            completed: 'Dec 20, 2018 10:25:07 PM UTC +0000',
+            completed: 'Dec 20, 2018 10:25:07 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Commit: e75c4a3 Merge branch \'voucher-code-bug-34\' refs/heads/master',
@@ -90,11 +90,11 @@ export default {
           times: {
             display: 'Dec 21, 2018 12:55:49 PM UTC +0000',
             started: 'Dec 21, 2018 12:55:49 PM UTC +0000',
-            completed: 'Dec 21, 2018 12:55:49 PM UTC +0000',
+            completed: 'Dec 21, 2018 12:55:49 PM UTC +0000'
           },
           status: 'Failed',
           loading: false,
-          success: false,
+          success: false
         },
         {
           text: 'Commit: 398945c Ensure stage_file_proxy is enabled refs/heads/master',
@@ -102,10 +102,10 @@ export default {
           times: {
             display: 'Dec 21, 2018 1:09:19 PM UTC +0000',
             started: 'Dec 21, 2018 1:09:19 PM UTC +0000',
-            completed: 'Dec 21, 2018 1:09:19 PM UTC +0000',
+            completed: 'Dec 21, 2018 1:09:19 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Commit: 96ac151 Fix syntax refs/heads/master',
@@ -113,10 +113,10 @@ export default {
           times: {
             display: 'Dec 21, 2018 1:23:43 PM UTC +0000',
             started: 'Dec 21, 2018 1:23:43 PM UTC +0000',
-            completed: 'Dec 21, 2018 1:23:43 PM UTC +0000',
+            completed: 'Dec 21, 2018 1:23:43 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Commit: 8056d51 Add production URLs as settings refs/heads/master',
@@ -124,13 +124,13 @@ export default {
           times: {
             display: 'Dec 21, 2018 1:34:13 PM UTC +0000',
             started: 'Dec 21, 2018 1:34:13 PM UTC +0000',
-            completed: 'Dec 21, 2018 1:34:13 PM UTC +0000',
+            completed: 'Dec 21, 2018 1:34:13 PM UTC +0000'
           },
           status: 'In progress',
           loading: true,
-          success: true,
-        },
-      ],
+          success: true
+        }
+      ]
     },
     2: {
       id: 2,
@@ -142,18 +142,18 @@ export default {
         dev: {
           name: 'Dev',
           url: 'dev.oliverdavies.uk',
-          label: 'develop',
+          label: 'develop'
         },
         stage: {
           name: 'Stage',
           url: 'stg.oliverdavies.uk',
-          label: 'master',
+          label: 'master'
         },
         prod: {
           name: 'Prod',
           url: 'oliverdavies.uk',
-          label: 'tags/2018-12-21',
-        },
+          label: 'tags/2018-12-21'
+        }
       },
       tasks: [
         {
@@ -162,10 +162,10 @@ export default {
           times: {
             display: 'Dec 23, 2018 11:26:48 PM UTC +0000',
             started: 'Dec 23, 2018 11:26:50 PM UTC +0000',
-            completed: 'Dec 23, 2018 11:26:52 PM UTC +0000',
+            completed: 'Dec 23, 2018 11:26:52 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Create database opdaviestest in Stage.',
@@ -173,10 +173,10 @@ export default {
           times: {
             display: 'Dec 23, 2018 11:26:48 PM UTC +0000',
             started: 'Dec 23, 2018 11:26:50 PM UTC +0000',
-            completed: 'Dec 23, 2018 11:26:52 PM UTC +0000',
+            completed: 'Dec 23, 2018 11:26:52 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Install Drupal 8 to Dev.',
@@ -184,10 +184,10 @@ export default {
           times: {
             display: 'Dec 23, 2018 11:33:52 PM UTC +0000',
             started: 'Dec 23, 2018 11:33:53 PM UTC +0000',
-            completed: 'Dec 23, 2018 11:37:21 PM UTC +0000',
+            completed: 'Dec 23, 2018 11:37:21 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Commit: 9736ef5 Importing site archive refs/heads/master',
@@ -195,10 +195,10 @@ export default {
           times: {
             display: 'Dec 23, 2018 11:36:29 PM UTC +0000',
             started: 'Dec 23, 2018 11:36:30 PM UTC +0000',
-            completed: 'Dec 23, 2018 11:37:16 PM UTC +0000',
+            completed: 'Dec 23, 2018 11:37:16 PM UTC +0000'
           },
           loading: false,
-          success: true,
+          success: true
         },
         {
           text: 'Commit: 0ab620f Initial commit to Acquia Git starter repo. refs/tags/pre-import-2018-12-23',
@@ -206,12 +206,12 @@ export default {
           times: {
             display: 'Dec 23, 2018 11:36:30 PM UTC +0000',
             started: 'Dec 23, 2018 11:36:32 PM UTC +0000',
-            completed: 'Dec 23, 2018 11:36:33 PM UTC +0000',
+            completed: 'Dec 23, 2018 11:36:33 PM UTC +0000'
           },
           loading: false,
-          success: true,
-        },
-      ],
-    },
-  },
+          success: true
+        }
+      ]
+    }
+  }
 }

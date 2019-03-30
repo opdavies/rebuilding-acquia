@@ -8,13 +8,13 @@
 <script>
 export default {
   props: {
-    application: Object,
+    application: Object
   },
 
-  data() {
+  data () {
     return {
       starred: false
     }
-  },
+  }
 }
 </script>

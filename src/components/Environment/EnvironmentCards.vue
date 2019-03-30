@@ -52,8 +52,8 @@
 export default {
   props: {
     environments: Object,
-    id: String,
-  },
+    id: String
+  }
 }
 </script>
 

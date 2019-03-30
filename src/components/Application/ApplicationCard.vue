@@ -53,18 +53,18 @@ import StarToggle from '@/components/Application/StarToggle'
 export default {
   components: {
     ApplicationTags,
-    StarToggle,
+    StarToggle
   },
 
   props: {
     application: Object,
     display: String,
-    id: Number,
+    id: Number
   },
 
-  data() {
+  data () {
     return {
-      starred: false,
+      starred: false
     }
   }
 }

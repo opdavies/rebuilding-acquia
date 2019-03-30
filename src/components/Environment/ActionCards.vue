@@ -73,7 +73,6 @@
   </div>
 </template>
 
-
 <script>
 import ActionCard from '@/components/Environment/ActionCard'
 import ActionCardButton from '@/components/Environment/ActionCardButton'
@@ -81,7 +80,7 @@ import ActionCardButton from '@/components/Environment/ActionCardButton'
 export default {
   components: {
     ActionCard,
-    ActionCardButton,
+    ActionCardButton
   },
 
   props: {
@@ -89,11 +88,11 @@ export default {
     isProduction: Boolean
   },
 
-  data() {
+  data () {
     return {
-      active: 'code',
+      active: 'code'
     }
-  },
+  }
 }
 </script>
 
