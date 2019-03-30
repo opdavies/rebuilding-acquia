@@ -82,14 +82,16 @@
 </template>
 
 <script>
+import ApiClient from '@/api-client.js'
 import ApplicationTags from '@/components/Application/ApplicationTags'
-import data from '@/data'
 import EnvironmentCards from '@/components/Environment/EnvironmentCards'
 import QuickHelp from '@/components/Environment/QuickHelp'
 import TaskLog from '@/components/Environment/TaskLog/TaskLog'
 import ToggleHelp from '@/components/Environment/ToggleHelp'
 
 export default {
+  mixins: [ApiClient],
+
   components: {
     ApplicationTags,
     EnvironmentCards,
@@ -104,7 +106,6 @@ export default {
 
   data () {
     return {
-      applications: data.applications,
       help: {
         hidden: false
       }
@@ -113,7 +114,7 @@ export default {
 
   computed: {
     application: function () {
-      return this.applications[this.id]
+      return this.getApplication(this.id)
     }
   }
 }
