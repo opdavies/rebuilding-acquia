@@ -153,10 +153,12 @@
 
 <script>
 import ActionCards from '@/components/Environment/ActionCards'
+import ApiClient from '@/api-client.js'
 import ApplicationTags from '@/components/Application/ApplicationTags'
-import data from '@/data'
 
 export default {
+  mixins: [ApiClient],
+
   components: {
     ActionCards,
     ApplicationTags
@@ -167,19 +169,13 @@ export default {
     environmentName: String
   },
 
-  data () {
-    return {
-      applications: data.applications
-    }
-  },
-
   computed: {
     application: function () {
-      return this.applications[this.id]
+      return this.getApplication(this.id)
     },
 
     environment: function () {
-      return this.application['environments'][this.environmentName]
+      return this.getEnvironment(this.id, this.environmentName)
     },
 
     gitUrl: function () {

@@ -63,11 +63,13 @@
 
 <script>
 import _ from 'lodash'
+import ApiClient from '@/api-client.js'
 import ApplicationCard from '@/components/Application/ApplicationCard'
 import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisplaySwitcher'
-import data from '@/data'
 
 export default {
+  mixins: [ApiClient],
+
   components: {
     ApplicationCard,
     ApplicationDisplaySwitcher
@@ -75,7 +77,7 @@ export default {
 
   data () {
     return {
-      applications: data.applications,
+      applications: this.getApplications(),
       display: 'grid'
     }
   },
