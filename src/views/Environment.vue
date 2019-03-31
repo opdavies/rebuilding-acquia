@@ -44,7 +44,7 @@
             <div>
               <h1 class="text-4xl font-thin mb-2">Overview</h1>
 
-              <application-tags :type="application.type" :level="application.level"></application-tags>
+              <application-tags :type="getApplicationType(application)" :level="application.level"></application-tags>
             </div>
 
             <div class="my-10">

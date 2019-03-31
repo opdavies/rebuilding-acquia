@@ -1,7 +1,7 @@
 <template>
   <div>
     <ul class="list-reset flex flex-wrap -mr-2 -mb-2">
-      <li class="tag is-type">{{ type }}</li>
+      <li class="tag" :data-type="type.id">{{ type.name }}</li>
       <li class="tag">{{ level }}</li>
     </ul>
   </div>
@@ -11,7 +11,7 @@
 export default {
   props: {
     level: String,
-    type: String
+    type: Object
   }
 }
 </script>
@@ -23,5 +23,9 @@ export default {
 
 .tag[data-type="drupal"] {
   @apply bg-blue-100 border-blue-100 text-white
+}
+
+.tag[data-type="nodejs"] {
+  @apply bg-green border-green text-white
 }
 </style>

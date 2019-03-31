@@ -48,7 +48,7 @@
               <div class="mr-16 mb-4 lg:mb-0">
                 <h1 class="text-4xl font-thin mb-2">Environments</h1>
 
-                <application-tags :type="application.type" :level="application.level"></application-tags>
+                <application-tags :type="getApplicationType(application)" :level="application.level"></application-tags>
               </div>
 
               <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">

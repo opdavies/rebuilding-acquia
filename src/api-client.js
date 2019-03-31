@@ -1,12 +1,23 @@
 import _ from 'lodash'
 
 const data = {
+  types: {
+    drupal: {
+      id: 'drupal',
+      name: 'Drupal'
+    },
+    nodejs: {
+      id: 'nodejs',
+      name: 'Node.js'
+    }
+  },
+
   applications: {
     1: {
       id: 1,
       name: 'Rebuilding Acquia',
       machineName: 'rebuildingacquia',
-      type: 'Drupal',
+      type: 'drupal',
       level: 'Enterprise',
       environments: {
         dev: {
@@ -138,7 +149,7 @@ const data = {
       id: 2,
       name: 'Oliver Davies',
       machineName: 'oliverdavies',
-      type: 'Drupal',
+      type: 'drupal',
       level: 'Professional',
       environments: {
         dev: {
@@ -220,6 +231,10 @@ const data = {
 
 export default {
   methods: {
+    getTypes() {
+      return data.types
+    },
+
     getApplications () {
       return data.applications
     },
@@ -231,6 +246,10 @@ export default {
     getEnvironment (applicationId, environment) {
       return _(this.getApplication(applicationId))
         .get('environments')[environment]
+    },
+
+    getApplicationType (application) {
+      return this.getTypes()[application.type]
     }
   }
 }
