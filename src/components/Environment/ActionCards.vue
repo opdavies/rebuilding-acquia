@@ -8,7 +8,7 @@
 
     <div class="flex flex-wrap -mx-4 -mb-4">
       <div class="wrapper" :class="[ active == 'code' ? 'block' : 'hidden' ]">
-        <action-card title="Code" description="Prod: tags/2018-12-21">
+        <action-card title="Code" :description="`${ environment.name }: ${environment.label}`">
           <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__code"></use></svg>
 
           <ul slot="buttons" class="button-list">
@@ -28,7 +28,7 @@
       </div>
 
       <div class="wrapper" :class="[ active == 'databases' ? 'block' : 'hidden' ]">
-        <action-card title="Databases" description="Prod">
+        <action-card title="Databases" :description="environment.name">
           <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__database"></use></svg>
 
           <ul slot="buttons" class="button-list">
@@ -57,7 +57,7 @@
       </div>
 
       <div class="wrapper" :class="[ active == 'files' ? 'block' : 'hidden' ]">
-        <action-card title="Files" description="Prod">
+        <action-card title="Files" :description="environment.name">
           <svg slot="icon" class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__environment"></use></svg>
 
           <ul slot="buttons" class="button-list">
