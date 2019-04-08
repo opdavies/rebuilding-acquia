@@ -23,22 +23,34 @@ const data = {
         dev: {
           name: 'Dev',
           url: 'dev.rebuilding-acquia.com',
-          label: 'develop'
+          label: 'develop',
+          versions: {
+            php: '7.1'
+          }
         },
         stage: {
           name: 'Stage',
           url: 'stg.rebuilding-acquia.com',
-          label: 'master'
+          label: 'master',
+          versions: {
+            php: '7.1'
+          }
         },
         prod: {
           name: 'Prod',
           url: 'rebuilding-acquia.com',
-          label: 'tags/2018-12-21'
+          label: 'tags/2018-12-21',
+          versions: {
+            php: '7.1'
+          }
         },
         ra: {
           name: 'RA',
           url: 'ra.rebuilding-acquia.com',
-          label: 'tags/WELCOME'
+          label: 'tags/WELCOME',
+          versions: {
+            php: '7.2'
+          }
         }
       },
       tasks: [
@@ -155,17 +167,26 @@ const data = {
         dev: {
           name: 'Dev',
           url: 'dev.oliverdavies.uk',
-          label: 'develop'
+          label: 'develop',
+          versions: {
+            php: '7.2'
+          }
         },
         stage: {
           name: 'Stage',
           url: 'stg.oliverdavies.uk',
-          label: 'master'
+          label: 'master',
+          versions: {
+            php: '7.2'
+          }
         },
         prod: {
           name: 'Prod',
           url: 'oliverdavies.uk',
-          label: 'tags/2018-12-21'
+          label: 'tags/2018-12-21',
+          versions: {
+            php: '7.2'
+          }
         }
       },
       tasks: [
