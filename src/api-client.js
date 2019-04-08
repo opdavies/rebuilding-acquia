@@ -231,7 +231,7 @@ const data = {
 
 export default {
   methods: {
-    getTypes() {
+    getTypes () {
       return data.types
     },
 
