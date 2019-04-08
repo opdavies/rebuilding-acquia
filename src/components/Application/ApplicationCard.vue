@@ -13,7 +13,7 @@
             </div>
           </div>
 
-          <application-tags :type="getApplicationType(application)" :level="application.level" class="mt-6"></application-tags>
+          <php-version class="mt-8" :application="application"></php-version>
         </div>
 
         <div class="flex-none w-1/6 text-right">
@@ -30,10 +30,12 @@
               <router-link :to="{name: 'environments', params: {id: id}}" class="text-blue-300 no-underline hover:underline focus:underline"><h2 class="text-base font-normal mb-1">{{ application.name }}</h2></router-link>
             </div>
 
-            <application-tags :type="getApplicationType(application)" :level="application.level" class="w-1/4 px-2"></application-tags>
-
             <div class="w-2/5 px-2">
               <a href="#0" class="text-blue-300 no-underline hover:underline focus:underline">{{ application.environments['prod'].url }}</a>
+            </div>
+
+            <div class="w-1/5 px-2">
+              <php-version :application="application"></php-version>
             </div>
           </div>
 
@@ -48,14 +50,14 @@
 
 <script>
 import ApiClient from '@/api-client.js'
-import ApplicationTags from '@/components/Application/ApplicationTags'
+import PhpVersion from '@/components/Application/PhpVersion'
 import StarToggle from '@/components/Application/StarToggle'
 
 export default {
   mixins: [ApiClient],
 
   components: {
-    ApplicationTags,
+    PhpVersion,
     StarToggle
   },
 
