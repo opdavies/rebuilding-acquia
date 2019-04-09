@@ -131,6 +131,7 @@
 </template>
 
 <script>
+import _ from 'lodash'
 import ActionCards from '@/components/Environment/ActionCards'
 import ApiClient from '@/api-client.js'
 import ApplicationTags from '@/components/Application/ApplicationTags'
