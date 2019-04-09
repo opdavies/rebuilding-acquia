@@ -97,7 +97,7 @@
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
                       <div class="mb-1 text-xs text-gray-600">PHP version</div>
-                      <div>7.1</div>
+                      <div v-text="phpVersion"></div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
@@ -167,6 +167,10 @@ export default {
 
     sshUrl: function () {
       return this.application.machineName + '.' + this.environmentName + '@staging-1234.prod.hosting.acquia.com'
+    },
+
+    phpVersion: function () {
+      return _(this.environment).get('versions.php')
     }
   }
 }
