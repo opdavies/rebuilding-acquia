@@ -171,7 +171,7 @@ export default {
     },
 
     phpVersion: function () {
-      return _(this.environment).get('versions.php')
+      return this.getVersion('php', this.environment)
     }
   }
 }

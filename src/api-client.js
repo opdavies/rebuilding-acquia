@@ -271,6 +271,10 @@ export default {
 
     getApplicationType (application) {
       return this.getTypes()[application.type]
+    },
+
+    getVersion (type, environment) {
+      return _(environment).get(`versions.${type}`)
     }
   }
 }

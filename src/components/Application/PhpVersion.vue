@@ -22,7 +22,7 @@ export default {
         return null
       }
 
-      return _.get(this.getEnvironment(this.application.id, 'prod'), 'versions.php')
+      return this.getVersion('php', this.getEnvironment(this.application.id, 'prod'))
     }
   }
 }
