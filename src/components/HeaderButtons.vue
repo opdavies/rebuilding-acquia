@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden md:block">
+  <div class="hidden lg:block">
     <ul class="list-reset flex">
       <li v-for="(link, i) in links" :key="link.title" :class="{'ml-6': i !== 0}">
         <button
