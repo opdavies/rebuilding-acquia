@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white border-t-10 border-purple mb-6" :class="[hidden ? 'hidden' : 'block lg:flex']">
-    <div class="flex-none py-3 pl-3 pr-8 border-b lg:border-r border-grey-200">
+    <div class="flex-none py-3 pl-3 pr-8 border-b lg:border-r border-gray-200">
       <div class="flex items-center">
         <svg class="h-6 w-6 mr-1 text-purple fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__info"></use></svg>
         Quick help
@@ -22,13 +22,13 @@
             :key="item.subject"
             type="button"
             class="hover:underline focus:underline mr-6 focus:outline-none"
-            :class="[ i === selected ? 'text-grey-700' : 'text-blue-300' ]"
+            :class="[ i === selected ? 'text-gray-700' : 'text-blue-300' ]"
             @click="selected = i"
           >{{ item.subject }}</button>
         </div>
 
         <div class="leading-normal">
-          <p class="text-sm text-grey-600">
+          <p class="text-sm text-gray-600">
             {{ items[selected].text }}
             <a href="#0" class="text-blue-300 no-underline hover:underline focus:underline">Learn more</a>
           </p>

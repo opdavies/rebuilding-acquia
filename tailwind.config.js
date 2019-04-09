@@ -12,14 +12,14 @@ module.exports = {
         400: '#004f86'
       },
       green: '#398002',
-      grey: {
-        100: '#f8fafc',
-        200: '#eee',
-        300: '#ddd',
-        400: '#bbb',
-        500: '#888',
-        600: '#555',
-        700: '#333'
+      gray: {
+        100: '#f8fafc', // lightest
+        200: '#eee', // lighter
+        300: '#ddd', // light
+        400: '#bbb', // default
+        500: '#888', // dark
+        600: '#555', // darker
+        700: '#333' // darkest
       },
       orange: {
         100: '#fa9903',

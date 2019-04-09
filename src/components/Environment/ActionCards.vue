@@ -47,7 +47,7 @@
             <li class="button-list-item">
               <action-card-button label="Restore" :disabled="isProduction" :class="{
                 'text-blue-300': !isProduction,
-                'text-grey-500 cursor-not-allowed': isProduction
+                'text-gray-500 cursor-not-allowed': isProduction
               }">
                 <svg role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__restore"></use></svg>
               </action-card-button>
@@ -110,6 +110,6 @@ export default {
 }
 
 .button-list-item {
-  @apply w-1/2 flex-1 text-center border-l border-grey-400
+  @apply w-1/2 flex-1 text-center border-l border-gray-400
 }
 </style>

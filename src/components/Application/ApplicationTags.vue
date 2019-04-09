@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
 .tag {
-  @apply text-2xs py-1 px-2 rounded uppercase border border-grey-400 bg-white mr-2 mb-2
+  @apply text-2xs py-1 px-2 rounded uppercase border border-gray-400 bg-white mr-2 mb-2
 }
 
 .tag[data-type="drupal"] {

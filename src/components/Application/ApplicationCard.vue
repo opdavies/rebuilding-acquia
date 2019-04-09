@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="display == 'grid'" class="bg-white p-4 border-grey-400 rounded-sm border flex-1 shadow">
+    <div v-if="display == 'grid'" class="bg-white p-4 border-gray-400 rounded-sm border flex-1 shadow">
       <div class="flex h-full">
         <div class="flex-1 w-5/6 flex flex-col justify-between">
           <div>
@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div v-if="display == 'list'" class="bg-white p-3 border-grey-400 border-b">
+    <div v-if="display == 'list'" class="bg-white p-3 border-gray-400 border-b">
       <div class="-mx-2">
         <div class="flex flex-row-reverse items-center justify-between">
           <div class="flex flex-1 justify-between items-center -mx-2">

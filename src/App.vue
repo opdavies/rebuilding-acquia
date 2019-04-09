@@ -32,11 +32,11 @@ h2 {
 }
 
 .btn.is-secondary {
-  @apply bg-grey-500;
+  @apply bg-gray-500;
 
   &:hover,
   &:focus {
-    @apply bg-grey-600
+    @apply bg-gray-600
   }
 }
 

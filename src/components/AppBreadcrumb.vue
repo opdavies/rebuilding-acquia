@@ -3,7 +3,7 @@
     <ul class="flex -ml-3">
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">
-          <span class="text-grey-700 uppercase text-sm">Organisation</span>
+          <span class="text-gray-700 uppercase text-sm">Organisation</span>
           <span v-if="!selectedOrganisation" class="font-bold block mb-1">All</span>
           <router-link v-else :to="{name: 'applications'}" class="font-bold block mb-1 hover:text-blue-400" v-text="selectedOrganisation"></router-link>
         </div>
@@ -12,7 +12,7 @@
 
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">
-          <span class="text-grey-700 uppercase text-sm">Application</span>
+          <span class="text-gray-700 uppercase text-sm">Application</span>
           <span v-if="!selectedOrganisation" class="font-bold block mb-1">All</span>
           <router-link v-else :to="{name: 'environments'}" class="font-bold block mb-1 hover:text-blue-400" v-text="selectedApplication"></router-link>
         </div>
@@ -21,7 +21,7 @@
 
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">
-          <span class="text-grey-700 uppercase text-sm">Environment</span>
+          <span class="text-gray-700 uppercase text-sm">Environment</span>
           <span class="font-bold block mb-1">{{ selectedEnvironment || '--' }}</span>
         </div>
       </li>

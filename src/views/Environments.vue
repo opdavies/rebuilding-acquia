@@ -37,7 +37,7 @@
               <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
                 <div class="w-full lg:w-1/2 xl:w-1/3">
                   <form action="#">
-                    <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-grey-400-6 rounded">
+                    <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-gray-600 rounded">
                   </form>
                 </div>
 

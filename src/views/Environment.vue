@@ -39,14 +39,14 @@
               </div>
 
               <div class="shadow-md overflow-hidden">
-                <div class="bg-white border-b-2 border-grey-300 p-3"><h2 class="text-lg">Site Health</h2></div>
+                <div class="bg-white border-b-2 border-gray-300 p-3"><h2 class="text-lg">Site Health</h2></div>
                 <div class="bg-white p-4">
                   <div class="mb-6">
-                    <p class="text-lg font-hairline text-grey-darkest">Uptime monitoring</p>
+                    <p class="text-lg font-hairline text-gray-700">Uptime monitoring</p>
                   </div>
 
                   <div class="text-center leading-normal mb-5">
-                    <p class="text-grey-600">
+                    <p class="text-gray-600">
                       Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
                       of whether your Drupal site is really up and running.
                     </p>
@@ -60,11 +60,11 @@
               </div>
 
               <div class="shadow-md overflow-hidden">
-                <div class="bg-white border-b-2 border-grey-300 p-3"><h2 class="text-lg">Information</h2></div>
+                <div class="bg-white border-b-2 border-gray-300 p-3"><h2 class="text-lg">Information</h2></div>
                 <div class="bg-white px-4 py-6">
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">Git URL</div>
-                    <div class="border border-grey-dark rounded p-3 truncate">{{ gitUrl }}</div>
+                    <div class="border border-gray-500 rounded p-3 truncate">{{ gitUrl }}</div>
                     <div class="absolute top-0 right-0">
                       <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
@@ -75,7 +75,7 @@
 
                   <div class="mb-6 relative">
                     <div class="text-xs mb-1">SSH URL</div>
-                    <div class="border border-grey-dark rounded p-3 truncate">{{ sshUrl }}</div>
+                    <div class="border border-gray-500 rounded p-3 truncate">{{ sshUrl }}</div>
                     <div class="absolute top-0 right-0">
                       <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
                         <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
@@ -86,22 +86,22 @@
 
                   <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-600">IP Address</div>
+                      <div class="mb-1 text-xs text-gray-600">IP Address</div>
                       <div>1.2.3.4</div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-600">Region</div>
+                      <div class="mb-1 text-xs text-gray-600">Region</div>
                       <div>eu-west-1</div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-600">PHP version</div>
+                      <div class="mb-1 text-xs text-gray-600">PHP version</div>
                       <div>7.1</div>
                     </div>
 
                     <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
-                      <div class="mb-1 text-xs text-grey-600">Live development mode</div>
+                      <div class="mb-1 text-xs text-gray-600">Live development mode</div>
                       <div>Off</div>
                     </div>
                   </div>
