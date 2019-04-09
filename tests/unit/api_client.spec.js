@@ -153,7 +153,7 @@ test('it can get the type of an application', () => {
     },
     symfony: {
       type: 'symfony'
-    },
+    }
   }
 
   _.forEach(applications, (application, expected) => {
