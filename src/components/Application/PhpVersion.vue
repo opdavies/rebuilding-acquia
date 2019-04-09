@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import _ from 'lodash'
 import ApiClient from '@/api-client.js'
 
 export default {
