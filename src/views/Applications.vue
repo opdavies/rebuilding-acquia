@@ -4,10 +4,6 @@
       <navbar></navbar>
 
       <title-block>
-        <template slot="left">
-          <div class="text-2xl font-hairline mr-2">Applications</div>
-        </template>
-
         <template slot="right">
           <header-buttons :links="[
             { title: 'Add Application', icon: 'alpha__new-app', disabled: false },
