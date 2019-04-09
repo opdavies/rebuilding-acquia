@@ -1,6 +1,6 @@
 import _ from 'lodash'
 
-const apiClient = require('../src/api-client')
+const apiClient = require('../../src/api-client')
 const methods = apiClient.default.methods
 
 test('it can get the application types', () => {
