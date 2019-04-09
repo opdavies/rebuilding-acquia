@@ -158,7 +158,7 @@ export default {
     },
 
     gitUrl: function () {
-      return this.application.machineName + '@svn-1234.prod.hosting.acquia.com:' + this.application.machineName + '.git'
+      return `${this.application.machineName}@svn-1234.prod.hosting.acquia.com:${this.application.machineName}.git`
     },
 
     isProduction: function () {
@@ -166,7 +166,7 @@ export default {
     },
 
     sshUrl: function () {
-      return this.application.machineName + '.' + this.environmentName + '@staging-1234.prod.hosting.acquia.com'
+      return `${this.application.machineName}.${this.environmentName}@staging-1234.prod.hosting.acquia.com`
     },
 
     phpVersion: function () {
