@@ -7,8 +7,8 @@
 
         <div class="flex flex-col flex-1">
           <nav class="border-t-2 border-transparent flex justify-end md:justify-start">
-            <a href="#0" class="inline-block text-sm border-b-4 border-blue-300 mx-2 px-4 py-4 md:py-5 text-blue-300 uppercase no-underline hover:underline focus:underline">Develop</a>
-            <a href="#0" class="inline-block text-sm border-b-4 border-transparent mx-2 px-4 py-4 md:py-5 text-blue-300 uppercase no-underline hover:underline focus:underline">Manage</a>
+            <a href="#0" class="inline-block text-sm border-b-4 border-blue-300 mx-2 px-4 py-5 text-blue-300 uppercase no-underline hover:underline focus:underline">Develop</a>
+            <a href="#0" class="inline-block text-sm border-b-4 border-transparent mx-2 px-4 py-5 text-blue-300 uppercase no-underline hover:underline focus:underline">Manage</a>
           </nav>
         </div>
 

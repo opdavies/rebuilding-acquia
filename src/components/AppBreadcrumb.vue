@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="py-1">
     <ul class="flex -ml-3">
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">

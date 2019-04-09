@@ -24,7 +24,7 @@
     </div>
 
     <div class="mt-48">
-      <div class="-mt-6 md:-mt-3 flex flex-row-reverse h-full">
+      <div class="-mt-3 flex flex-row-reverse h-full">
         <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-2">
@@ -53,7 +53,7 @@
           <task-log :tasks="application.tasks" v-if="application.tasks[0]"></task-log>
         </div>
 
-        <sidebar class="-mt-1 md:-mt-2px" :links="[
+        <sidebar :links="[
           { title: 'Environments', icon: 'alpha__grid', active: true, disabled: false },
           { title: 'Product Keys', icon: 'locations__keys', active: false, disabled: true },
           { title: 'Security', icon: 'alpha__security', active: false, disabled: true },
