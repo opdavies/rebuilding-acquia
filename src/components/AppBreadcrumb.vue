@@ -40,9 +40,17 @@ export default {
   },
 
   computed: {
-    selectedApplication: function () {
+    selectedOrganisation: function () {
       if (!this.application) {
         return 'All'
+      }
+
+      return 'Rebuilding Acquia'
+    },
+
+    selectedApplication: function () {
+      if (!this.application) {
+        return null
       }
 
       return this.application.name
@@ -58,14 +66,6 @@ export default {
       }
 
       return this.environment.name
-    },
-
-    selectedOrganisation: function () {
-      if (!this.application) {
-        return null
-      }
-
-      return 'Rebuilding Acquia'
     }
   }
 }
