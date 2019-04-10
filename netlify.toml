@@ -1,4 +1,8 @@
 [build]
-command = "yarn test:unit && yarn build"
+command = """\
+yarn lint
+yarn test:unit
+yarn build
+"""
 publish = "dist"
 environment = { YARN_VERSION = "1.13.0" }
