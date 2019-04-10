@@ -1,5 +1,5 @@
 <template>
-  <div class="py-1">
+  <div class="py-1 overflow-y-scroll">
     <ul class="flex -ml-3">
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">
