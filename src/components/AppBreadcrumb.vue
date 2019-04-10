@@ -3,7 +3,7 @@
     <ul class="flex -ml-3">
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">
-          <span class="text-gray-700 uppercase text-sm">Organisation</span>
+          <span class="text-gray-700 uppercase text-sm">Organization</span>
           <span v-if="!selectedOrganisation" class="font-bold block mb-1">All</span>
           <router-link v-else :to="{name: 'applications'}" class="font-bold block mb-1 hover:text-blue-400 whitespace-no-wrap" v-text="selectedOrganisation"></router-link>
         </div>
