@@ -23,7 +23,9 @@
       <li class="flex items-center ml-3">
         <div class="flex flex-col-reverse">
           <span class="text-gray-700 uppercase text-sm">Environment</span>
-          <span class="font-bold block mb-1">{{ selectedEnvironment || '--' }}</span>
+          <span v-if="!selectedApplication" class="font-bold block mb-1">---</span>
+          <span v-else-if="!selectedEnvironment" class="font-bold block mb-1">All</span>
+          <span v-else class="font-bold block mb-1" v-text="selectedEnvironment"></span>
         </div>
       </li>
     </ul>
