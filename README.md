@@ -4,4 +4,6 @@
 
 A clone of [Acquia](https://www.acquia.com)’s hosting dashboard, built with Vue.js and Tailwind CSS.
 
+## Screenshots
+
 ![A screenshot of the applications page in the list view](docs/images/applications-grid.png)
