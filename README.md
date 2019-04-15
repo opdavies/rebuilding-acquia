@@ -4,6 +4,10 @@
 
 A clone of [Acquia](https://www.acquia.com)’s hosting dashboard, built with [Vue.js](https://vuejs.org) and [Tailwind CSS](https://tailwindcss.com).
 
+## Icons
+
+The icons were downloaded from the live Acquia webite and re-used, but the HTML, CSS and JavaScript code was written from scratch using the above mentioned technologies.
+
 ## Screenshots
 
 ### Viewing all applications
