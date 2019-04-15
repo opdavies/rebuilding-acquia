@@ -6,4 +6,22 @@ A clone of [Acquia](https://www.acquia.com)’s hosting dashboard, built with Vu
 
 ## Screenshots
 
+### Viewing all applications
+
 ![A screenshot of the applications page in the list view](docs/images/applications-grid.png)
+
+### Viewing all environments for an application
+
+![A screenshot of the applications page in the list view](docs/images/environments-with-help.png)
+
+### Viewing a single environment
+
+![A screenshot of the applications page in the list view](docs/images/environment-prod.png)
+
+## How it works
+
+TODO: Add blog post link
+
+## Author
+
+[Oliver Davies](https://www.oliverdavies.uk) - Full Stack Developer
