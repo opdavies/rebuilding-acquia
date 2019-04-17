@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8cc12712-590a-47c7-bb78-d65e9249ac1d/deploy-status)](https://app.netlify.com/sites/rebuilding-acquia/deploys)
 
+[View the site live on Netlify &rarr;](https://rebuilding-acquia.oliverdavies.uk)
+
 ## Project setup
 ```
 yarn install
