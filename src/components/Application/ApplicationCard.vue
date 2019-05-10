@@ -17,7 +17,7 @@
         </div>
 
         <div class="flex-none w-1/6 text-right">
-          <star-toggle :application="application"></star-toggle>
+          <star-toggle :application="application" :starred="starred" @toggle="starred = !starred"></star-toggle>
         </div>
       </div>
     </div>
@@ -40,7 +40,7 @@
           </div>
 
           <div class="px-2">
-            <star-toggle :application="application"></star-toggle>
+            <star-toggle :application="application" :starred="starred" @toggle="starred = !starred"></star-toggle>
           </div>
         </div>
       </div>
