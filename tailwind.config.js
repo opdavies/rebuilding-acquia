@@ -1,4 +1,4 @@
-let defaultTheme = require('tailwindcss/defaultTheme')
+const { fontFamily, spacing } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   theme: {
@@ -42,7 +42,7 @@ module.exports = {
         md: '0 0 10px 0 rgba(0,0,0,0.1)'
       },
       fontFamily: {
-        sans: ['Proxima Nova', ...defaultTheme.fontFamily.sans]
+        sans: ['Proxima Nova', ...fontFamily.sans]
       },
       fontSize: {
         '2xs': '.625rem' // 10px
@@ -59,7 +59,7 @@ module.exports = {
     }
   },
   plugins: [
-    require('tailwindcss-spaced-items')({ values: defaultTheme.spacing }),
+    require('tailwindcss-spaced-items')({ values: spacing }),
     require('tailwindcss-visuallyhidden')()
   ]
 }
