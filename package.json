@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "postcss-nested": "^4.1.2",
-    "tailwindcss": "^1.0.0-beta.3",
+    "tailwindcss": "^1.0.1",
     "tailwindcss-spaced-items": "^0.1.0",
     "tailwindcss-visuallyhidden": "^1.0.2",
     "vue": "^2.6.6",
