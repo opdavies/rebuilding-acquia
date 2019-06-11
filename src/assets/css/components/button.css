@@ -1,0 +1,18 @@
+.btn {
+  @apply text-sm font-thin antialiased text-white px-4 py-3 no-underline rounded mx-1 bg-blue-300;
+
+  &:hover,
+  &:focus {
+    @apply bg-blue-400
+  }
+}
+
+.btn.is-secondary {
+  @apply bg-gray-500;
+
+  &:hover,
+  &:focus {
+    @apply bg-gray-600
+  }
+}
+
