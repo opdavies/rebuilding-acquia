@@ -6,4 +6,4 @@
   </div>
 </template>
 
-<style src="./css/app.css"/>
+<style src="./assets/css/tailwind.css"/>
