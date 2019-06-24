@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import _ from 'lodash'
+import sortBy from 'lodash/sortBy'
 import ApiClient from '@/api-client.js'
 import ApplicationCard from '@/components/Application/ApplicationCard'
 import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisplaySwitcher'
@@ -80,7 +80,7 @@ export default {
 
   computed: {
     sortedApplications: function () {
-      return _.sortBy(this.applications, [function (a) { return a.name }])
+      return sortBy(this.applications, [function (a) { return a.name }])
     }
   },
 

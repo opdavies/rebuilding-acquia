@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import _ from 'lodash'
+import reverse from 'lodash/reverse'
 import TaskLogItem from '@/components/Environment/TaskLog/TaskLogItem'
 
 export default {
@@ -30,7 +30,7 @@ export default {
     reversedTasks: function () {
       let tasks = this.tasks
 
-      return _.reverse(tasks)
+      return reverse(tasks)
     }
   }
 }

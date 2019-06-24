@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import _ from 'lodash'
+import { omitBy, _ } from 'lodash'
 
 export default {
   props: {
@@ -31,7 +31,7 @@ export default {
     filteredLinks: function () {
       let links = this.links
 
-      return _.omitBy(links, _.isEmpty)
+      return omitBy(links, _.isEmpty)
     }
   }
 }
