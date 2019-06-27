@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul class="list-reset flex flex-wrap -mr-2 -mb-2">
-      <li class="tag" :data-type="application.type" v-text="applicationTypeName"/>
-      <li class="tag">{{ application.level }}</li>
+      <li class="mr-2 mb-2 py-1 px-2 text-2xs rounded uppercase border" :class="typeClasses" v-text="applicationTypeName"/>
+      <li class="mr-2 mb-2 py-1 px-2 text-2xs rounded uppercase border border-gray-400 bg-white">{{ application.level }}</li>
     </ul>
   </div>
 </template>
@@ -16,21 +16,15 @@ export default {
   computed: {
     applicationTypeName () {
       return this.$attrs.types[this.application.type].name
+    },
+
+    typeClasses() {
+      return {
+        '': 'bg-white border-gray-400',
+        drupal: 'bg-blue-100 border-blue-100 text-white',
+        nodejs: 'bg-green border-green text-white'
+      }[this.application.type]
     }
   }
 }
 </script>
-
-<style scoped>
-.tag {
-  @apply text-2xs py-1 px-2 rounded uppercase border border-gray-400 bg-white mr-2 mb-2
-}
-
-.tag[data-type="drupal"] {
-  @apply bg-blue-100 border-blue-100 text-white
-}
-
-.tag[data-type="nodejs"] {
-  @apply bg-green border-green text-white
-}
-</style>
