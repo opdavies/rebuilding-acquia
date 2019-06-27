@@ -68,7 +68,7 @@ import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisp
 export default {
   props: {
     applications: {
-      type: Array,
+      type: Object,
       required: true
     },
     types: {
