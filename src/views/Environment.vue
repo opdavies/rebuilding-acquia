@@ -18,10 +18,10 @@
 
     <div class="mt-48">
       <div class="-mt-3 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
+        <div class="ml-16 p-4 flex-1 overflow-x-hidden lg:ml-56 lg:p-12">
           <div>
             <div>
-              <h1 class="text-4xl font-thin mb-2">Overview</h1>
+              <h1 class="mb-2 text-4xl font-thin">Overview</h1>
 
               <application-tags :application="application" :types="$attrs.types"/>
             </div>
@@ -39,13 +39,13 @@
               </div>
 
               <div class="shadow-md overflow-hidden">
-                <div class="bg-white border-b-2 border-gray-300 p-3"><h2 class="text-lg">Site Health</h2></div>
-                <div class="bg-white p-4">
+                <div class="p-3 bg-white border-b-2 border-gray-300"><h2 class="text-lg">Site Health</h2></div>
+                <div class="p-4 bg-white">
                   <div class="mb-6">
                     <p class="text-lg font-hairline text-gray-700">Uptime monitoring</p>
                   </div>
 
-                  <div class="text-center leading-normal mb-5">
+                  <div class="mb-5 text-center leading-normal">
                     <p class="text-gray-600">
                       Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
                       of whether your Drupal site is really up and running.
@@ -60,47 +60,47 @@
               </div>
 
               <div class="shadow-md overflow-hidden">
-                <div class="bg-white border-b-2 border-gray-300 p-3"><h2 class="text-lg">Information</h2></div>
-                <div class="bg-white px-4 py-6">
+                <div class="p-3 bg-white border-b-2 border-gray-300"><h2 class="text-lg">Information</h2></div>
+                <div class="px-4 py-6 bg-white">
                   <div class="mb-6 relative">
-                    <div class="text-xs mb-1">Git URL</div>
-                    <div class="border border-gray-500 rounded p-3 truncate">{{ gitUrl }}</div>
+                    <div class="mb-1 text-xs">Git URL</div>
+                    <div class="p-3 border border-gray-500 rounded truncate">{{ gitUrl }}</div>
                     <div class="absolute top-0 right-0">
                       <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
-                        <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                        <svg class="mr-1 h-3 w-3 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                         Copy <span class="visuallyhidden">Git URL to your clipboard</span>
                       </button>
                     </div>
                   </div>
 
                   <div class="mb-6 relative">
-                    <div class="text-xs mb-1">SSH URL</div>
-                    <div class="border border-gray-500 rounded p-3 truncate">{{ sshUrl }}</div>
+                    <div class="mb-1 text-xs">SSH URL</div>
+                    <div class="p-3 border border-gray-500 rounded truncate">{{ sshUrl }}</div>
                     <div class="absolute top-0 right-0">
                       <button type="button" class="flex items-center text-xs text-blue-300 hover:underline focus:underline">
-                        <svg class="h-3 w-3 fill-current mr-1" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
+                        <svg class="mr-1 h-3 w-3 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__copy"></use></svg>
                         Copy <span class="visuallyhidden">SSH URL to your clipboard</span>
                       </button>
                     </div>
                   </div>
 
-                  <div class="flex flex-wrap -mx-4 -mb-4 lg:-mb-6">
-                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                  <div class="-mx-4 -mb-4 flex flex-wrap lg:-mb-6">
+                    <div class="mb-4 px-4 w-full lg:w-1/2 lg:mb-6">
                       <div class="mb-1 text-xs text-gray-600">IP Address</div>
                       <div>1.2.3.4</div>
                     </div>
 
-                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-4 px-4 w-full lg:w-1/2 lg:mb-6">
                       <div class="mb-1 text-xs text-gray-600">Region</div>
                       <div>eu-west-1</div>
                     </div>
 
-                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-4 px-4 w-full lg:w-1/2 lg:mb-6">
                       <div class="mb-1 text-xs text-gray-600">PHP version</div>
                       <div v-text="phpVersion"></div>
                     </div>
 
-                    <div class="w-full lg:w-1/2 px-4 mb-4 lg:mb-6">
+                    <div class="mb-4 px-4 w-full lg:w-1/2 lg:mb-6">
                       <div class="mb-1 text-xs text-gray-600">Live development mode</div>
                       <div>Off</div>
                     </div>
@@ -135,11 +135,6 @@ import ActionCards from '@/components/Environment/ActionCards'
 import ApplicationTags from '@/components/Application/ApplicationTags'
 
 export default {
-  mounted () {
-    // console.log(this.$attrs)
-    // console.log(this.$props)
-  },
-
   components: {
     ActionCards,
     ApplicationTags

@@ -1,7 +1,7 @@
 <template>
   <div class="border-b-3 border-gray-300">
-    <div class="bg-white px-4 lg:px-6 py-5 border-t border-gray-200 flex justify-between items-center">
-      <div class="w-full md:w-auto flex flex-col">
+    <div class="px-4 py-5 flex justify-between items-center bg-white border-t border-gray-200 lg:px-6">
+      <div class="w-full flex flex-col md:w-auto">
         <app-breadcrumb :application="application" :environment="environment"></app-breadcrumb>
       </div>
 

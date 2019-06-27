@@ -2,13 +2,13 @@
   <div>
     <div class="px-3 py-4 border-b border-gray-300 flex" :class="{'bg-yellow-lightest': open}">
       <div class="flex-none mr-3">
-        <svg v-if="task.loading" class="h-5 w-5 text-gray-500 fill-current rotates" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__loading"></use></svg>
+        <svg v-if="task.loading" class="rotates h-5 w-5 text-gray-500 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__loading"></use></svg>
         <svg v-if="!task.loading && task.success" class="h-5 w-5 text-green fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__success-circle"></use></svg>
         <svg v-if="!task.loading && !task.success" class="h-5 w-5 text-red fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#feedback__warning"></use></svg>
       </div>
 
       <div class="flex-1">
-        <div class="text-sm font-bold mb-2">{{ task.text }}</div>
+        <div class="mb-2 text-sm font-bold">{{ task.text }}</div>
         <div class="text-gray-600 text-2xs">{{ task.times.display }}</div>
       </div>
 
@@ -21,29 +21,29 @@
     </div>
 
     <div class="p-4 bg-gray-600 text-white antialiased" v-show="open">
-      <div class="lg:flex lg:flex-wrap -mx-4 -mb-4">
+      <div class="-mx-4 -mb-4 lg:flex lg:flex-wrap">
         <div class="px-4 mb-4">
-          <div class="text-xs uppercase mb-1">Task ID</div>
+          <div class="mb-1 text-xs uppercase">Task ID</div>
           <div class="text-sm font-bold">12345678</div>
         </div>
 
-        <div class="px-4 mb-4 lg:w-1/6 lg:flex-none">
-          <div class="text-xs uppercase mb-1">User</div>
-          <div class="text-sm font-bold truncate">{{ task.user }}</div>
+        <div class="mb-4 px-4 lg:w-1/6 lg:flex-none">
+          <div class="mb-1 text-xs uppercase">User</div>
+          <div class="truncate text-sm font-bold">{{ task.user }}</div>
         </div>
 
         <div class="px-4 mb-4 lg:w-1/4 lg:flex-none">
-          <div class="text-xs uppercase mb-1">Started</div>
-          <div class="text-sm font-bold truncate">{{ task.times.started }}</div>
+          <div class="mb-1 text-xs uppercase">Started</div>
+          <div class="truncate text-sm font-bold">{{ task.times.started }}</div>
         </div>
 
         <div class="px-4 mb-4 lg:w-1/4 lg:flex-none">
-          <div class="text-xs uppercase mb-1">Completed</div>
-          <div class="text-sm font-bold truncate">{{ task.times.completed }}</div>
+          <div class="mb-1 text-xs uppercase">Completed</div>
+          <div class="truncate text-sm font-bold">{{ task.times.completed }}</div>
         </div>
 
         <div class="px-4 mb-4">
-          <div class="text-xs uppercase mb-1">Status</div>
+          <div class="mb-1 text-xs uppercase">Status</div>
           <div class="text-sm font-bold">{{ status }}</div>
         </div>
       </div>

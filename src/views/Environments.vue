@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="fixed top-0 w-full z-30">
+    <div class="w-full fixed top-0 z-30">
       <navbar></navbar>
 
       <title-block :application="application">
         <template slot="right">
           <div class="flex items-center">
             <div class="hidden md:block">
-              <button type="button" class="text-sm font-bold text-blue-300 uppercase py-2 px-6 border border-blue-300 hover:text-blue-400 hover:border-blue-400 focus:border-blue-400">
+              <button type="button" class="py-2 px-6 text-sm font-bold text-blue-300 uppercase border border-blue-300 hover:text-blue-400 hover:border-blue-400 focus:border-blue-400">
                 Steps to launch
               </button>
             </div>
@@ -24,20 +24,20 @@
     </div>
 
     <div class="mt-48">
-      <div class="-mt-3 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
+      <div class="-mt-3 h-full flex flex-row-reverse">
+        <div class="ml-16 p-4 flex-1 overflow-x-hidden lg:p-12 lg:ml-56">
           <div class="mb-6">
-            <div class="lg:flex lg:items-baseline mb-2">
+            <div class="mb-2 lg:flex lg:items-baseline">
               <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-thin mb-2">Environments</h1>
+                <h1 class="mb-2 text-4xl font-thin">Environments</h1>
 
                 <application-tags :application="application" :types="$attrs.types"/>
               </div>
 
-              <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
+              <div class="flex-1 justify-between items-baseline lg:flex lg:flex-row-reverse">
                 <div class="w-full lg:w-1/2 xl:w-1/3">
                   <form action="#">
-                    <input type="text" placeholder="Filter environments" class="w-full py-2 px-3 border border-gray-600 rounded">
+                    <input type="text" placeholder="Filter environments" class="py-2 px-3 w-full border border-gray-600 rounded">
                   </form>
                 </div>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="hidden lg:block">
     <ul class="list-reset flex">
-      <li v-for="(link, i) in links" :key="link.title" :class="{'ml-6': i !== 0}">
+      <li v-for="(link, i) in links" :key="link.title" :class="{ 'ml-6': i !== 0 }">
         <button
           type="button"
           class="text-xs no-underline hover:underline flex flex-col items-center justify-center"
@@ -11,7 +11,7 @@
           }"
           :disabled="link.disabled"
         >
-          <svg class="h-6 w-6 fill-current mb-2" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>
+          <svg class="mb-2 h-6 w-6 fill-current" role="presentation"><use :xlink:href="`/img/icons.symbol.svg#${link.icon}`"></use></svg>
           {{ link.title }}
         </button>
       </li>

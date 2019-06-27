@@ -2,21 +2,21 @@
   <div class="bg-white border-t-10 border-purple mb-6" :class="[hidden ? 'hidden' : 'block lg:flex']">
     <div class="flex-none py-3 pl-3 pr-8 border-b lg:border-r border-gray-200">
       <div class="flex items-center">
-        <svg class="h-6 w-6 mr-1 text-purple fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__info"></use></svg>
+        <svg class="mr-1 h-6 w-6 text-purple fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__info"></use></svg>
         Quick help
       </div>
     </div>
 
     <div class="p-4">
-      <div class="block lg:hidden leading-normal -mb-5">
+      <div class="-mb-5 block leading-normal lg:hidden">
         <div v-for="item in items" :key="item.subject">
-          <p class="text-sm mb-3 font-bold">{{ item.subject }}</p>
-          <p class="text-sm mb-5">{{ item.text }}</p>
+          <p class="mb-3 text-sm font-bold">{{ item.subject }}</p>
+          <p class="mb-5 text-sm">{{ item.text }}</p>
         </div>
       </div>
 
       <div class="hidden lg:block">
-        <div class="w-full lg:w-auto lg:flex mb-6">
+        <div class="mb-6 w-full lg:w-auto lg:flex">
           <button
             v-for="(item, i) in items"
             :key="item.subject"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="fixed top-0 w-full z-30">
+    <div class="w-full fixed top-0 z-30">
       <navbar></navbar>
 
       <title-block>
@@ -13,28 +13,28 @@
     </div>
 
     <div class="mt-48">
-      <div class="-mt-3 flex flex-row-reverse h-full">
-        <div class="flex-1 p-4 lg:p-12 ml-16 lg:ml-56 overflow-x-hidden">
+      <div class="-mt-3 h-full flex flex-row-reverse">
+        <div class="ml-16 p-4 flex-1 overflow-x-hidden lg:ml-56 lg:p-12">
           <div class="mb-6">
             <div class="lg:flex lg:items-baseline mb-12">
               <div class="mr-16 mb-4 lg:mb-0">
-                <h1 class="text-4xl font-thin mb-2">Applications</h1>
+                <h1 class="mb-2 text-4xl font-thin">Applications</h1>
               </div>
 
-              <application-display-switcher class="hidden lg:flex-1 lg:flex lg:justify-end mr-3" :mode="display" @display-changed="handleDisplay"></application-display-switcher>
+              <application-display-switcher class="mr-3 hidden lg:flex-1 lg:flex lg:justify-end" :mode="display" @display-changed="handleDisplay"></application-display-switcher>
 
-              <div class="lg:flex lg:flex-row-reverse justify-between items-baseline">
+              <div class="justify-between items-baseline lg:flex lg:flex-row-reverse">
                 <div class="w-full">
                   <form action="#">
                     <label for="applications" class="visuallyhidden">Filter applications</label>
-                    <input id="applications" type="text" placeholder="Filter applications" class="w-full py-2 px-3 border border-gray-600 rounded">
+                    <input id="applications" type="text" placeholder="Filter applications" class="py-2 px-3 w-full border border-gray-600 rounded">
                   </form>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="flex flex-wrap -mx-3 -mb-6">
+          <div class="-mx-3 -mb-6 flex flex-wrap">
             <application-card
               v-for="application in sortedApplications"
               :id="application.id"
@@ -42,7 +42,7 @@
               :key="application.id"
               :display="display"
               class="px-3 w-full"
-              :class="[display == 'grid' ? 'md:w-1/2 lg:w-1/3 xl:w-1/4 mb-6 flex flex-col' : '']"
+              :class="{ 'mb-6 flex flex-col md:w-1/2 lg:w-1/3 xl:w-1/4': display == 'grid' }"
             ></application-card>
           </div>
         </div>

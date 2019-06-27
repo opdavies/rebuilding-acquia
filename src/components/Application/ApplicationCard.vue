@@ -16,27 +16,27 @@
           <php-version class="mt-8" :application="application"></php-version>
         </div>
 
-        <div class="flex-none w-1/6 text-right">
+        <div class="w-1/6 flex-none text-right">
           <star-toggle :application="application" :starred="starred" @toggle="starred = !starred"></star-toggle>
         </div>
       </div>
     </div>
 
-    <div v-if="display == 'list'" class="bg-white p-3 border-gray-400 border-b">
+    <div v-if="display == 'list'" class="p-3 bg-white border-gray-400 border-b">
       <div class="-mx-2">
         <div class="flex flex-row-reverse items-center justify-between">
-          <div class="flex flex-1 justify-between items-center -mx-2">
-            <div class="flex-1 px-2">
+          <div class="-mx-2 flex flex-1 justify-between items-center">
+            <div class="px-2 flex-1">
               <router-link :to="{name: 'environments', params: { id }}" class="text-blue-300 no-underline hover:underline focus:underline">
-                <h2 class="text-base font-normal mb-1">{{ application.name }}</h2>
+                <h2 class="mb-1 text-base font-normal">{{ application.name }}</h2>
               </router-link>
             </div>
 
-            <div class="w-2/5 px-2">
+            <div class="px-2 w-2/5">
               <a href="#0" class="text-blue-300 no-underline hover:underline focus:underline" v-text="prodUrl"/>
             </div>
 
-            <div class="w-1/5 px-2">
+            <div class="px-1 w-1/5">
               <php-version :application="application"/>
             </div>
           </div>

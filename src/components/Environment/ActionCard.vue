@@ -5,7 +5,7 @@
         <div class="px-3 py-4">
           <div class="flex flex-row-reverse">
             <div class="flex-1">
-              <h2 class="text-gray-600 text-base mb-1">{{ title }}</h2>
+              <h2 class="mb-1 text-gray-600 text-base">{{ title }}</h2>
               <div class="text-xs text-gray-600">{{ description }}</div>
             </div>
 

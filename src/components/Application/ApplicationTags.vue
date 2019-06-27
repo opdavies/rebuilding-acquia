@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ul class="list-reset flex flex-wrap -mr-2 -mb-2">
+    <ul class="list-reset -mr-2 -mb-2 flex flex-wrap">
       <li class="mr-2 mb-2 py-1 px-2 text-2xs rounded uppercase border" :class="typeClasses" v-text="applicationTypeName"/>
       <li class="mr-2 mb-2 py-1 px-2 text-2xs rounded uppercase border border-gray-400 bg-white">{{ application.level }}</li>
     </ul>

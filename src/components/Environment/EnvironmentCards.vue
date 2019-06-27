@@ -37,8 +37,8 @@
               </span>
             </button>
 
-            <button type="button" class="flex items-center text-white bg-blue-200 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:underline px-1 py-3 text-sm w-full text-left py-1 border-t border-gray-400">
-              <svg class="h-6 w-5 text-white mr-2 fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
+            <button type="button" class="px-1 py-3 w-full flex items-center text-white bg-blue-200 text-sm text-left border-t border-gray-400 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:underline">
+              <svg class="mr-2 h-6 w-5 text-white fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__grip-handle"></use></svg>
               Files
             </button>
           </div>

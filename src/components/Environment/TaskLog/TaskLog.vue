@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-gray-300 pb-4 pt-6 px-4">
+    <div class="pb-4 pt-6 px-4 bg-gray-300">
       <h2 class="font-normal text-lg">Task Log</h2>
     </div>
     <div>
