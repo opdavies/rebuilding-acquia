@@ -18,7 +18,7 @@ export default {
       return this.$attrs.types[this.application.type].name
     },
 
-    typeClasses() {
+    typeClasses () {
       return {
         '': 'bg-white border-gray-400',
         drupal: 'bg-blue-100 border-blue-100 text-white',
