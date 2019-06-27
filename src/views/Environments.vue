@@ -31,7 +31,7 @@
               <div class="mr-16 mb-4 lg:mb-0">
                 <h1 class="text-4xl font-thin mb-2">Environments</h1>
 
-                <application-tags :type="getApplicationType(application)" :level="application.level"></application-tags>
+                <application-tags :application="application" :types="$attrs.types"/>
               </div>
 
               <div class="lg:flex lg:flex-row-reverse flex-1 justify-between _bg-blue items-baseline">
@@ -49,7 +49,7 @@
           </div>
 
           <quick-help :hidden="help.hidden"></quick-help>
-          <environment-cards :environments="application.environments" :id="id"></environment-cards>
+          <environment-cards :application="application" :id="id"/>
           <task-log :tasks="application.tasks" v-if="application.tasks[0]"></task-log>
         </div>
 
@@ -65,7 +65,6 @@
 </template>
 
 <script>
-import ApiClient from '@/api-client.js'
 import ApplicationTags from '@/components/Application/ApplicationTags'
 import EnvironmentCards from '@/components/Environment/EnvironmentCards'
 import QuickHelp from '@/components/Environment/QuickHelp'
@@ -73,8 +72,6 @@ import TaskLog from '@/components/Environment/TaskLog/TaskLog'
 import ToggleHelp from '@/components/Environment/ToggleHelp'
 
 export default {
-  mixins: [ApiClient],
-
   components: {
     ApplicationTags,
     EnvironmentCards,
@@ -96,8 +93,8 @@ export default {
   },
 
   computed: {
-    application: function () {
-      return this.getApplication(this.id)
+    application () {
+      return this.$attrs.applications[this.id]
     }
   }
 }

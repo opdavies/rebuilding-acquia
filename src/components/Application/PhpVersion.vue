@@ -6,11 +6,7 @@
 </template>
 
 <script>
-import ApiClient from '@/api-client.js'
-
 export default {
-  mixins: [ApiClient],
-
   props: {
     application: Object
   },
@@ -21,7 +17,7 @@ export default {
         return null
       }
 
-      return this.getVersion('php', this.getEnvironment(this.application.id, 'prod'))
+      return this.application.environments['prod'].versions['php']
     }
   }
 }

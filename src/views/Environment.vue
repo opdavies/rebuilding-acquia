@@ -23,7 +23,7 @@
             <div>
               <h1 class="text-4xl font-thin mb-2">Overview</h1>
 
-              <application-tags :type="getApplicationType(application)" :level="application.level"></application-tags>
+              <application-tags :application="application" :types="$attrs.types"/>
             </div>
 
             <div class="my-10">
@@ -132,11 +132,13 @@
 
 <script>
 import ActionCards from '@/components/Environment/ActionCards'
-import ApiClient from '@/api-client.js'
 import ApplicationTags from '@/components/Application/ApplicationTags'
 
 export default {
-  mixins: [ApiClient],
+  mounted () {
+    // console.log(this.$attrs)
+    // console.log(this.$props)
+  },
 
   components: {
     ActionCards,
@@ -150,11 +152,11 @@ export default {
 
   computed: {
     application: function () {
-      return this.getApplication(this.id)
+      return this.$attrs.applications[this.id]
     },
 
     environment: function () {
-      return this.getEnvironment(this.id, this.environmentName)
+      return this.application.environments[this.environmentName]
     },
 
     gitUrl: function () {
@@ -170,7 +172,7 @@ export default {
     },
 
     phpVersion: function () {
-      return this.getVersion('php', this.environment)
+      return this.environment.versions.php
     }
   }
 }

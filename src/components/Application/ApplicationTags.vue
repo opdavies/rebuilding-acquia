@@ -1,8 +1,8 @@
 <template>
   <div>
     <ul class="list-reset flex flex-wrap -mr-2 -mb-2">
-      <li class="tag" :data-type="type.id">{{ type.name }}</li>
-      <li class="tag">{{ level }}</li>
+      <li class="tag" :data-type="application.type" v-text="applicationTypeName"/>
+      <li class="tag">{{ application.level }}</li>
     </ul>
   </div>
 </template>
@@ -10,8 +10,13 @@
 <script>
 export default {
   props: {
-    level: String,
-    type: Object
+    application: Object
+  },
+
+  computed: {
+    applicationTypeName () {
+      return this.$attrs.types[this.application.type].name
+    }
   }
 }
 </script>

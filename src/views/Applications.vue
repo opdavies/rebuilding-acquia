@@ -59,12 +59,20 @@
 
 <script>
 import sortBy from 'lodash/sortBy'
-import ApiClient from '@/api-client.js'
 import ApplicationCard from '@/components/Application/ApplicationCard'
 import ApplicationDisplaySwitcher from '@/components/Application/ApplicationDisplaySwitcher'
 
 export default {
-  mixins: [ApiClient],
+  props: {
+    applications: {
+      type: Array,
+      required: true
+    },
+    types: {
+      type: Object,
+      required: true
+    }
+  },
 
   components: {
     ApplicationCard,
@@ -73,7 +81,6 @@ export default {
 
   data () {
     return {
-      applications: this.getApplications(),
       display: 'grid'
     }
   },

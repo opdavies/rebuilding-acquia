@@ -1,7 +1,7 @@
 <template>
   <div class="mb-6">
     <div class="flex flex-wrap -mx-4 -mb-6">
-      <div v-for="(environment, key) in environments" class="w-full md:w-1/2 xl:w-1/3 px-4 mb-6" :key="key">
+      <div v-for="(environment, key) in application.environments" class="w-full md:w-1/2 xl:w-1/3 px-4 mb-6" :key="key">
         <div class="border border-gray-400 rounded overflow-hidden shadow">
            <div class="bg-white">
             <div class="border-t-4 border-teal p-3">
@@ -51,7 +51,7 @@
 <script>
 export default {
   props: {
-    environments: Object,
+    application: Object,
     id: String
   }
 }
