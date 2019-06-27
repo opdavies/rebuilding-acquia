@@ -38,21 +38,21 @@
                 <action-cards :environment="environment" :is-production="isProduction"></action-cards>
               </div>
 
-              <div class="shadow-md overflow-hidden">
+              <div class="mt-8 shadow-md overflow-hidden">
                 <div class="p-3 bg-white border-b-2 border-gray-300"><h2 class="text-lg">Site Health</h2></div>
                 <div class="p-4 bg-white">
-                  <div class="mb-6">
+                  <div>
                     <p class="text-lg font-hairline text-gray-700">Uptime monitoring</p>
                   </div>
 
-                  <div class="mb-5 text-center leading-normal">
+                  <div class="mt-6 text-center leading-normal">
                     <p class="text-gray-600">
                       Acquia uses a specially tuned uptime monitoring solution to keep track<br class="hidden md:inline">
                       of whether your Drupal site is really up and running.
                     </p>
                   </div>
 
-                  <div class="flex justify-center">
+                  <div class="mt-5 flex justify-center">
                     <button type="button" class="btn">Enable Uptime</button>
                     <button type="button" class="btn is-secondary">Learn more</button>
                   </div>

@@ -48,9 +48,13 @@
             </div>
           </div>
 
-          <quick-help :hidden="help.hidden"></quick-help>
-          <environment-cards :application="application" :id="id"/>
-          <task-log :tasks="application.tasks" v-if="application.tasks[0]"></task-log>
+          <div class="spaced-y-6">
+            <quick-help :hidden="help.hidden"></quick-help>
+
+            <environment-cards :application="application" :id="id"/>
+
+            <task-log :tasks="application.tasks" v-if="application.tasks[0]"></task-log>
+          </div>
         </div>
 
         <sidebar :links="[

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white border-t-10 border-purple mb-6" :class="[hidden ? 'hidden' : 'block lg:flex']">
+  <div class="bg-white border-t-10 border-purple" :class="[hidden ? 'hidden' : 'block lg:flex']">
     <div class="flex-none py-3 pl-3 pr-8 border-b lg:border-r border-gray-200">
       <div class="flex items-center">
         <svg class="mr-1 h-6 w-6 text-purple fill-current" role="presentation"><use xlink:href="/img/icons.symbol.svg#actions__info"></use></svg>

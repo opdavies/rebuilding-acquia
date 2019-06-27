@@ -6,8 +6,8 @@
       <li class="px-1 w-1/3"><button type="button" class="py-3 w-full text-sm text-white rounded" :class="[ active == 'files' ? 'bg-blue-400' : 'bg-blue-300' ]" @click="active = 'files'">Files</button></li>
     </ul>
 
-    <div class="-mx-4 -mb-4 flex flex-wrap">
-      <div class="px-4 mb-4 w-full md:w-1/3 md:block" :class="[ active == 'code' ? 'block' : 'hidden' ]">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="px-4 w-full md:w-1/3 md:block" :class="[ active == 'code' ? 'block' : 'hidden' ]">
         <action-card title="Code" :description="`${ environment.name }: ${environment.label}`">
           <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__code"></use></svg>
 
@@ -27,7 +27,7 @@
         </action-card>
       </div>
 
-      <div class="px-4 mb-4 w-full md:block md:w-1/3" :class="[ active == 'databases' ? 'block' : 'hidden' ]">
+      <div class="px-4 w-full md:block md:w-1/3" :class="[ active == 'databases' ? 'block' : 'hidden' ]">
         <action-card title="Databases" :description="environment.name">
           <svg slot="icon" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__database"></use></svg>
 
@@ -56,7 +56,7 @@
         </action-card>
       </div>
 
-      <div class="px-4 mb-4 w-full md:block md:w-1/3" :class="[ active == 'files' ? 'block' : 'hidden' ]">
+      <div class="px-4 w-full md:block md:w-1/3" :class="[ active == 'files' ? 'block' : 'hidden' ]">
         <action-card title="Files" :description="environment.name">
           <svg slot="icon" class="h-8 w-8 fill-current text-teal" role="presentation"><use xlink:href="/img/icons.symbol.svg#objects__environment"></use></svg>
 

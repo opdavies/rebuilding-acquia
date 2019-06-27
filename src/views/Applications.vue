@@ -34,16 +34,19 @@
             </div>
           </div>
 
-          <div class="-mx-3 -mb-6 flex flex-wrap">
-            <application-card
+          <div class="-mt-6 -mx-3 flex flex-wrap">
+            <div
               v-for="application in sortedApplications"
-              :id="application.id"
-              :application="application"
               :key="application.id"
-              :display="display"
               class="px-3 w-full"
-              :class="{ 'mb-6 flex flex-col md:w-1/2 lg:w-1/3 xl:w-1/4': display == 'grid' }"
-            ></application-card>
+              :class="{ 'mt-6 flex flex-col md:w-1/2 lg:w-1/3 xl:w-1/4': display == 'grid' }"
+            >
+              <application-card
+                :application="application"
+                :display="display"
+                :id="application.id"
+              ></application-card>
+            </div>
           </div>
         </div>
 
