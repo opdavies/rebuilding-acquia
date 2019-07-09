@@ -80,16 +80,12 @@ export default {
 </script>
 
 <style scoped>
-.rotates {
+.rotates
   animation: rotation 1s infinite linear
-}
 
-@-webkit-keyframes rotation {
-  from {
+@-webkit-keyframes rotation
+  from
     -webkit-transform: rotate(0deg)
-  }
-  to {
+  to
     -webkit-transform: rotate(-359deg)
-  }
-}
 </style>

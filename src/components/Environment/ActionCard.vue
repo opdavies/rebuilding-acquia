@@ -39,7 +39,6 @@ export default {
 </script>
 
 <style scoped>
-svg {
+svg
   @apply h-8 w-8 fill-current text-teal
-}
 </style>

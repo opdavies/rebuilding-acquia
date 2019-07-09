@@ -1,12 +1,9 @@
-html {
-  line-height: 1.15;
-}
+html
+  line-height: 1.15
 
 h1,
-h2 {
+h2
   @apply font-bold
-}
 
-h2 {
+h2
   @apply text-2xl
-}

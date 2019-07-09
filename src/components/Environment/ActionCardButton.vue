@@ -14,7 +14,6 @@ export default {
 </script>
 
 <style scoped>
-  svg {
-    @apply h-6 w-6 fill-current mb-2
-  }
+svg
+  @apply h-6 w-6 fill-current mb-2
 </style>

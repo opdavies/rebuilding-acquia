@@ -60,7 +60,7 @@ export default {
   props: {
     application: Object,
     display: String,
-    id: Number
+    id: String
   },
 
   data () {
