@@ -16,7 +16,7 @@
     "tailwindcss-spaced-items": "^0.1.0",
     "tailwindcss-visuallyhidden": "^1.0.2",
     "vue": "^2.6.6",
-    "vue-router": "^3.1.2"
+    "vue-router": "^3.1.3"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
