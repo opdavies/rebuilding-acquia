@@ -12,7 +12,7 @@
   "dependencies": {
     "postcss-nested": "^4.1.2",
     "sugarss": "^2.0.0",
-    "tailwindcss": "^1.1.2",
+    "tailwindcss": "^1.1.3",
     "tailwindcss-spaced-items": "^0.1.0",
     "tailwindcss-visuallyhidden": "^1.0.2",
     "vue": "^2.6.6",
