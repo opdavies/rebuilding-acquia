@@ -1,6 +1,6 @@
 <template>
-  <div class="-mx-4 flex flex-wrap">
-    <div v-for="(environment, key) in application.environments" class="w-full md:w-1/2 xl:w-1/3 px-4" :key="key">
+  <div class="grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+    <div v-for="(environment, key) in application.environments" :key="key">
       <div class="border border-gray-400 rounded overflow-hidden shadow">
          <div class="bg-white">
           <div class="border-t-4 border-teal p-3">
