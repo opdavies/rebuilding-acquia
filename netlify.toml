@@ -5,4 +5,4 @@ yarn test:unit
 yarn build
 """
 publish = "dist"
-environment = { YARN_VERSION = "1.13.0" }
+environment = { NODE_VERSION = "v12.6.0", YARN_VERSION = "1.13.0" }
