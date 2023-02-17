@@ -4,6 +4,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.0"
     }
+
+    cloudflare = {
+      source  = "cloudflare/cloudflare"
+      version = "~> 3.0"
+    }
   }
 }
 
@@ -27,6 +32,7 @@ resource "aws_s3_bucket_acl" "rebuilding-acquia" {
 
 locals {
   s3_origin_id = "rebuilding-acquia"
+  zone_name    = "oliverdavies.uk"
 }
 
 resource "aws_cloudfront_origin_access_control" "rebuilding-acquia" {
@@ -35,6 +41,16 @@ resource "aws_cloudfront_origin_access_control" "rebuilding-acquia" {
   origin_access_control_origin_type = "s3"
   signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
+}
+
+data "cloudflare_zone" "rebuilding-acquia" {
+  name = local.zone_name
+}
+
+data "aws_acm_certificate" "rebuilding-acquia" {
+  domain   = local.zone_name
+  provider = aws.us-east-1
+  statuses = ["ISSUED"]
 }
 
 resource "aws_cloudfront_distribution" "s3_distribution" {
@@ -49,7 +65,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   enabled             = true
   is_ipv6_enabled     = true
 
-  aliases = ["rebuilding-acquia.oliverdavies.uk"]
+  aliases = ["rebuilding-acquia.${local.zone_name}"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -74,23 +90,22 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   restrictions {
     geo_restriction {
-      locations        = ["US", "CA", "GB"]
-      restriction_type = "whitelist"
+      locations        = []
+      restriction_type = "none"
     }
   }
 
   viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate.cert.arn
+    acm_certificate_arn = data.aws_acm_certificate.rebuilding-acquia.arn
     ssl_support_method  = "sni-only"
   }
 }
 
-resource "aws_acm_certificate" "cert" {
-  domain_name       = "rebuilding-acquia.oliverdavies.uk"
-  provider          = aws.us-east-1
-  validation_method = "DNS"
-
-  lifecycle {
-    create_before_destroy = true
-  }
+resource "cloudflare_record" "rebuilding-acquia" {
+  name    = "rebuilding-acquia"
+  proxied = false
+  ttl     = 0
+  type    = "CNAME"
+  value   = aws_cloudfront_distribution.s3_distribution.domain_name
+  zone_id = data.cloudflare_zone.rebuilding-acquia.id
 }
